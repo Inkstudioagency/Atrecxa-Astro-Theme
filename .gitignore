@@ -28,3 +28,4 @@ strapi/node_modules/
 
 .vercel
 .env*
+!.env.example
