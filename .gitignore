@@ -25,3 +25,6 @@ pnpm-debug.log*
 
 # Strapi project (has its own .gitignore)
 strapi/node_modules/
+
+.vercel
+.env*
