@@ -1,0 +1,52 @@
+---
+// "Primary button" Webflow component: label + arrow that slide on hover.
+// The hover animation is a Webflow IX3 interaction scoped to this component, so the data-wf-* attributes must stay.
+import type { HTMLAttributes } from 'astro/types';
+import { currentLink } from '../../lib/nav';
+
+type Variant = 'base' | 'black' | 'soft-white';
+
+interface Props extends Omit<HTMLAttributes<'a'>, 'class'> {
+  href: string;
+  variant?: Variant;
+  class?: string;
+}
+
+const VARIANT_STATE: Record<Variant, string> = {
+  base: 'base',
+  black: 'cc380b6c-20f9-10dd-0361-befb8f59dcf6',
+  'soft-white': 'bf6089a0-80e9-14d8-fb00-d8b21a188224',
+};
+
+const { href, variant = 'base', class: className, ...rest } = Astro.props;
+const state = VARIANT_STATE[variant];
+const variantClass = variant === 'base' ? undefined : `w-variant-${state}`;
+const { isCurrent, ariaCurrent } = currentLink(Astro.url);
+---
+
+<a
+  href={href}
+  data-wf--primary-button--variant={variant}
+  data-wf-component-id="fe6f4be6-50ca-05e1-38e9-9a6e9da8d773"
+  data-wf-variant-state={state}
+  aria-current={ariaCurrent(href)}
+  class:list={['primary-button', className, 'w-inline-block', isCurrent(href) && 'w--current']}
+  {...rest}
+>
+  <div class:list={['arrow-button-label', variantClass]}>
+    <div class="button-text-pill">
+      <div class="button-text is-one"><slot /></div>
+      <div class="button-text is-two"><slot /></div>
+    </div>
+  </div>
+  <div class:list={['arrow-button-icon', variantClass]}>
+    <div class="button-arrow-pill">
+      <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 15 15" fill="none" class="button-arrow">
+        <path d="M3 12L12 3M3.36 3H12V11.64" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
+      </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 15 15" fill="none" class="button-arrow">
+        <path d="M3 12L12 3M3.36 3H12V11.64" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
+      </svg>
+    </div>
+  </div>
+</a>

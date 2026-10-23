@@ -1,0 +1,51 @@
+---
+import ServiceCard from '../components/cards/ServiceCard.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/global/Header.astro';
+import TestimonialsV1 from '../components/sections/TestimonialsV1.astro';
+import ContactCta from '../components/sections/ContactCta.astro';
+import Footer from '../components/global/Footer.astro';
+import { getServices } from '../lib/cms';
+
+const services = await getServices();
+const services0 = services.slice(0);
+---
+
+<BaseLayout title="Services V1 - Atrecxa - Astro Theme" description="Services V1 page of the Atrecxa Astro theme — present architecture, homebuilding, renovation and interior styling services in a clear layout." wfPage="6a9ecba416758259e5be92d8">
+<div class="page-wrapper">
+    <div class="service-hero"><img src="/images/Rectangle-1-6.webp" loading="eager" sizes="(max-width: 1439px) 100vw, 1440px" srcset="/images/Rectangle-1-6-p-500.webp 500w, /images/Rectangle-1-6-p-800.webp 800w, /images/Rectangle-1-6-p-1080.webp 1080w, /images/Rectangle-1-6.webp 1440w" alt="Cozy living room with velvet armchairs and sofa in dark green, a round marble coffee table, a tall potted plant, heavy beige curtains, and a warm-lit table lamp. A decorative brass room divider with an organic irregular pattern partially separates the space." class="inner-hero-image" />
+      <Header />
+      <section class="section hero-center">
+        <div class="w-layout-blockcontainer container w-container">
+          <div class="hero-center-content">
+            <h1 class="font-h1 white">What we do</h1>
+          </div>
+        </div>
+      </section>
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="main">
+      <section class="section white-50">
+        <div class="section-gap large">
+          <div class="w-layout-blockcontainer container w-container">
+            <div class="work-head">
+              <div to-top-0="" class="section-badge">
+                <div class="section-badge-mark"></div>
+                <div class="font-label">Services</div>
+              </div>
+              <div class="max-width-48">
+                <h2 class="rebuild-text">We Create Interiors That Mix Style, Comfort, And Practicality. We're All About The Little Details And Timeless Vibes.</h2>
+              </div>
+            </div>
+            <div class="full-width w-dyn-list">{services0.length > 0 ? (<div role="list" class="service-list w-dyn-items">{services0.map((entry) => (<div role="listitem" class="service-collection-list w-dyn-item"><ServiceCard item={entry} /></div>))}</div>) : (<div class="w-dyn-empty">
+                <div>No items found.</div>
+              </div>)}</div>
+          </div>
+        </div>
+      </section>
+      <TestimonialsV1 />
+      <ContactCta />
+      <Footer />
+    </div>
+  </div>
+</BaseLayout>

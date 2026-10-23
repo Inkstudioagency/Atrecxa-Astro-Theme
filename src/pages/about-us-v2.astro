@@ -1,0 +1,675 @@
+---
+import BlogCardV2 from '../components/cards/BlogCardV2.astro';
+import BlogSideCardV2 from '../components/cards/BlogSideCardV2.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/global/Header.astro';
+import awardLogoV27Svg from '../assets/svg/award-logo-v2-7.svg?raw';
+import awardLogoV28Svg from '../assets/svg/award-logo-v2-8.svg?raw';
+import awardLogoV29Svg from '../assets/svg/award-logo-v2-9.svg?raw';
+import TestimonialsV2 from '../components/sections/TestimonialsV2.astro';
+import FaqV2 from '../components/sections/FaqV2.astro';
+import PrimaryButton from '../components/ui/PrimaryButton.astro';
+import CtaV2 from '../components/sections/CtaV2.astro';
+import Footer from '../components/global/Footer.astro';
+import { getBlogs } from '../lib/cms';
+
+const blogs = await getBlogs();
+const blogs0 = blogs.slice(0, 1);
+const blogs1 = blogs.slice(1, 3);
+---
+
+<BaseLayout title="About Us V2 - Atrecxa - Astro Theme" description="About Us V2 page of the Atrecxa Astro theme — an alternate studio story layout with mission, journey timeline, awards and team profiles." wfPage="6aa1657995f946b2d560ae14">
+<div class="page-wrapper">
+    <Header variant="dark" />
+    <section class="section hero-v2">
+      <div class="home-hero-top">
+        <div class="about-hero-head">
+          <h1 class="font-h1">Our</h1>
+          <div class="devider-line"></div>
+          <div class="font-h1">Story</div>
+        </div>
+      </div>
+      <div class="about-hero"><img src="/images/Hero.webp" loading="eager" sizes="(max-width: 4320px) 100vw, 4320px" srcset="/images/Hero-p-500.webp 500w, /images/Hero-p-800.webp 800w, /images/Hero-p-1080.webp 1080w, /images/Hero-p-1600.webp 1600w, /images/Hero-p-2000.webp 2000w, /images/Hero.webp 4320w" alt="Modern minimalist white house with large floor-to-ceiling glass windows, surrounded by steps and green shrubbery." class="about-hero-image-02" /><img src="/images/9a958679e21fb9a2eeeab6a9603b29a75c9d1e4c.webp" loading="eager" sizes="(max-width: 1678px) 100vw, 1678px" srcset="/images/9a958679e21fb9a2eeeab6a9603b29a75c9d1e4c-p-500.webp 500w, /images/9a958679e21fb9a2eeeab6a9603b29a75c9d1e4c-p-800.webp 800w, /images/9a958679e21fb9a2eeeab6a9603b29a75c9d1e4c-p-1080.webp 1080w, /images/9a958679e21fb9a2eeeab6a9603b29a75c9d1e4c-p-1600.webp 1600w, /images/9a958679e21fb9a2eeeab6a9603b29a75c9d1e4c.webp 1678w" alt="Modern minimalist glass house with large floor-to-ceiling windows, white exterior walls, broad flat roof, and wide concrete steps leading to the entrance, surrounded by green trimmed hedges." class="about-media-image" /></div>
+    </section>
+    <section class="section white">
+      <div class="section-gap large">
+        <div class="container">
+          <div class="v2-section-stack">
+            <div class="head-center">
+              <div class="section-badge">
+                <div class="section-badge-mark"></div>
+                <p class="font-label">About</p>
+              </div>
+              <div class="max-width-55">
+                <h2 class="rebuild-text">We Design Interiors That Blend Style, Comfort, And Functionality. With A Passion For Detail And A Focus On Timeless Elegance</h2>
+              </div>
+            </div>
+            <div class="vission-grid">
+              <div to-top-0="" class="media-frame about-v2-column hide-tab"><img class="media-image" src="/images/Image-single-image-3.webp" alt="Modern building with large floor-to-ceiling glass windows, light stone steps leading up to the entrance, and neatly trimmed green bushes in front under a clear blue sky." sizes="100vw" parallax="" loading="lazy" srcset="/images/Image-single-image-3-p-500.webp 500w, /images/Image-single-image-3-p-800.webp 800w, /images/Image-single-image-3-p-1080.webp 1080w, /images/Image-single-image-3.webp 1232w" /></div>
+              <div to-top-2="" class="about-v2-pillars">
+                <div class="about-v2-pillar _01">
+                  <div class="about-v2-pillar-row _01">
+                    <div class="vission-title">Our mission</div>
+                    <div class="about-v2-pillar-icon"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 32 32" fill="none" class="vission-logo">
+                        <path d="M8.29171 15.4907L4.41589 14.9838C3.62196 14.8809 3.09181 14.1122 3.44468 13.3945C4.56701 11.1116 7.49271 8.47257 12.9865 8.9078M8.29171 15.4907C9.69931 13.1391 11.429 10.6725 12.9865 8.9078M8.29171 15.4907L15.8427 23.0417M12.9865 8.9078C17.8807 3.45323 22.8994 2.30408 26.125 2.75588C27.4011 2.93461 28.3988 3.93231 28.5776 5.20843C29.0294 8.43409 27.8802 13.4527 22.4256 18.3469M15.8427 23.0417L16.3496 26.9175C16.4526 27.7115 17.2212 28.2417 17.939 27.8887C20.2219 26.7665 22.8608 23.8407 22.4256 18.3469M15.8427 23.0417C18.1943 21.6341 20.6608 19.9043 22.4256 18.3469" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M23.3333 10.6667C23.3333 9.19391 22.1395 8 20.6667 8C19.1939 8 18 9.19391 18 10.6667C18 12.1394 19.1939 13.3333 20.6667 13.3333C22.1395 13.3333 23.3333 12.1394 23.3333 10.6667Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M5.33337 29.3334L10.6667 24.0001M5.33337 22.6667L7.33337 20.6667" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                      </svg></div>
+                  </div>
+                  <div class="vission-summary-wrap _01">
+                    <p class="vission-summary _01">To design buildings and interiors as one act of thinking, with a single team holding the drawing, the budget and the build, so that what is handed over is exactly what was promised at the start.</p>
+                  </div>
+                </div>
+                <div class="about-v2-pillar _02">
+                  <div class="about-v2-pillar-row _02">
+                    <div class="vission-title">Our Vision</div>
+                    <div class="about-v2-pillar-icon"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 32 32" fill="none" class="vission-logo">
+                        <path d="M20.1749 3.33341C18.8616 2.90081 17.4581 2.66675 16 2.66675C8.63616 2.66675 2.66663 8.63628 2.66663 16.0001C2.66663 23.3638 8.63616 29.3334 16 29.3334C23.3637 29.3334 29.3333 23.3638 29.3333 16.0001C29.3333 14.6065 29.1194 13.2628 28.7229 12.0001" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
+                        <path d="M22.6667 15.9999C22.6667 19.6818 19.6819 22.6666 16 22.6666C12.3181 22.6666 9.33337 19.6818 9.33337 15.9999C9.33337 12.318 12.3181 9.33325 16 9.33325" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M26 6.00008L16 16.0001M26 6.00008V2.66675M26 6.00008H29.3333" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
+                      </svg></div>
+                  </div>
+                  <div class="vission-summary-wrap _02">
+                    <p class="vission-summary _02">A built environment worth inheriting. Homes, studios and workplaces that still work fifty years from now, because they were planned around daylight, material and use rather than around style.</p>
+                  </div>
+                </div>
+                <div class="about-v2-pillar _03">
+                  <div class="about-v2-pillar-row _03">
+                    <div class="vission-title">Our Philosophy</div>
+                    <div class="about-v2-pillar-icon"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 32 32" fill="none" class="vission-logo">
+                        <path d="M28 13.3333V17.3333C28 22.3616 28 24.8759 26.4379 26.4379C24.8759 28 22.3616 28 17.3333 28H14.6667C9.63835 28 7.1242 28 5.56209 26.4379C4 24.8759 4 22.3616 4 17.3333V14.6667C4 9.63835 4 7.1242 5.56209 5.56209C7.1242 4 9.63835 4 14.6667 4H18.6667" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M13.3334 4L20 27.3333" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M4 17.3334L16 14.6667" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M26 3.91675V6.00008M26 6.00008V8.08341M26 6.00008H24.3333M26 6.00008H27.6666M29.3333 6.00008L27.8874 5.51811C27.2238 5.29692 26.7032 4.77623 26.482 4.11265L26 2.66675L25.518 4.11265C25.2968 4.77623 24.7761 5.29692 24.1125 5.51811L22.6666 6.00008L24.1125 6.48205C24.7761 6.70324 25.2968 7.22393 25.518 7.88751L26 9.33341L26.482 7.88751C26.7032 7.22393 27.2238 6.70324 27.8874 6.48205L29.3333 6.00008Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                      </svg></div>
+                  </div>
+                  <div class="vission-summary-wrap _03">
+                    <p class="vission-summary _03">Every project begins in section rather than in plan. Where the light falls, how the ground moves and how deep a room can be before it stops working are settled before an elevation is drawn.</p>
+                  </div>
+                </div>
+              </div>
+              <div to-top-4="" class="media-frame about-v2-column"><img class="media-image" src="/images/Image-single-image-5.webp" alt="Three-story modern house made of stacked shipping containers painted black, featuring large windows, a small wooden deck with chairs and table, and plants on the rooftop and around the base, illuminated by golden sunset light in an urban setting." sizes="(max-width: 822px) 100vw, 822px" parallax="" loading="lazy" srcset="/images/Image-single-image-5-p-500.webp 500w, /images/Image-single-image-5-p-800.webp 800w, /images/Image-single-image-5.webp 822w" /></div>
+            </div>
+            <div to-top-0="" class="marque-main">
+              <div class="marque-badge-wrap">
+                <div class="hero-badge-text light">Trusted by industry-leading Brands</div>
+              </div>
+              <div class="marque-wrap">
+                <div class="marque-list"><img src="/images/Company-logo-7.webp" loading="lazy" alt="Eclipseful" class="company-logo-image" /><img src="/images/Company-logo-5.webp" loading="lazy" alt="Capsule company logo." class="company-logo-image" /><img src="/images/Company-logo-8.webp" loading="lazy" alt="Foresight" class="company-logo-image" /><img src="/images/Company-logo-6.webp" loading="lazy" alt="CloudWatch logo showing a stylized cloud icon followed by the word 'CloudWatch' in bold black font." class="company-logo-image" /><img src="/images/Company-logo.webp" loading="lazy" alt="Goodwell company logo with a stylized lowercase 'g' icon to the left of the word 'Goodwell'." class="company-logo-image" /><img src="/images/Company-logo-2.webp" loading="lazy" alt="Railspeed company logo with stylized horizontal bars next to the word Railspeed." class="company-logo-image" /><img src="/images/Company-logo-4.webp" loading="lazy" alt="Leapyear company logo with a stylized geometric icon to the left of the word 'Leapyear' in bold black font." class="company-logo-image" /><img src="/images/Company-logo-1.webp" loading="lazy" alt="Radius company logo with a starburst design to the left of the word Radius in bold font." class="company-logo-image" /><img src="/images/Company-logo-3.webp" loading="lazy" alt="Norse Star company logo with a black abstract star symbol followed by the words 'Norse Star' in black text." class="company-logo-image" /></div>
+                <div class="marque-list"><img src="/images/Company-logo-7.webp" loading="lazy" alt="Eclipseful" class="company-logo-image" /><img src="/images/Company-logo-5.webp" loading="lazy" alt="Capsule company logo." class="company-logo-image" /><img src="/images/Company-logo-8.webp" loading="lazy" alt="Foresight" class="company-logo-image" /><img src="/images/Company-logo-6.webp" loading="lazy" alt="CloudWatch logo showing a stylized cloud icon followed by the word 'CloudWatch' in bold black font." class="company-logo-image" /><img src="/images/Company-logo.webp" loading="lazy" alt="Goodwell company logo with a stylized lowercase 'g' icon to the left of the word 'Goodwell'." class="company-logo-image" /><img src="/images/Company-logo-2.webp" loading="lazy" alt="Railspeed company logo with stylized horizontal bars next to the word Railspeed." class="company-logo-image" /><img src="/images/Company-logo-4.webp" loading="lazy" alt="Leapyear company logo with a stylized geometric icon to the left of the word 'Leapyear' in bold black font." class="company-logo-image" /><img src="/images/Company-logo-1.webp" loading="lazy" alt="Radius company logo with a starburst design to the left of the word Radius in bold font." class="company-logo-image" /><img src="/images/Company-logo-3.webp" loading="lazy" alt="Norse Star company logo with a black abstract star symbol followed by the words 'Norse Star' in black text." class="company-logo-image" /></div>
+                <div class="marque-overlay"></div>
+                <div class="marque-overlay right"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section page-bg">
+      <div class="section-gap large">
+        <div class="container">
+          <div class="v2-section-stack">
+            <div class="head-center">
+              <div class="section-badge">
+                <div class="section-badge-mark"></div>
+                <p class="font-label">Journey</p>
+              </div>
+              <h2 class="section-heading-large">Our journey</h2>
+            </div>
+            <div class="journey-sticky-wrapper">
+              <div class="journey-list-wrap">
+                <div class="journey-v2-track">
+                  <div class="journey-animated-line-v2"></div>
+                  <div class="journey-v2-item">
+                    <div class="journey-v2-top padding-none">
+                      <div class="about-rebuild-text body-font">2008</div>
+                      <div class="journey-v2-stem">
+                        <div class="journey-v2-stem-line"></div>
+                        <div class="journey-v2-stem-dot"></div>
+                      </div>
+                    </div>
+                    <div class="journey-v2-bottom">
+                      <div class="journey-v2-card">
+                        <div class="font-h5 body-font">The First Spark</div>
+                        <div class="media-frame journey-v2"><img src="/images/Container-17.webp" alt="Modern home office setup with a wooden desk featuring a desktop computer with a black screen, a laptop, a keyboard, mouse, decorative items, and books on shelves above, next to a large window with grey curtains and a potted plant." sizes="(max-width: 1020px) 100vw, 1020px" srcset="/images/Container-17-p-500.webp 500w, /images/Container-17-p-800.webp 800w, /images/Container-17.webp 1020w" class="journey-image-v2" /></div>
+                        <p class="font-regular">Two architects, one borrowed room above a joinery workshop, and one house to draw.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="journey-v2-item">
+                    <div class="journey-v2-top">
+                      <div class="journey-v2-card">
+                        <div class="font-h5 body-font-copy">Building Our Vision</div>
+                        <div class="media-frame journey-v2"><img src="/images/Container-16.webp" alt="A multi-story industrial-style building made of corrugated metal panels with rust patches, set in a desert landscape with a clear sky at sunset." sizes="(max-width: 1020px) 100vw, 1020px" srcset="/images/Container-16-p-500.webp 500w, /images/Container-16-p-800.webp 800w, /images/Container-16.webp 1020w" class="journey-image-v2" /></div>
+                        <p class="font-regular">Premises of our own at last, and the first engineers and interior designers hired.</p>
+                      </div>
+                    </div>
+                    <div class="journey-v2-bottom padding-none">
+                      <div class="journey-v2-stem">
+                        <div class="journey-v2-stem-dot"></div>
+                        <div class="journey-v2-stem-line"></div>
+                      </div>
+                      <p class="about-rebuild-text body-font">2012</p>
+                    </div>
+                  </div>
+                  <div class="journey-v2-item">
+                    <div class="journey-v2-top padding-none">
+                      <div class="about-rebuild-text body-font">2015</div>
+                      <div class="journey-v2-stem">
+                        <div class="journey-v2-stem-line"></div>
+                        <div class="journey-v2-stem-dot"></div>
+                      </div>
+                    </div>
+                    <div class="journey-v2-bottom">
+                      <div class="journey-v2-card">
+                        <div class="font-h5 body-font">Expanding Horizons</div>
+                        <div class="media-frame journey-v2"><img src="/images/Container-18.webp" alt="Bright living room with large windows showing green trees outside, beige sofas with cushions, a wooden coffee table with books and flowers, neutral tones, and a floor lamp." sizes="(max-width: 1020px) 100vw, 1020px" srcset="/images/Container-18-p-500.webp 500w, /images/Container-18-p-800.webp 800w, /images/Container-18.webp 1020w" class="journey-image-v2" /></div>
+                        <p class="font-regular">A national award and a commission abroad landed in the same twelve-month stretch.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="journey-v2-track">
+                  <div class="journey-animated-line-v2"></div>
+                  <div class="journey-v2-item">
+                    <div class="journey-v2-top">
+                      <div class="journey-v2-card">
+                        <div class="font-h5 body-font">Shaping the Future</div>
+                        <div class="media-frame journey-v2"><img src="/images/Container-27.webp" alt="A multi-story industrial-style building made of corrugated metal panels with rust patches, set in a desert landscape with a clear sky at sunset." sizes="(max-width: 1360px) 100vw, 1360px" srcset="/images/Container-27-p-500.webp 500w, /images/Container-27-p-800.webp 800w, /images/Container-27-p-1080.webp 1080w, /images/Container-27.webp 1360w" class="journey-image-v2" /></div>
+                        <p class="font-regular">Low-carbon material, airtight fabric and passive heating became the default spec.</p>
+                      </div>
+                    </div>
+                    <div class="journey-v2-bottom padding-none">
+                      <div class="journey-v2-stem">
+                        <div class="journey-v2-stem-dot"></div>
+                        <div class="journey-v2-stem-line"></div>
+                      </div>
+                      <p class="about-rebuild-text body-font">2020</p>
+                    </div>
+                  </div>
+                  <div class="journey-v2-item">
+                    <div class="journey-v2-top padding-none">
+                      <div class="about-rebuild-text body-font">2022</div>
+                      <div class="journey-v2-stem">
+                        <div class="journey-v2-stem-line"></div>
+                        <div class="journey-v2-stem-dot"></div>
+                      </div>
+                    </div>
+                    <div class="journey-v2-bottom">
+                      <div class="journey-v2-card">
+                        <div class="font-h5 body-font">The Idea Takes Shape</div>
+                        <div class="media-frame journey-v2"><img src="/images/5f7daaa29a17017395ed202082cb76adf4bcec0c-1.webp" alt="Bright living room with large windows showing green trees outside, beige sofas with cushions, a wooden coffee table with books and flowers, neutral tones, and a floor lamp." sizes="(max-width: 2400px) 100vw, 2400px" srcset="/images/5f7daaa29a17017395ed202082cb76adf4bcec0c-1-p-500.webp 500w, /images/5f7daaa29a17017395ed202082cb76adf4bcec0c-1-p-800.webp 800w, /images/5f7daaa29a17017395ed202082cb76adf4bcec0c-1-p-1080.webp 1080w, /images/5f7daaa29a17017395ed202082cb76adf4bcec0c-1-p-1600.webp 1600w, /images/5f7daaa29a17017395ed202082cb76adf4bcec0c-1-p-2000.webp 2000w, /images/5f7daaa29a17017395ed202082cb76adf4bcec0c-1.webp 2400w" class="journey-image-v2" /></div>
+                        <p class="font-regular">A second studio opened in the same year our hundredth building was handed over.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="journey-v2-item">
+                    <div class="journey-v2-top">
+                      <div class="journey-v2-card">
+                        <div class="font-h5 body-font">Building Our Vision</div>
+                        <div class="media-frame journey-v2"><img src="/images/Rectangle-161124199.webp" alt="A multi-story industrial-style building made of corrugated metal panels with rust patches, set in a desert landscape with a clear sky at sunset." sizes="(max-width: 656px) 100vw, 656px" srcset="/images/Rectangle-161124199-p-500.webp 500w, /images/Rectangle-161124199.webp 656w" class="journey-image-v2" /></div>
+                        <p class="font-regular">Two hundred projects in, and six of every ten now rework a building that stands.</p>
+                      </div>
+                    </div>
+                    <div class="journey-v2-bottom padding-none">
+                      <div class="journey-v2-stem">
+                        <div class="journey-v2-stem-dot"></div>
+                        <div class="journey-v2-stem-line"></div>
+                      </div>
+                      <p class="about-rebuild-text body-font">2026</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="journey-marque-main">
+              <div class="journey-list">
+                <div class="journey-v2-mobile">
+                  <div class="journey-marque-card-main">
+                    <div class="journey-marque-card">
+                      <div class="journey-v2-stem">
+                        <div class="journey-v2-stem-line"></div>
+                        <div class="journey-v2-stem-dot"></div>
+                      </div>
+                      <div class="about-rebuild-text body-font">2008</div>
+                    </div>
+                    <div class="journey-v2-bottom">
+                      <div class="journey-v2-card">
+                        <div class="font-h5 body-font">The First Spark</div>
+                        <div class="media-frame journey-v2"><img src="/images/Container-17.webp" alt="Modern home office setup with a wooden desk featuring a desktop computer with a black screen, a laptop, a keyboard, mouse, decorative items, and books on shelves above, next to a large window with grey curtains and a potted plant." sizes="(max-width: 1020px) 100vw, 1020px" srcset="/images/Container-17-p-500.webp 500w, /images/Container-17-p-800.webp 800w, /images/Container-17.webp 1020w" class="journey-image-about" /></div>
+                        <p class="font-regular">Two architects, one borrowed room above a joinery workshop, and one house to draw.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="journey-v2-mobile">
+                  <div class="journey-marque-card-main">
+                    <div class="journey-marque-card">
+                      <div class="journey-v2-stem">
+                        <div class="journey-v2-stem-line"></div>
+                        <div class="journey-v2-stem-dot"></div>
+                      </div>
+                      <div class="about-rebuild-text body-font">2012</div>
+                    </div>
+                    <div class="journey-v2-bottom">
+                      <div class="journey-v2-card">
+                        <div class="font-h5 body-font">The Idea Takes Shape</div>
+                        <div class="media-frame journey-v2"><img src="/images/Container-16.webp" alt="Modern home office setup with a wooden desk featuring a desktop computer with a black screen, a laptop, a keyboard, mouse, decorative items, and books on shelves above, next to a large window with grey curtains and a potted plant." sizes="(max-width: 1020px) 100vw, 1020px" srcset="/images/Container-16-p-500.webp 500w, /images/Container-16-p-800.webp 800w, /images/Container-16.webp 1020w" class="journey-image-about" /></div>
+                        <p class="font-regular">Premises of our own at last, and the first engineers and interior designers hired.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="journey-v2-mobile">
+                  <div class="journey-marque-card-main">
+                    <div class="journey-marque-card">
+                      <div class="journey-v2-stem">
+                        <div class="journey-v2-stem-line"></div>
+                        <div class="journey-v2-stem-dot"></div>
+                      </div>
+                      <div class="about-rebuild-text body-font">2015</div>
+                    </div>
+                    <div class="journey-v2-bottom">
+                      <div class="journey-v2-card">
+                        <div class="font-h5 body-font">Expanding Horizons</div>
+                        <div class="media-frame journey-v2"><img src="/images/Container-18.webp" alt="Modern home office setup with a wooden desk featuring a desktop computer with a black screen, a laptop, a keyboard, mouse, decorative items, and books on shelves above, next to a large window with grey curtains and a potted plant." sizes="(max-width: 1020px) 100vw, 1020px" srcset="/images/Container-18-p-500.webp 500w, /images/Container-18-p-800.webp 800w, /images/Container-18.webp 1020w" class="journey-image-about" /></div>
+                        <p class="font-regular">A national award and a commission abroad landed in the same twelve-month stretch.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="journey-v2-mobile">
+                  <div class="journey-marque-card-main">
+                    <div class="journey-marque-card">
+                      <div class="journey-v2-stem">
+                        <div class="journey-v2-stem-line"></div>
+                        <div class="journey-v2-stem-dot"></div>
+                      </div>
+                      <div class="about-rebuild-text body-font">2020</div>
+                    </div>
+                    <div class="journey-v2-bottom">
+                      <div class="journey-v2-card">
+                        <div class="font-h5 body-font">A New Perspective</div>
+                        <div class="media-frame journey-v2"><img src="/images/Container-27.webp" alt="Modern home office setup with a wooden desk featuring a desktop computer with a black screen, a laptop, a keyboard, mouse, decorative items, and books on shelves above, next to a large window with grey curtains and a potted plant." sizes="(max-width: 1360px) 100vw, 1360px" srcset="/images/Container-27-p-500.webp 500w, /images/Container-27-p-800.webp 800w, /images/Container-27-p-1080.webp 1080w, /images/Container-27.webp 1360w" class="journey-image-about" /></div>
+                        <p class="font-regular">Low-carbon material, airtight fabric and passive heating became the default spec.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="journey-list">
+                <div class="journey-v2-mobile">
+                  <div class="journey-marque-card-main">
+                    <div class="journey-marque-card">
+                      <div class="journey-v2-stem">
+                        <div class="journey-v2-stem-line"></div>
+                        <div class="journey-v2-stem-dot"></div>
+                      </div>
+                      <div class="about-rebuild-text body-font">2008</div>
+                    </div>
+                    <div class="journey-v2-bottom">
+                      <div class="journey-v2-card">
+                        <div class="font-h5 body-font">The First Spark</div>
+                        <div class="media-frame journey-v2"><img src="/images/Container-17.webp" alt="Modern home office setup with a wooden desk featuring a desktop computer with a black screen, a laptop, a keyboard, mouse, decorative items, and books on shelves above, next to a large window with grey curtains and a potted plant." sizes="(max-width: 1020px) 100vw, 1020px" srcset="/images/Container-17-p-500.webp 500w, /images/Container-17-p-800.webp 800w, /images/Container-17.webp 1020w" class="journey-image-about" /></div>
+                        <p class="font-regular">Two architects, one borrowed room above a joinery workshop, and one house to draw.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="journey-v2-mobile">
+                  <div class="journey-marque-card-main">
+                    <div class="journey-marque-card">
+                      <div class="journey-v2-stem">
+                        <div class="journey-v2-stem-line"></div>
+                        <div class="journey-v2-stem-dot"></div>
+                      </div>
+                      <div class="about-rebuild-text body-font">2012</div>
+                    </div>
+                    <div class="journey-v2-bottom">
+                      <div class="journey-v2-card">
+                        <div class="font-h5 body-font">The Idea Takes Shape</div>
+                        <div class="media-frame journey-v2"><img src="/images/Container-16.webp" alt="Modern home office setup with a wooden desk featuring a desktop computer with a black screen, a laptop, a keyboard, mouse, decorative items, and books on shelves above, next to a large window with grey curtains and a potted plant." sizes="(max-width: 1020px) 100vw, 1020px" srcset="/images/Container-16-p-500.webp 500w, /images/Container-16-p-800.webp 800w, /images/Container-16.webp 1020w" class="journey-image-about" /></div>
+                        <p class="font-regular">Premises of our own at last, and the first engineers and interior designers hired.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="journey-v2-mobile">
+                  <div class="journey-marque-card-main">
+                    <div class="journey-marque-card">
+                      <div class="journey-v2-stem">
+                        <div class="journey-v2-stem-line"></div>
+                        <div class="journey-v2-stem-dot"></div>
+                      </div>
+                      <div class="about-rebuild-text body-font">2015</div>
+                    </div>
+                    <div class="journey-v2-bottom">
+                      <div class="journey-v2-card">
+                        <div class="font-h5 body-font">Expanding Horizons</div>
+                        <div class="media-frame journey-v2"><img src="/images/Container-18.webp" alt="Modern home office setup with a wooden desk featuring a desktop computer with a black screen, a laptop, a keyboard, mouse, decorative items, and books on shelves above, next to a large window with grey curtains and a potted plant." sizes="(max-width: 1020px) 100vw, 1020px" srcset="/images/Container-18-p-500.webp 500w, /images/Container-18-p-800.webp 800w, /images/Container-18.webp 1020w" class="journey-image-about" /></div>
+                        <p class="font-regular">A national award and a commission abroad landed in the same twelve-month stretch.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="journey-v2-mobile">
+                  <div class="journey-marque-card-main">
+                    <div class="journey-marque-card">
+                      <div class="journey-v2-stem">
+                        <div class="journey-v2-stem-line"></div>
+                        <div class="journey-v2-stem-dot"></div>
+                      </div>
+                      <div class="about-rebuild-text body-font">2020</div>
+                    </div>
+                    <div class="journey-v2-bottom">
+                      <div class="journey-v2-card">
+                        <div class="font-h5 body-font">A New Perspective</div>
+                        <div class="media-frame journey-v2"><img src="/images/Container-27.webp" alt="Modern home office setup with a wooden desk featuring a desktop computer with a black screen, a laptop, a keyboard, mouse, decorative items, and books on shelves above, next to a large window with grey curtains and a potted plant." sizes="(max-width: 1360px) 100vw, 1360px" srcset="/images/Container-27-p-500.webp 500w, /images/Container-27-p-800.webp 800w, /images/Container-27-p-1080.webp 1080w, /images/Container-27.webp 1360w" class="journey-image-about" /></div>
+                        <p class="font-regular">Low-carbon material, airtight fabric and passive heating became the default spec.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section work-v2">
+      <div class="section-gap large">
+        <div class="container">
+          <div class="v2-section-stack">
+            <div class="head-center">
+              <div class="section-badge">
+                <div class="section-badge-mark white"></div>
+                <p class="font-label white">Awards</p>
+              </div>
+              <h2 class="section-heading-large white-100">Awards &amp; Honors</h2>
+            </div>
+            <div class="awards-v2-grid">
+              <div to-top-0="" class="award-v2-card">
+                <p class="font-small">(2023)</p><Fragment set:html={awardLogoV27Svg} />
+                <div class="award-title-wrap">
+                  <div class="award-title-v2">Urban Architecture</div>
+                  <p class="font-regular award-summary">Recognized with the Ji.Hlava IDFF Special Mention</p>
+                </div>
+              </div>
+              <div to-top-2="" class="award-v2-card">
+                <p class="font-small">(2024)</p><Fragment set:html={awardLogoV28Svg} />
+                <div class="award-title-wrap">
+                  <div class="award-title-v2">Residential Design</div>
+                  <p class="font-regular award-summary">An Official Selection at Roma CinemaDoc for designs</p>
+                </div>
+              </div>
+              <div to-top-4="" class="award-v2-card">
+                <p class="font-small">(2025)</p><Fragment set:html={awardLogoV29Svg} />
+                <div class="award-title-wrap">
+                  <div class="award-title-v2">Luxury Interiors</div>
+                  <p class="font-regular award-summary">Premio Giuria Popolare Winner, celebrated by public juries </p>
+                </div>
+              </div>
+              <div to-top-6="" class="award-v2-card">
+                <p class="font-small">(2026)</p><Fragment set:html={awardLogoV29Svg} />
+                <div class="award-title-wrap">
+                  <div class="award-title-v2">Urban Planning</div>
+                  <p class="font-regular award-summary">Winner of the Premio Giuria recognized for iconic designs</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section page-bg">
+      <div class="section-gap large">
+        <div class="container">
+          <div class="v2-section-stack">
+            <div class="head-center">
+              <div class="section-badge">
+                <div class="section-badge-mark"></div>
+                <p class="font-label">Team</p>
+              </div>
+              <h2 class="section-heading-large">Behind the team</h2>
+            </div>
+            <div data-delay="100" data-animation="slide" class="team-slider w-slider" data-autoplay="true" to-top-0="" data-easing="ease" data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit="1" data-nav-spacing="3" data-duration="500" data-infinite="true">
+              <div class="team-slider-mask w-slider-mask">
+                <div class="team-slide w-slide">
+                  <div class="team-slider-card">
+                    <div class="team-slider-image-wrap"><img src="/images/Image-Design-yours-15.webp" loading="lazy" sizes="100vw" srcset="/images/Image-Design-yours-15-p-500.webp 500w, /images/Image-Design-yours-15-p-800.webp 800w, /images/Image-Design-yours-15.webp 858w" alt="Smiling young man with light brown hair and beard wearing a brown shirt against a dark brown background with a diagonal sunlight pattern." class="team-slider-image" />
+                      <div class="team-social-wrap">
+                        <a href="https://x.com/" target="_blank" class="team-social-link w-inline-block"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 16 16" fill="none" class="team-social-icon">
+                            <path d="M2 14L7.03226 8.96774M14 2L8.96774 7.03226M7.03226 8.96774L10.6667 14H14L8.96774 7.03226L5.33333 2H2L7.03226 8.96774Z" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
+                          </svg>
+                          <div class="demo">#</div>
+                        </a>
+                        <a href="https://www.instagram.com/" target="_blank" class="team-social-link w-inline-block">
+                          <div class="demo">#</div><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 16 16" fill="none" class="team-social-icon">
+                            <g clip-path="url(#clip0_10274_7638)">
+                              <path d="M11.3334 1.33301H4.66671C2.82576 1.33301 1.33337 2.82539 1.33337 4.66634V11.333C1.33337 13.174 2.82576 14.6663 4.66671 14.6663H11.3334C13.1743 14.6663 14.6667 13.174 14.6667 11.333V4.66634C14.6667 2.82539 13.1743 1.33301 11.3334 1.33301Z" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
+                              <path d="M10.6664 7.5802C10.7487 8.13503 10.6539 8.70168 10.3956 9.19954C10.1373 9.69741 9.72853 10.1011 9.22752 10.3533C8.7265 10.6055 8.15873 10.6933 7.60495 10.6042C7.05118 10.515 6.5396 10.2536 6.14299 9.85698C5.74638 9.46036 5.48492 8.94878 5.39581 8.39501C5.3067 7.84124 5.39447 7.27346 5.64665 6.77245C5.89882 6.27144 6.30255 5.86269 6.80042 5.60436C7.29829 5.34603 7.86493 5.25126 8.41976 5.33353C8.98571 5.41746 9.50966 5.68118 9.91423 6.08574C10.3188 6.4903 10.5825 7.01425 10.6664 7.5802Z" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
+                              <path d="M11.6666 4.33301H11.6733" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
+                            </g>
+                            <defs>
+                              <clipPath id="clip0_10274_7638">
+                                <rect width="16" height="16" fill="currentColor"></rect>
+                              </clipPath>
+                            </defs>
+                          </svg>
+                        </a>
+                        <a href="https://linkedin.com" target="_blank" class="team-social-link w-inline-block">
+                          <div class="demo">#</div><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 16 16" fill="none" class="team-social-icon">
+                            <path d="M10.6666 5.33301C11.7275 5.33301 12.7449 5.75444 13.4951 6.50458C14.2452 7.25473 14.6666 8.27214 14.6666 9.33301V13.9997H12V9.33301C12 8.97939 11.8595 8.64025 11.6094 8.3902C11.3594 8.14015 11.0202 7.99967 10.6666 7.99967C10.313 7.99967 9.97387 8.14015 9.72382 8.3902C9.47377 8.64025 9.33329 8.97939 9.33329 9.33301V13.9997H6.66663V9.33301C6.66663 8.27214 7.08805 7.25473 7.8382 6.50458C8.58834 5.75444 9.60576 5.33301 10.6666 5.33301Z" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M4.00004 6H1.33337V14H4.00004V6Z" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M2.66671 3.99967C3.40309 3.99967 4.00004 3.40272 4.00004 2.66634C4.00004 1.92996 3.40309 1.33301 2.66671 1.33301C1.93033 1.33301 1.33337 1.92996 1.33337 2.66634C1.33337 3.40272 1.93033 3.99967 2.66671 3.99967Z" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="team-info-wrap">
+                      <div class="member-name">Sophia Reade</div>
+                      <div>Lead Interior Designer</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="team-slide w-slide">
+                  <div class="team-slider-card">
+                    <div class="team-slider-image-wrap"><img src="/images/Image-Design-yours-16-1.webp" loading="lazy" sizes="100vw" srcset="/images/Image-Design-yours-16-1-p-500.webp 500w, /images/Image-Design-yours-16-1-p-800.webp 800w, /images/Image-Design-yours-16-1-p-1080.webp 1080w, /images/Image-Design-yours-16-1.webp 1107w" alt="Smiling young woman with wavy brown hair wearing a mustard-colored coat over a gray shirt, standing indoors with blurred background." class="team-slider-image" />
+                      <div class="team-social-wrap">
+                        <a href="https://x.com/" target="_blank" class="team-social-link w-inline-block"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 16 16" fill="none" class="team-social-icon">
+                            <path d="M2 14L7.03226 8.96774M14 2L8.96774 7.03226M7.03226 8.96774L10.6667 14H14L8.96774 7.03226L5.33333 2H2L7.03226 8.96774Z" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
+                          </svg>
+                          <div class="demo">#</div>
+                        </a>
+                        <a href="https://www.instagram.com/" target="_blank" class="team-social-link w-inline-block">
+                          <div class="demo">#</div><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 16 16" fill="none" class="team-social-icon">
+                            <g clip-path="url(#clip0_10274_7638)">
+                              <path d="M11.3334 1.33301H4.66671C2.82576 1.33301 1.33337 2.82539 1.33337 4.66634V11.333C1.33337 13.174 2.82576 14.6663 4.66671 14.6663H11.3334C13.1743 14.6663 14.6667 13.174 14.6667 11.333V4.66634C14.6667 2.82539 13.1743 1.33301 11.3334 1.33301Z" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
+                              <path d="M10.6664 7.5802C10.7487 8.13503 10.6539 8.70168 10.3956 9.19954C10.1373 9.69741 9.72853 10.1011 9.22752 10.3533C8.7265 10.6055 8.15873 10.6933 7.60495 10.6042C7.05118 10.515 6.5396 10.2536 6.14299 9.85698C5.74638 9.46036 5.48492 8.94878 5.39581 8.39501C5.3067 7.84124 5.39447 7.27346 5.64665 6.77245C5.89882 6.27144 6.30255 5.86269 6.80042 5.60436C7.29829 5.34603 7.86493 5.25126 8.41976 5.33353C8.98571 5.41746 9.50966 5.68118 9.91423 6.08574C10.3188 6.4903 10.5825 7.01425 10.6664 7.5802Z" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
+                              <path d="M11.6666 4.33301H11.6733" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
+                            </g>
+                            <defs>
+                              <clipPath id="clip0_10274_7638">
+                                <rect width="16" height="16" fill="currentColor"></rect>
+                              </clipPath>
+                            </defs>
+                          </svg>
+                        </a>
+                        <a href="https://linkedin.com" target="_blank" class="team-social-link w-inline-block">
+                          <div class="demo">#</div><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 16 16" fill="none" class="team-social-icon">
+                            <path d="M10.6666 5.33301C11.7275 5.33301 12.7449 5.75444 13.4951 6.50458C14.2452 7.25473 14.6666 8.27214 14.6666 9.33301V13.9997H12V9.33301C12 8.97939 11.8595 8.64025 11.6094 8.3902C11.3594 8.14015 11.0202 7.99967 10.6666 7.99967C10.313 7.99967 9.97387 8.14015 9.72382 8.3902C9.47377 8.64025 9.33329 8.97939 9.33329 9.33301V13.9997H6.66663V9.33301C6.66663 8.27214 7.08805 7.25473 7.8382 6.50458C8.58834 5.75444 9.60576 5.33301 10.6666 5.33301Z" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M4.00004 6H1.33337V14H4.00004V6Z" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M2.66671 3.99967C3.40309 3.99967 4.00004 3.40272 4.00004 2.66634C4.00004 1.92996 3.40309 1.33301 2.66671 1.33301C1.93033 1.33301 1.33337 1.92996 1.33337 2.66634C1.33337 3.40272 1.93033 3.99967 2.66671 3.99967Z" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="team-info-wrap">
+                      <div class="member-name">Sophia Reade</div>
+                      <div>Lead Interior Designer</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="team-slide w-slide">
+                  <div class="team-slider-card">
+                    <div class="team-slider-image-wrap"><img src="/images/Frame-2147235131.webp" loading="lazy" sizes="100vw" srcset="/images/Frame-2147235131-p-500.webp 500w, /images/Frame-2147235131-p-800.webp 800w, /images/Frame-2147235131-p-1080.webp 1080w, /images/Frame-2147235131-p-1600.webp 1600w, /images/Frame-2147235131.webp 1764w" alt="Smiling woman with curly dark hair wearing a maroon blouse, standing against a light gray background with diagonal shadows." class="team-slider-image" />
+                      <div class="team-social-wrap">
+                        <a href="https://x.com/" target="_blank" class="team-social-link w-inline-block"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 16 16" fill="none" class="team-social-icon">
+                            <path d="M2 14L7.03226 8.96774M14 2L8.96774 7.03226M7.03226 8.96774L10.6667 14H14L8.96774 7.03226L5.33333 2H2L7.03226 8.96774Z" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
+                          </svg>
+                          <div class="demo">#</div>
+                        </a>
+                        <a href="https://www.instagram.com/" target="_blank" class="team-social-link w-inline-block">
+                          <div class="demo">#</div><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 16 16" fill="none" class="team-social-icon">
+                            <g clip-path="url(#clip0_10274_7638)">
+                              <path d="M11.3334 1.33301H4.66671C2.82576 1.33301 1.33337 2.82539 1.33337 4.66634V11.333C1.33337 13.174 2.82576 14.6663 4.66671 14.6663H11.3334C13.1743 14.6663 14.6667 13.174 14.6667 11.333V4.66634C14.6667 2.82539 13.1743 1.33301 11.3334 1.33301Z" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
+                              <path d="M10.6664 7.5802C10.7487 8.13503 10.6539 8.70168 10.3956 9.19954C10.1373 9.69741 9.72853 10.1011 9.22752 10.3533C8.7265 10.6055 8.15873 10.6933 7.60495 10.6042C7.05118 10.515 6.5396 10.2536 6.14299 9.85698C5.74638 9.46036 5.48492 8.94878 5.39581 8.39501C5.3067 7.84124 5.39447 7.27346 5.64665 6.77245C5.89882 6.27144 6.30255 5.86269 6.80042 5.60436C7.29829 5.34603 7.86493 5.25126 8.41976 5.33353C8.98571 5.41746 9.50966 5.68118 9.91423 6.08574C10.3188 6.4903 10.5825 7.01425 10.6664 7.5802Z" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
+                              <path d="M11.6666 4.33301H11.6733" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
+                            </g>
+                            <defs>
+                              <clipPath id="clip0_10274_7638">
+                                <rect width="16" height="16" fill="currentColor"></rect>
+                              </clipPath>
+                            </defs>
+                          </svg>
+                        </a>
+                        <a href="https://linkedin.com" target="_blank" class="team-social-link w-inline-block">
+                          <div class="demo">#</div><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 16 16" fill="none" class="team-social-icon">
+                            <path d="M10.6666 5.33301C11.7275 5.33301 12.7449 5.75444 13.4951 6.50458C14.2452 7.25473 14.6666 8.27214 14.6666 9.33301V13.9997H12V9.33301C12 8.97939 11.8595 8.64025 11.6094 8.3902C11.3594 8.14015 11.0202 7.99967 10.6666 7.99967C10.313 7.99967 9.97387 8.14015 9.72382 8.3902C9.47377 8.64025 9.33329 8.97939 9.33329 9.33301V13.9997H6.66663V9.33301C6.66663 8.27214 7.08805 7.25473 7.8382 6.50458C8.58834 5.75444 9.60576 5.33301 10.6666 5.33301Z" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M4.00004 6H1.33337V14H4.00004V6Z" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M2.66671 3.99967C3.40309 3.99967 4.00004 3.40272 4.00004 2.66634C4.00004 1.92996 3.40309 1.33301 2.66671 1.33301C1.93033 1.33301 1.33337 1.92996 1.33337 2.66634C1.33337 3.40272 1.93033 3.99967 2.66671 3.99967Z" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="team-info-wrap">
+                      <div class="member-name">Sophia Reade</div>
+                      <div>Lead Interior Designer</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="team-slide w-slide">
+                  <div class="team-slider-card">
+                    <div class="team-slider-image-wrap"><img src="/images/Image-Design-yours-16-1.webp" loading="lazy" sizes="100vw" srcset="/images/Image-Design-yours-16-1-p-500.webp 500w, /images/Image-Design-yours-16-1-p-800.webp 800w, /images/Image-Design-yours-16-1-p-1080.webp 1080w, /images/Image-Design-yours-16-1.webp 1107w" alt="Smiling young woman with wavy brown hair wearing a mustard-colored coat over a gray shirt, standing indoors with blurred background." class="team-slider-image" />
+                      <div class="team-social-wrap">
+                        <a href="https://x.com/" target="_blank" class="team-social-link w-inline-block"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 16 16" fill="none" class="team-social-icon">
+                            <path d="M2 14L7.03226 8.96774M14 2L8.96774 7.03226M7.03226 8.96774L10.6667 14H14L8.96774 7.03226L5.33333 2H2L7.03226 8.96774Z" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
+                          </svg>
+                          <div class="demo">#</div>
+                        </a>
+                        <a href="https://www.instagram.com/" target="_blank" class="team-social-link w-inline-block">
+                          <div class="demo">#</div><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 16 16" fill="none" class="team-social-icon">
+                            <g clip-path="url(#clip0_10274_7638)">
+                              <path d="M11.3334 1.33301H4.66671C2.82576 1.33301 1.33337 2.82539 1.33337 4.66634V11.333C1.33337 13.174 2.82576 14.6663 4.66671 14.6663H11.3334C13.1743 14.6663 14.6667 13.174 14.6667 11.333V4.66634C14.6667 2.82539 13.1743 1.33301 11.3334 1.33301Z" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
+                              <path d="M10.6664 7.5802C10.7487 8.13503 10.6539 8.70168 10.3956 9.19954C10.1373 9.69741 9.72853 10.1011 9.22752 10.3533C8.7265 10.6055 8.15873 10.6933 7.60495 10.6042C7.05118 10.515 6.5396 10.2536 6.14299 9.85698C5.74638 9.46036 5.48492 8.94878 5.39581 8.39501C5.3067 7.84124 5.39447 7.27346 5.64665 6.77245C5.89882 6.27144 6.30255 5.86269 6.80042 5.60436C7.29829 5.34603 7.86493 5.25126 8.41976 5.33353C8.98571 5.41746 9.50966 5.68118 9.91423 6.08574C10.3188 6.4903 10.5825 7.01425 10.6664 7.5802Z" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
+                              <path d="M11.6666 4.33301H11.6733" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
+                            </g>
+                            <defs>
+                              <clipPath id="clip0_10274_7638">
+                                <rect width="16" height="16" fill="currentColor"></rect>
+                              </clipPath>
+                            </defs>
+                          </svg>
+                        </a>
+                        <a href="https://linkedin.com" target="_blank" class="team-social-link w-inline-block">
+                          <div class="demo">#</div><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 16 16" fill="none" class="team-social-icon">
+                            <path d="M10.6666 5.33301C11.7275 5.33301 12.7449 5.75444 13.4951 6.50458C14.2452 7.25473 14.6666 8.27214 14.6666 9.33301V13.9997H12V9.33301C12 8.97939 11.8595 8.64025 11.6094 8.3902C11.3594 8.14015 11.0202 7.99967 10.6666 7.99967C10.313 7.99967 9.97387 8.14015 9.72382 8.3902C9.47377 8.64025 9.33329 8.97939 9.33329 9.33301V13.9997H6.66663V9.33301C6.66663 8.27214 7.08805 7.25473 7.8382 6.50458C8.58834 5.75444 9.60576 5.33301 10.6666 5.33301Z" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M4.00004 6H1.33337V14H4.00004V6Z" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M2.66671 3.99967C3.40309 3.99967 4.00004 3.40272 4.00004 2.66634C4.00004 1.92996 3.40309 1.33301 2.66671 1.33301C1.93033 1.33301 1.33337 1.92996 1.33337 2.66634C1.33337 3.40272 1.93033 3.99967 2.66671 3.99967Z" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="team-info-wrap">
+                      <div class="member-name">Sophia Reade</div>
+                      <div>Lead Interior Designer</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="team-slide w-slide">
+                  <div class="team-slider-card">
+                    <div class="team-slider-image-wrap"><img src="/images/Image-Design-yours-18.webp" loading="lazy" sizes="(max-width: 1144px) 100vw, 1144px" srcset="/images/Image-Design-yours-18-p-500.webp 500w, /images/Image-Design-yours-18-p-800.webp 800w, /images/Image-Design-yours-18-p-1080.webp 1080w, /images/Image-Design-yours-18.webp 1144w" alt="Young man with curly dark hair, beard, and mustache wearing a black sweatshirt, smiling gently against a softly blurred indoor background with warm lighting." class="team-slider-image" />
+                      <div class="team-social-wrap">
+                        <a href="https://x.com/" target="_blank" class="team-social-link w-inline-block"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 16 16" fill="none" class="team-social-icon">
+                            <path d="M2 14L7.03226 8.96774M14 2L8.96774 7.03226M7.03226 8.96774L10.6667 14H14L8.96774 7.03226L5.33333 2H2L7.03226 8.96774Z" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
+                          </svg>
+                          <div class="demo">#</div>
+                        </a>
+                        <a href="https://www.instagram.com/" target="_blank" class="team-social-link w-inline-block">
+                          <div class="demo">#</div><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 16 16" fill="none" class="team-social-icon">
+                            <g clip-path="url(#clip0_10274_7638)">
+                              <path d="M11.3334 1.33301H4.66671C2.82576 1.33301 1.33337 2.82539 1.33337 4.66634V11.333C1.33337 13.174 2.82576 14.6663 4.66671 14.6663H11.3334C13.1743 14.6663 14.6667 13.174 14.6667 11.333V4.66634C14.6667 2.82539 13.1743 1.33301 11.3334 1.33301Z" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
+                              <path d="M10.6664 7.5802C10.7487 8.13503 10.6539 8.70168 10.3956 9.19954C10.1373 9.69741 9.72853 10.1011 9.22752 10.3533C8.7265 10.6055 8.15873 10.6933 7.60495 10.6042C7.05118 10.515 6.5396 10.2536 6.14299 9.85698C5.74638 9.46036 5.48492 8.94878 5.39581 8.39501C5.3067 7.84124 5.39447 7.27346 5.64665 6.77245C5.89882 6.27144 6.30255 5.86269 6.80042 5.60436C7.29829 5.34603 7.86493 5.25126 8.41976 5.33353C8.98571 5.41746 9.50966 5.68118 9.91423 6.08574C10.3188 6.4903 10.5825 7.01425 10.6664 7.5802Z" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
+                              <path d="M11.6666 4.33301H11.6733" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
+                            </g>
+                            <defs>
+                              <clipPath id="clip0_10274_7638">
+                                <rect width="16" height="16" fill="currentColor"></rect>
+                              </clipPath>
+                            </defs>
+                          </svg>
+                        </a>
+                        <a href="https://linkedin.com" target="_blank" class="team-social-link w-inline-block">
+                          <div class="demo">#</div><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 16 16" fill="none" class="team-social-icon">
+                            <path d="M10.6666 5.33301C11.7275 5.33301 12.7449 5.75444 13.4951 6.50458C14.2452 7.25473 14.6666 8.27214 14.6666 9.33301V13.9997H12V9.33301C12 8.97939 11.8595 8.64025 11.6094 8.3902C11.3594 8.14015 11.0202 7.99967 10.6666 7.99967C10.313 7.99967 9.97387 8.14015 9.72382 8.3902C9.47377 8.64025 9.33329 8.97939 9.33329 9.33301V13.9997H6.66663V9.33301C6.66663 8.27214 7.08805 7.25473 7.8382 6.50458C8.58834 5.75444 9.60576 5.33301 10.6666 5.33301Z" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M4.00004 6H1.33337V14H4.00004V6Z" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M2.66671 3.99967C3.40309 3.99967 4.00004 3.40272 4.00004 2.66634C4.00004 1.92996 3.40309 1.33301 2.66671 1.33301C1.93033 1.33301 1.33337 1.92996 1.33337 2.66634C1.33337 3.40272 1.93033 3.99967 2.66671 3.99967Z" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="team-info-wrap">
+                      <div class="member-name">Sophia Reade</div>
+                      <div>Lead Interior Designer</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="team-slider-button left w-slider-arrow-left"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 24 24" fill="none" class="slider-arrow-icon">
+                  <path d="M5.5 12.002H19" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                  <path d="M10.9999 18.002C10.9999 18.002 5.00001 13.583 5 12.0019C4.99999 10.4208 11 6.00195 11 6.00195" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg></div>
+              <div class="team-slider-button right w-slider-arrow-right"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 24 24" fill="none" class="slider-arrow-icon">
+                  <path d="M18.5 11.998L5 11.998" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                  <path d="M13.0001 5.998C13.0001 5.998 19.0001 10.417 19.0001 11.9981C19.0001 13.5792 13 17.998 13 17.998" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg></div>
+              <div class="hide w-slider-nav w-round w-num"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <TestimonialsV2 />
+    <FaqV2 />
+    <section class="section white">
+      <div class="section-gap large">
+        <div class="container">
+          <div class="v2-section-stack">
+            <div class="v2-head-row">
+              <div class="teatimonial-header">
+                <div class="section-badge">
+                  <div class="section-badge-mark"></div>
+                  <p class="font-label">Blogs</p>
+                </div>
+                <h2 class="section-heading-small">Latest Articles</h2>
+              </div>
+              <div to-top-4="" class="header-button-wrap">
+                <PrimaryButton href="/blogs" variant="black">View all blogs</PrimaryButton>
+              </div>
+            </div>
+            <div class="blog-v2-grid-about">
+              <div class="w-dyn-list">{blogs0.length > 0 ? (<div role="list" class="w-dyn-items">{blogs0.map((entry) => (<div role="listitem" class="w-dyn-item"><BlogCardV2 item={entry} /></div>))}</div>) : (<div class="w-dyn-empty">
+                  <div>No items found.</div>
+                </div>)}</div>
+              <div class="w-dyn-list">{blogs1.length > 0 ? (<div role="list" class="blog-v2-col w-dyn-items">{blogs1.map((entry) => (<div role="listitem" class="w-dyn-item"><BlogSideCardV2 item={entry} /></div>))}</div>) : (<div class="w-dyn-empty">
+                  <div>No items found.</div>
+                </div>)}</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <CtaV2 />
+    <Footer />
+  </div>
+</BaseLayout>

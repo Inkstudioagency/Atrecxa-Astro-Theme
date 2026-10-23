@@ -1,0 +1,41 @@
+---
+import PrimaryButton from '../ui/PrimaryButton.astro';
+import BlogLeadV3 from '../cards/BlogLeadV3.astro';
+import BlogSideCardV3 from '../cards/BlogSideCardV3.astro';
+import { getBlogs, byOrderAsc } from '../../lib/cms';
+
+const blogs = await getBlogs();
+const blogs4 = blogs.slice(0, 1);
+const blogs5 = byOrderAsc(blogs).slice(1, 3);
+---
+
+<section data-wf-component-id="09696900-696b-62d3-be5d-2cd062d407cd" data-wf-variant-state="base" class="section page-bg">
+        <div class="section-gap large">
+          <div class="v2-section-stack">
+            <div class="w-layout-blockcontainer container w-container">
+              <div class="v2-head-row">
+                <div class="text-stack">
+                  <div class="section-badge">
+                    <div class="section-badge-mark"></div>
+                    <p class="font-label">Blogs</p>
+                  </div>
+                  <h2 class="font-h2 style-font">Latest Articles</h2>
+                </div>
+                <div to-top-2="" class="faq-button-wrap">
+                  <PrimaryButton href="/blogs" variant="black">View all blogs</PrimaryButton>
+                </div>
+              </div>
+            </div>
+            <div class="container">
+              <div class="blog-v3-grid">
+                <div class="w-dyn-list">{blogs4.length > 0 ? (<div role="list" class="blog-list w-dyn-items">{blogs4.map((entry) => (<div role="listitem" class="w-dyn-item"><BlogLeadV3 item={entry} /></div>))}</div>) : (<div class="w-dyn-empty">
+                    <div>No items found.</div>
+                  </div>)}</div>
+                <div class="w-dyn-list">{blogs5.length > 0 ? (<div role="list" class="blog-v3-col w-dyn-items">{blogs5.map((entry) => (<div role="listitem" class="w-dyn-item"><BlogSideCardV3 item={entry} /></div>))}</div>) : (<div class="w-dyn-empty">
+                    <div>No items found.</div>
+                  </div>)}</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>

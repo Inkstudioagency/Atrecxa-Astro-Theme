@@ -1,0 +1,73 @@
+---
+import ServiceRowV2 from '../components/cards/ServiceRowV2.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/global/Header.astro';
+import TestimonialsV2 from '../components/sections/TestimonialsV2.astro';
+import FaqV2 from '../components/sections/FaqV2.astro';
+import CtaV2 from '../components/sections/CtaV2.astro';
+import Footer from '../components/global/Footer.astro';
+import { getServices } from '../lib/cms';
+
+const services = await getServices();
+const services0 = services.slice(0, 1);
+const services1 = services.slice(1, 2);
+const services2 = services.slice(2, 3);
+const services3 = services.slice(3, 4);
+---
+
+<BaseLayout title="Services V2 - Atrecxa - Astro Theme" description="Services V2 page of the Atrecxa Astro theme — an alternate service listing layout with detailed scope, inclusions and pricing-ready blocks." wfPage="6aa1658c9b0bb2c8089892a7">
+<div class="page-wrapper">
+    <Header variant="dark" />
+    <div class="main">
+      <section class="section hero-v2">
+        <div class="home-hero-top">
+          <div class="about-hero-head">
+            <h1 class="font-h1 center">What we do</h1>
+          </div>
+        </div>
+        <div class="about-hero"><img src="/images/Hero-2-1.webp" loading="eager" sizes="(max-width: 4320px) 100vw, 4320px" srcset="/images/Hero-2-1-p-500.webp 500w, /images/Hero-2-1-p-800.webp 800w, /images/Hero-2-1-p-1080.webp 1080w, /images/Hero-2-1-p-1600.webp 1600w, /images/Hero-2-1-p-2000.webp 2000w, /images/Hero-2-1.webp 4320w" alt="Modern two-story house with white and black exterior, large windows showing lit interiors, a glass balcony with a potted plant, front entrance framed in black with steps, and surrounding outdoor lighting and greenery at dusk." class="service-v2-hero-image" /><img src="/images/ChatGPT-Image-Sep-2-2026-02_38_09-PM-2-7.webp" loading="eager" sizes="(max-width: 1743px) 100vw, 1743px" srcset="/images/ChatGPT-Image-Sep-2-2026-02_38_09-PM-2-7-p-500.webp 500w, /images/ChatGPT-Image-Sep-2-2026-02_38_09-PM-2-7-p-800.webp 800w, /images/ChatGPT-Image-Sep-2-2026-02_38_09-PM-2-7-p-1080.webp 1080w, /images/ChatGPT-Image-Sep-2-2026-02_38_09-PM-2-7.webp 1743w" alt="Modern two-story house with white walls and black accents is lit warmly at night, featuring large glass windows, a front entrance with stairs, balconies with glass railings, and landscaping with trees and shrubs along a tiled driveway." class="service-v2-image" /></div>
+      </section>
+      <section class="section">
+        <div class="section-gap large">
+          <div class="container">
+            <div class="v2-section-stack">
+              <div class="services-v2-head">
+                <div to-top-0="" class="section-badge">
+                  <div class="section-badge-mark"></div>
+                  <p class="font-label">Services</p>
+                </div>
+                <h2 class="rebuild-text"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;We Create Interiors That Mix Style Comfort, And Practicality. We're All About The Little Details And Timeless Vibes.</h2>
+              </div>
+              <div class="service-collection-wrap">
+                <div class="service-list-item">
+                  <div class="w-dyn-list">{services0.length > 0 ? (<div role="list" class="services-list-v2 w-dyn-items">{services0.map((entry) => (<div role="listitem" class="w-dyn-item"><ServiceRowV2 item={entry} sizes="100vw" /></div>))}</div>) : (<div class="w-dyn-empty">
+                      <div>No items found.</div>
+                    </div>)}</div>
+                </div>
+                <div class="service-list-item">
+                  <div class="w-dyn-list">{services1.length > 0 ? (<div role="list" class="services-list-v2 w-dyn-items">{services1.map((entry) => (<div role="listitem" class="w-dyn-item"><ServiceRowV2 item={entry} /></div>))}</div>) : (<div class="w-dyn-empty">
+                      <div>No items found.</div>
+                    </div>)}</div>
+                </div>
+                <div class="service-list-item">
+                  <div class="w-dyn-list">{services2.length > 0 ? (<div role="list" class="services-list-v2 w-dyn-items">{services2.map((entry) => (<div role="listitem" class="w-dyn-item"><ServiceRowV2 item={entry} sizes="100vw" /></div>))}</div>) : (<div class="w-dyn-empty">
+                      <div>No items found.</div>
+                    </div>)}</div>
+                </div>
+                <div class="service-list-item">
+                  <div class="w-dyn-list">{services3.length > 0 ? (<div role="list" class="services-list-v2 w-dyn-items">{services3.map((entry) => (<div role="listitem" class="w-dyn-item"><ServiceRowV2 item={entry} sizes="100vw" hideDescriptionOnMobile={false} /></div>))}</div>) : (<div class="w-dyn-empty">
+                      <div>No items found.</div>
+                    </div>)}</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <TestimonialsV2 />
+      <FaqV2 />
+      <CtaV2 />
+    </div>
+    <Footer />
+  </div>
+</BaseLayout>

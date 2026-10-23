@@ -1,0 +1,47 @@
+---
+import BlogCard from '../cards/BlogCard.astro';
+import { getBlogs } from '../../lib/cms';
+
+const blogs = await getBlogs();
+const blogs8 = blogs.slice(0, 3);
+const blogs9 = blogs.slice(0, 1);
+const blogs10 = blogs.slice(1, 2);
+const blogs11 = blogs.slice(2, 3);
+---
+
+<section class="section white-50">
+        <div class="section-gap large">
+          <div class="w-layout-blockcontainer container w-container">
+            <div class="section-head">
+              <div class="section-badge">
+                <div class="section-badge-mark"></div>
+                <p class="font-label">Blogs</p>
+              </div>
+              <h2 class="section-heading-v1">Latest Articles</h2>
+            </div>
+            <div class="blog-collection-main w-dyn-list">{blogs8.length > 0 ? (<div role="list" class="grid-3 blog w-dyn-items">{blogs8.map((entry) => (<div role="listitem" class="w-dyn-item"><BlogCard item={entry} /></div>))}</div>) : (null)}</div>
+            <div data-delay="4000" data-animation="slide" class="slider-mobile w-slider" data-autoplay="false" data-easing="ease" data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="3" data-duration="500" data-infinite="true">
+              <div class="w-slider-mask">
+                <div class="slide w-slide">
+                  <div class="w-dyn-list">{blogs9.length > 0 ? (<div role="list" class="w-dyn-items">{blogs9.map((entry) => (<div role="listitem" class="w-dyn-item"><BlogCard item={entry} animate={false} /></div>))}</div>) : (null)}</div>
+                </div>
+                <div class="slide w-slide">
+                  <div class="w-dyn-list">{blogs10.length > 0 ? (<div role="list" class="w-dyn-items">{blogs10.map((entry) => (<div role="listitem" class="w-dyn-item"><BlogCard item={entry} animate={false} /></div>))}</div>) : (null)}</div>
+                </div>
+                <div class="slide w-slide">
+                  <div class="w-dyn-list">{blogs11.length > 0 ? (<div role="list" class="w-dyn-items">{blogs11.map((entry) => (<div role="listitem" class="w-dyn-item"><BlogCard item={entry} animate={false} /></div>))}</div>) : (null)}</div>
+                </div>
+              </div>
+              <div class="slider-button-white left w-slider-arrow-left"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 24 24" fill="none" class="arrow left">
+                  <path d="M18.5 11.998L5 11.998" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                  <path d="M13.0001 5.998C13.0001 5.998 19 10.417 19 11.9981C19 13.5792 13 17.998 13 17.998" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg></div>
+              <div class="slider-button-white right w-slider-arrow-right"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 24 24" fill="none" class="arrow">
+                  <path d="M18.5 11.998L5 11.998" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                  <path d="M13.0001 5.998C13.0001 5.998 19 10.417 19 11.9981C19 13.5792 13 17.998 13 17.998" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg></div>
+              <div class="hide w-slider-nav w-round w-num"></div>
+            </div>
+          </div>
+        </div>
+      </section>

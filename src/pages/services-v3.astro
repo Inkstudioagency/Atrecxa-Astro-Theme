@@ -1,0 +1,57 @@
+---
+import ServiceRowV3 from '../components/cards/ServiceRowV3.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/global/Header.astro';
+import TestimonialsV3 from '../components/sections/TestimonialsV3.astro';
+import FaqV3 from '../components/sections/FaqV3.astro';
+import CtaV3 from '../components/sections/CtaV3.astro';
+import Footer from '../components/global/Footer.astro';
+import { getServices } from '../lib/cms';
+
+const services = await getServices();
+const services0 = services.slice(0);
+---
+
+<BaseLayout title="Services V3 - Atrecxa - Astro Theme" description="Services V3 page of the Atrecxa Astro theme — a refined service overview layout built for architecture and interior design studios." wfPage="6aa2bcae9ceb948e88419cac">
+<div class="page-wrapper">
+    <div class="home-hero-v3">
+      <Header />
+      <section class="section service-hero-v3">
+        <div class="hero-v3-band">
+          <div class="container">
+            <div class="hero-v3-row">
+              <div class="hero-v3-title-wrap">
+                <h1 class="hero-heading-v3">What we do</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section><img src="/images/5f7daaa29a17017395ed202082cb76adf4bcec0c-1.webp" loading="eager" sizes="(max-width: 2400px) 100vw, 2400px" srcset="/images/5f7daaa29a17017395ed202082cb76adf4bcec0c-1-p-500.webp 500w, /images/5f7daaa29a17017395ed202082cb76adf4bcec0c-1-p-800.webp 800w, /images/5f7daaa29a17017395ed202082cb76adf4bcec0c-1-p-1080.webp 1080w, /images/5f7daaa29a17017395ed202082cb76adf4bcec0c-1-p-1600.webp 1600w, /images/5f7daaa29a17017395ed202082cb76adf4bcec0c-1-p-2000.webp 2000w, /images/5f7daaa29a17017395ed202082cb76adf4bcec0c-1.webp 2400w" alt="Minimalist living room with a large white sofa on the left, a wooden side stool, a wooden coffee table in the center with a glass vase and books, two modern cream-colored chairs on the right, floor lamp, abstract wall art behind the sofa, and sheer white curtains covering large windows that allow natural light to fill the space." class="inner-hero-image" />
+      <div class="hero-overlay-v3"></div>
+    </div>
+    <div class="main">
+      <section class="section page-bg">
+        <div class="section-gap large">
+          <div class="container">
+            <div class="v2-section-stack">
+              <div class="intro-v2-head services-v3">
+                <div class="section-badge">
+                  <div class="section-badge-mark"></div>
+                  <p class="font-label">Services</p>
+                </div>
+                <h2 class="rebuild-text"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;We Create Interiors That Mix Style Comfort, And Practicality. We're All About The Little Details And Timeless Vibes.</h2>
+              </div>
+              <div class="w-dyn-list">{services0.length > 0 ? (<div role="list" class="services-v3-list w-dyn-items">{services0.map((entry) => (<div role="listitem" class="service-collection-item w-dyn-item"><ServiceRowV3 item={entry} /></div>))}</div>) : (<div class="w-dyn-empty">
+                  <div>No items found.</div>
+                </div>)}</div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <TestimonialsV3 />
+      <FaqV3 />
+      <CtaV3 />
+      <Footer />
+    </div>
+  </div>
+</BaseLayout>

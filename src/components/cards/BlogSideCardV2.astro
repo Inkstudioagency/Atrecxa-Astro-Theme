@@ -1,0 +1,40 @@
+---
+// Small blog card next to the large one in the V2 "Latest Articles" section (desktop/tablet layout).
+import type { Blog } from '../../lib/cms';
+import { mediaSrc, mediaSrcset, mediaAlt, formatDate } from '../../lib/cms';
+import ArrowPill from '../ui/ArrowPill.astro';
+
+interface Props {
+  item: Blog;
+}
+
+const { item } = Astro.props;
+const url = `/blog/${item.slug}`;
+---
+
+<div to-top-0="" class="blog-v2-side-card">
+  <a href={url} class="media-frame small w-inline-block">
+    <img src={mediaSrc(item.image)} sizes="100vw" srcset={mediaSrcset(item.image)} alt={mediaAlt(item.image)} parallax="" class="blog-card-image-small" />
+    <div class="demo">#</div>
+  </a>
+  <div class="blog-v2-side-body">
+    <div class="blog-card-top">
+      <div class="blog-arrow-wrap">
+        <div class="blog-v2-meta-text black">
+          <p class="text-regular">{formatDate(item.date)}</p>
+          <div class="blog-v2-dot black"></div>
+          <p class="text-regular">{item.category}</p>
+        </div>
+        <a href={url} class="expert-v2-button w-inline-block" aria-label={item.title}>
+          <ArrowPill />
+          <div class="demo">#</div>
+        </a>
+      </div>
+      <div class="divider-line"></div>
+    </div>
+    <a href={url} class="blog-title-link w-inline-block">
+      <div class="card-title body-font">{item.title}</div>
+      <div class="demo">#</div>
+    </a>
+  </div>
+</div>

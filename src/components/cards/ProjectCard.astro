@@ -1,0 +1,42 @@
+---
+// Project card used in the home page project grids (Webflow "work-card").
+import type { Project } from '../../lib/cms';
+import { mediaSrc, mediaSrcset, mediaAlt } from '../../lib/cms';
+
+interface Props {
+  item: Project;
+  /** Image frame shape (Webflow combo class on .project-image-wrap). */
+  size?: 'small' | 'portrait' | 'square' | 'tinny';
+  /** Scroll-in animation (Webflow IX3 `to-top-0`). */
+  animate?: boolean;
+  /** Image parallax on scroll (Webflow IX3 `parallax`). */
+  parallax?: boolean;
+  sizes?: string;
+}
+
+const {
+  item,
+  size = 'small',
+  animate = true,
+  parallax = true,
+  sizes = '(max-width: 767px) 100vw, (max-width: 991px) 727px, 939px',
+} = Astro.props;
+const url = `/project/${item.slug}`;
+---
+
+<div to-top-0={animate ? '' : undefined} class="work-card">
+  <a href={url} class:list={['project-image-wrap', size, 'w-inline-block']}>
+    <img src={mediaSrc(item.image)} sizes={sizes} srcset={mediaSrcset(item.image)} alt={mediaAlt(item.image)} loading="lazy" parallax={parallax ? '' : undefined} class:list={['project-image', size === 'tinny' && 'short']} />
+    <div class="demo">#</div>
+  </a>
+  <div class="work-caption">
+    <a href={url} class="prject-title-link w-inline-block">
+      <div class="project-title">{item.title}</div>
+      <div class="demo">#</div>
+    </a>
+    <a href={url} class="project-link w-inline-block">
+      <p class="text-regular underline-text">View Project</p>
+      <div class="project-button-line"><div class="project-animated-line"></div></div>
+    </a>
+  </div>
+</div>

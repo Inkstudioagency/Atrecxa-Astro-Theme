@@ -1,0 +1,33 @@
+---
+// Lead article in the V3 "Latest Articles" section (Home V3, About V3).
+import type { Blog } from '../../lib/cms';
+import { mediaSrc, mediaSrcset, mediaAlt, formatDate } from '../../lib/cms';
+
+interface Props {
+  item: Blog;
+}
+
+const { item } = Astro.props;
+const url = `/blog/${item.slug}`;
+---
+
+<div to-top-0="" class="blog-v3-lead">
+  <div class="blog-v3-lead-text">
+    <div class="blog-v3-lead-top">
+      <div class="tag-list">
+        <div class="tag-pill blog-meta"><p class="font-small">{formatDate(item.date)}</p></div>
+        <div class="tag-pill blog-meta"><p class="font-small">{item.category}</p></div>
+      </div>
+      <a href={url} class="blog-title-link w-inline-block">
+        <div class="font-h5 body-font">{item.title}</div>
+      </a>
+    </div>
+    <a href={url} class="underline-link w-inline-block">
+      <p class="text-regular">Read article</p>
+      <div class="button-animated-line"></div>
+    </a>
+  </div>
+  <a href={url} class="media-frame long w-inline-block">
+    <img src={mediaSrc(item.image)} sizes="100vw" srcset={mediaSrcset(item.image)} alt={mediaAlt(item.image)} parallax="" loading="lazy" class="media-image" />
+  </a>
+</div>

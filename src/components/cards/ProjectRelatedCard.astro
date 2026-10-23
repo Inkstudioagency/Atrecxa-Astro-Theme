@@ -1,0 +1,29 @@
+---
+// "More projects" card on project detail pages (white text on a dark section).
+import type { Project } from '../../lib/cms';
+import { mediaSrc, mediaSrcset, mediaAlt } from '../../lib/cms';
+
+interface Props {
+  item: Project;
+}
+
+const { item } = Astro.props;
+const url = `/project/${item.slug}`;
+---
+
+<div to-top-0="" class="work-card">
+  <a href={url} class="project-image-wrap feature w-inline-block">
+    <img src={mediaSrc(item.image)} sizes="(max-width: 767px) 100vw, (max-width: 991px) 727px, 939px" srcset={mediaSrcset(item.image)} alt={mediaAlt(item.image)} loading="lazy" class="project-card-image" />
+    <div class="demo">#</div>
+  </a>
+  <div class="work-caption">
+    <a href={url} class="prject-title-link-white w-inline-block">
+      <div class="project-title">{item.title}</div>
+      <div class="demo">#</div>
+    </a>
+    <a href={url} class="project-link-white w-inline-block">
+      <p class="text-regular underline-text">View Project</p>
+      <div class="project-button-line"><div class="project-animated-line-white"></div></div>
+    </a>
+  </div>
+</div>

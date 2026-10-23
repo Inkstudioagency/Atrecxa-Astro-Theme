@@ -1,0 +1,308 @@
+---
+import ServiceSlideCard from '../components/cards/ServiceSlideCard.astro';
+import ProjectCardV2 from '../components/cards/ProjectCardV2.astro';
+import BlogCardV2 from '../components/cards/BlogCardV2.astro';
+import BlogSideCardV2 from '../components/cards/BlogSideCardV2.astro';
+import BlogSlideCardV2 from '../components/cards/BlogSlideCardV2.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/global/Header.astro';
+import PrimaryButton from '../components/ui/PrimaryButton.astro';
+import TestimonialsV2 from '../components/sections/TestimonialsV2.astro';
+import FaqV2 from '../components/sections/FaqV2.astro';
+import CtaV2 from '../components/sections/CtaV2.astro';
+import Footer from '../components/global/Footer.astro';
+import { getServices, getProjects, getBlogs } from '../lib/cms';
+
+const services = await getServices();
+const projects = await getProjects();
+const blogs = await getBlogs();
+const services0 = services.slice(1, 2);
+const services1 = services.slice(2, 3);
+const services2 = services.slice(3, 4);
+const projects3 = projects.slice(0, 1);
+const projects4 = projects.slice(1, 2);
+const projects5 = projects.slice(2, 3);
+const projects6 = projects.slice(3, 4);
+const blogs7 = blogs.slice(0, 1);
+const blogs8 = blogs.slice(1, 3);
+const blogs9 = blogs.slice(0, 1);
+const blogs10 = blogs.slice(1, 2);
+const blogs11 = blogs.slice(2, 3);
+---
+
+<BaseLayout title="Home V2 - Atrecxa - Astro Theme" description="Home V2 layout of the Atrecxa Astro theme — an alternate architecture studio homepage with a bolder hero, project grid and services overview." wfPage="6aa165511fb503ef5e07fa55">
+<div class="page-wrapper">
+    <div class="home-hero-v2">
+      <Header variant="dark" />
+      <div class="home-hero-top">
+        <div class="hero-v2-head center">
+          <h1 class="home-v2-heading">Redefining modern luxury Apartment</h1>
+          <p class="text-regular hero-v2-lead">We design buildings and interiors as a single act of thinking — from the first sketch of a site</p>
+        </div>
+      </div>
+      <div class="home-hero-image-wrap"><img src="/images/Group-1437255853-2.webp" loading="eager" sizes="(max-width: 2160px) 100vw, 2160px" srcset="/images/Group-1437255853-2-p-500.webp 500w, /images/Group-1437255853-2-p-800.webp 800w, /images/Group-1437255853-2-p-1080.webp 1080w, /images/Group-1437255853-2-p-1600.webp 1600w, /images/Group-1437255853-2-p-2000.webp 2000w, /images/Group-1437255853-2.webp 2160w" alt="Modern three-story house with large floor-to-ceiling windows, black-framed glass and white facade illuminated from inside during dusk; driveway with parked cars on the left and dark entrance under a cantilevered upper floor on the right." class="home-hero-image-v2" /><img src="/images/ChatGPT-Image-Sep-2-2026-02_38_09-PM-2-2.webp" loading="eager" sizes="(max-width: 2160px) 100vw, 2160px" srcset="/images/ChatGPT-Image-Sep-2-2026-02_38_09-PM-2-2-p-500.webp 500w, /images/ChatGPT-Image-Sep-2-2026-02_38_09-PM-2-2-p-800.webp 800w, /images/ChatGPT-Image-Sep-2-2026-02_38_09-PM-2-2-p-1080.webp 1080w, /images/ChatGPT-Image-Sep-2-2026-02_38_09-PM-2-2-p-1600.webp 1600w, /images/ChatGPT-Image-Sep-2-2026-02_38_09-PM-2-2.webp 2160w" alt="Modern three-story white house with large black-framed windows, a flat paved driveway, and a covered entrance illuminated at night, with two cars parked under a transparent canopy on the left and adjacent houses partly visible." class="about-media-image" /></div>
+    </div>
+    <section class="section white">
+      <div class="section-gap large">
+        <div class="container">
+          <div class="intro-v2">
+            <div class="intro-v2-head">
+              <div to-top-0="" class="section-badge">
+                <div class="section-badge-mark"></div>
+                <p class="font-label">About</p>
+              </div>
+              <h2 class="rebuild-text">We Design Interiors That Blend Style, Comfort, And Functionality. With A Passion For Detail And a Focus On Timeless Elegance</h2>
+            </div>
+            <div class="intro-v2-body">
+              <div class="media-frame left">
+                <div to-top-0="" class="abuout-image-wrap"><img class="about-small-image" src="/images/Image-single-image-1.webp" alt="Modern glass-walled pavilion with flat overhanging roof, surrounded by greenery, stairs in front, and a blue sky above." sizes="(max-width: 760px) 100vw, 760px" parallax="" loading="lazy" srcset="/images/Image-single-image-1-p-500.webp 500w, /images/Image-single-image-1.webp 760w" /></div>
+              </div>
+              <div to-top-2="" class="media-frame about-v2"><img class="about-image-v2" src="/images/Image-single-image-2.webp" alt="Three-story modern house made of black metal shipping containers stacked vertically with large windows, a small wooden deck with chairs, and rooftop greenery, captured at sunset with golden light and a partly cloudy sky." sizes="(max-width: 776px) 100vw, 776px" parallax="" loading="lazy" srcset="/images/Image-single-image-2-p-500.webp 500w, /images/Image-single-image-2.webp 776w" /></div>
+              <div to-top-4="" class="intro-v2-aside">
+                <p class="font-regular">We develop retail and mixed-use spaces as integral components of community planning. By aligning development strategies with construction execution, we deliver commercial environments that activate.</p>
+                <a href="/about-us-v2" class="learn-more-button w-inline-block">
+                  <div>Learn more</div>
+                </a>
+                <div class="intro-v2-stats">
+                  <div class="stat-item">
+                    <div data-counter="counter" class="counter-stats body-font">250+</div>
+                    <p class="font-regular dark medium">Homes Designed</p>
+                  </div>
+                  <div class="divider-line"></div>
+                  <div class="stat-item">
+                    <div data-counter="counter" class="counter-stats body-font">75%</div>
+                    <p class="font-regular dark medium">Client Satisfaction Rate</p>
+                  </div>
+                  <div class="divider-line"></div>
+                  <div class="stat-item">
+                    <div data-counter="counter" class="counter-stats body-font">14+</div>
+                    <p class="font-regular dark medium">Years of experience</p>
+                  </div>
+                  <div class="divider-line"></div>
+                  <div class="stat-item">
+                    <div data-counter="counter" class="counter-stats body-font">30%</div>
+                    <p class="font-regular dark medium">Space efficiency</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section page-bg">
+      <div class="section-gap large">
+        <div class="container">
+          <div class="v2-section-stack">
+            <div class="section-head-v2">
+              <div class="section-badge">
+                <div class="section-badge-mark"></div>
+                <p class="font-label">Services</p>
+              </div>
+              <h2 class="section-heading-small">What We Do</h2>
+            </div>
+            <div data-delay="4000" data-animation="slide" class="slider-v2 w-slider" data-autoplay="false" to-top-0="" data-easing="ease" data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="3" data-duration="700" data-infinite="true">
+              <div class="slider-mask-v2 w-slider-mask">
+                <div class="slide-v2 w-slide">
+                  <div class="w-dyn-list">{services0.length > 0 ? (<div role="list" class="services-list-v2 w-dyn-items">{services0.map((entry) => (<div role="listitem" class="w-dyn-item"><ServiceSlideCard item={entry} loading="lazy" /></div>))}</div>) : (<div class="w-dyn-empty">
+                      <div>No items found.</div>
+                    </div>)}</div>
+                </div>
+                <div class="slide-v2 w-slide">
+                  <div class="w-dyn-list">{services1.length > 0 ? (<div role="list" class="services-list-v2 w-dyn-items">{services1.map((entry) => (<div role="listitem" class="w-dyn-item"><ServiceSlideCard item={entry} sizes="100vw" /></div>))}</div>) : (<div class="w-dyn-empty">
+                      <div>No items found.</div>
+                    </div>)}</div>
+                </div>
+                <div class="slide-v2 w-slide">
+                  <div class="w-dyn-list">{services2.length > 0 ? (<div role="list" class="services-list-v2 w-dyn-items">{services2.map((entry) => (<div role="listitem" class="w-dyn-item"><ServiceSlideCard item={entry} sizes="100vw" /></div>))}</div>) : (<div class="w-dyn-empty">
+                      <div>No items found.</div>
+                    </div>)}</div>
+                </div>
+              </div>
+              <div class="service-slider-button left w-slider-arrow-left"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 24 24" fill="none" class="arrow">
+                  <path d="M5.5 12.002H19" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                  <path d="M10.9999 18.002C10.9999 18.002 5.00001 13.583 5 12.0019C4.99999 10.4208 11 6.00195 11 6.00195" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg></div>
+              <div class="service-slider-button right w-slider-arrow-right"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 24 24" fill="none" class="arrow">
+                  <path d="M18.5 11.998L5 11.998" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                  <path d="M13.0001 5.998C13.0001 5.998 19 10.417 19 11.9981C19 13.5792 13 17.998 13 17.998" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg></div>
+              <div class="slider-nav w-slider-nav w-round w-num"></div>
+            </div>
+            <div to-top-0="" class="button-wrap flush">
+              <PrimaryButton href="/services-v3" variant="black">View All Service</PrimaryButton>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section work-v2">
+      <div class="section-gap deco">
+        <div class="container project">
+          <div class="v2-split-grid">
+            <div class="project-left">
+              <div class="header-left sticky">
+                <div class="section-badge">
+                  <div class="section-badge-mark white"></div>
+                  <p class="font-label white">Process</p>
+                </div>
+                <h2 class="section-heading white">Selected Work</h2>
+              </div>
+            </div>
+            <div class="work-right">
+              <div class="project-collection-block">
+                <div class="w-dyn-list">{projects3.length > 0 ? (<div role="list" class="w-dyn-items">{projects3.map((entry) => (<div role="listitem" class="w-dyn-item"><ProjectCardV2 item={entry} /></div>))}</div>) : (<div class="w-dyn-empty">
+                    <div>No items found.</div>
+                  </div>)}</div>
+              </div>
+              <div class="project-collection-block">
+                <div class="w-dyn-list">{projects4.length > 0 ? (<div role="list" class="w-dyn-items">{projects4.map((entry) => (<div role="listitem" class="w-dyn-item"><ProjectCardV2 item={entry} /></div>))}</div>) : (<div class="w-dyn-empty">
+                    <div>No items found.</div>
+                  </div>)}</div>
+              </div>
+              <div class="project-collection-block">
+                <div class="w-dyn-list">{projects5.length > 0 ? (<div role="list" class="w-dyn-items">{projects5.map((entry) => (<div role="listitem" class="w-dyn-item"><ProjectCardV2 item={entry} /></div>))}</div>) : (<div class="w-dyn-empty">
+                    <div>No items found.</div>
+                  </div>)}</div>
+              </div>
+              <div class="project-collection-block">
+                <div class="w-dyn-list">{projects6.length > 0 ? (<div role="list" class="w-dyn-items">{projects6.map((entry) => (<div role="listitem" class="w-dyn-item"><ProjectCardV2 item={entry} /></div>))}</div>) : (<div class="w-dyn-empty">
+                    <div>No items found.</div>
+                  </div>)}</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="section-gap large">
+        <div class="container">
+          <div class="v2-split-grid">
+            <div class="process-left-main">
+              <div class="process-head">
+                <div class="section-head-v2">
+                  <div class="section-badge">
+                    <div class="section-badge-mark"></div>
+                    <p class="font-label">Process</p>
+                  </div>
+                  <h2 class="section-heading-small">From brief to build</h2>
+                </div>
+                <div to-top-0="" class="header-button-wrap">
+                  <PrimaryButton href="/contact-us" variant="black">Get in touch</PrimaryButton>
+                </div>
+              </div>
+            </div>
+            <div class="process-v2-list">
+              <div to-top-0="" class="divider-line"></div>
+              <div to-top-0="" class="process-v2-item _01">
+                <div class="process-v2-row">
+                  <div class="process-v2-label">
+                    <div class="process-v2-number">
+                      <p class="process-number">01</p>
+                    </div>
+                    <div class="about-rebuild-text body-font">Concept</div>
+                  </div>
+                  <div class="process-summary-wrap _01">
+                    <p class="process-summary">One organising idea, tested against the brief with sketches and study models, before a single elevation is drawn.</p>
+                  </div>
+                </div>
+                <div class="media-frame process-v2 one"><img src="/images/Image-Design-yours-12.webp" alt="Close-up of hands working on a detailed wooden architectural model of a multi-story building surrounded by miniature trees." sizes="100vw" srcset="/images/Image-Design-yours-12-p-500.webp 500w, /images/Image-Design-yours-12-p-800.webp 800w, /images/Image-Design-yours-12-p-1080.webp 1080w, /images/Image-Design-yours-12-p-1600.webp 1600w, /images/Image-Design-yours-12-p-2000.webp 2000w, /images/Image-Design-yours-12.webp 2178w" class="process-image" /></div>
+              </div>
+              <div to-top-0="" class="divider-line"></div>
+              <div to-top-0="" class="process-v2-item _02">
+                <div class="process-v2-row">
+                  <div class="process-v2-label">
+                    <div class="process-v2-number">
+                      <p class="process-number">02</p>
+                    </div>
+                    <div class="about-rebuild-text body-font">Development</div>
+                  </div>
+                  <div class="process-summary-wrap _02">
+                    <p class="process-summary">Technical resolution, materials, and coordination with engineers and consultants.</p>
+                  </div>
+                </div>
+                <div class="media-frame process-v2 two"><img src="/images/Image-Design-yours-13.webp" alt="Close-up of hands assembling a detailed wooden architectural model of a multi-story building surrounded by miniature trees." sizes="(max-width: 1452px) 100vw, 1452px" srcset="/images/Image-Design-yours-13-p-500.webp 500w, /images/Image-Design-yours-13-p-800.webp 800w, /images/Image-Design-yours-13-p-1080.webp 1080w, /images/Image-Design-yours-13.webp 1452w" class="process-image" /></div>
+              </div>
+              <div to-top-0="" class="divider-line"></div>
+              <div to-top-0="" class="process-v2-item _03">
+                <div class="process-v2-row">
+                  <div class="process-v2-label">
+                    <div class="process-v2-number">
+                      <p class="process-number">03</p>
+                    </div>
+                    <div class="about-rebuild-text body-font">Delivery</div>
+                  </div>
+                  <div class="process-summary-wrap _03">
+                    <p class="process-summary">Site coordination through to handover, with the same team that drew it.</p>
+                  </div>
+                </div>
+                <div class="media-frame process-v2 three"><img src="/images/Image-Design-yours-14.webp" alt="Close-up of hands adjusting details on an architectural model of a multi-story building surrounded by miniature trees." sizes="(max-width: 2178px) 100vw, 2178px" srcset="/images/Image-Design-yours-14-p-500.webp 500w, /images/Image-Design-yours-14-p-800.webp 800w, /images/Image-Design-yours-14-p-1080.webp 1080w, /images/Image-Design-yours-14-p-1600.webp 1600w, /images/Image-Design-yours-14-p-2000.webp 2000w, /images/Image-Design-yours-14.webp 2178w" class="process-image" /></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <TestimonialsV2 />
+    <FaqV2 />
+    <section class="section white">
+      <div class="section-gap large">
+        <div class="container">
+          <div class="v2-section-stack">
+            <div class="v2-head-row">
+              <div class="section-head-v2">
+                <div class="section-badge">
+                  <div class="section-badge-mark"></div>
+                  <p class="font-label">Blogs</p>
+                </div>
+                <h2 class="section-heading-small">Latest Articles</h2>
+              </div>
+              <div to-top-0="" class="header-button-wrap">
+                <PrimaryButton href="/blogs" variant="black">View all blogs</PrimaryButton>
+              </div>
+            </div>
+            <div class="blog-v2-grid">
+              <div class="w-dyn-list">{blogs7.length > 0 ? (<div role="list" class="w-dyn-items">{blogs7.map((entry) => (<div role="listitem" class="w-dyn-item"><BlogCardV2 item={entry} /></div>))}</div>) : (<div class="w-dyn-empty">
+                  <div>No items found.</div>
+                </div>)}</div>
+              <div class="w-dyn-list">{blogs8.length > 0 ? (<div role="list" class="blog-v2-col w-dyn-items">{blogs8.map((entry) => (<div role="listitem" class="w-dyn-item"><BlogSideCardV2 item={entry} /></div>))}</div>) : (<div class="w-dyn-empty">
+                  <div>No items found.</div>
+                </div>)}</div>
+            </div>
+            <div data-delay="4000" data-animation="slide" class="slider-mobile w-slider" data-autoplay="false" to-top-0="" data-easing="ease" data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="3" data-duration="500" data-infinite="true">
+              <div class="w-slider-mask">
+                <div class="slide w-slide">
+                  <div class="w-dyn-list">{blogs9.length > 0 ? (<div role="list" class="w-dyn-items">{blogs9.map((entry) => (<div role="listitem" class="w-dyn-item"><BlogSlideCardV2 item={entry} /></div>))}</div>) : (<div class="w-dyn-empty">
+                      <div>No items found.</div>
+                    </div>)}</div>
+                </div>
+                <div class="slide w-slide">
+                  <div class="w-dyn-list">{blogs10.length > 0 ? (<div role="list" class="w-dyn-items">{blogs10.map((entry) => (<div role="listitem" class="w-dyn-item"><BlogSlideCardV2 item={entry} /></div>))}</div>) : (<div class="w-dyn-empty">
+                      <div>No items found.</div>
+                    </div>)}</div>
+                </div>
+                <div class="slide w-slide">
+                  <div class="w-dyn-list">{blogs11.length > 0 ? (<div role="list" class="w-dyn-items">{blogs11.map((entry) => (<div role="listitem" class="w-dyn-item"><BlogSlideCardV2 item={entry} /></div>))}</div>) : (<div class="w-dyn-empty">
+                      <div>No items found.</div>
+                    </div>)}</div>
+                </div>
+              </div>
+              <div class="slider-button left w-slider-arrow-left"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 24 24" fill="none" class="arrow left">
+                  <path d="M18.5 11.998L5 11.998" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                  <path d="M13.0001 5.998C13.0001 5.998 19 10.417 19 11.9981C19 13.5792 13 17.998 13 17.998" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg></div>
+              <div class="slider-button right w-slider-arrow-right"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 24 24" fill="none" class="arrow">
+                  <path d="M18.5 11.998L5 11.998" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                  <path d="M13.0001 5.998C13.0001 5.998 19 10.417 19 11.9981C19 13.5792 13 17.998 13 17.998" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg></div>
+              <div class="hide w-slider-nav w-round w-num"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <CtaV2 />
+    <Footer />
+  </div>
+</BaseLayout>

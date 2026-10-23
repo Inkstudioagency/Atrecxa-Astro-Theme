@@ -1,0 +1,44 @@
+---
+// Service card on Home V3 (text and "What's Included" pills beside a large image).
+import type { Service } from '../../lib/cms';
+import { mediaSrc, mediaSrcset, mediaAlt } from '../../lib/cms';
+
+interface Props {
+  item: Service;
+  sizes?: string;
+}
+
+const { item, sizes } = Astro.props;
+const url = `/service/${item.slug}`;
+---
+
+<div class="service-card-v3">
+  <div class="service-card-left">
+    <div class="service-head">
+      <a href={url} class="service-titile-link w-inline-block">
+        <div class="about-rebuild-text body-font">{item.title}</div>
+        <div class="demo">#</div>
+      </a>
+      <p class="font-regular">{item.shortDescription}</p>
+    </div>
+    <div class="text-stack hide-mobile">
+      <p class="font-small dark strong">What's Included</p>
+      <div class="tag-list tight">
+        {
+          item.included.slice(0, 5).map((entry, i) => (
+            <div class:list={['tag-pill compact', i >= 3 && 'hide-tab']}>
+              <p class="font-regular dark">{entry.text}</p>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+    <a href={url} class="learn-more-button w-inline-block">
+      <div>View Service</div>
+    </a>
+  </div>
+  <a href={url} class="service-image-wrap w-inline-block">
+    <img src={mediaSrc(item.image)} sizes={sizes} srcset={mediaSrcset(item.image)} alt={mediaAlt(item.image)} loading="lazy" class="service-image" />
+    <div class="demo">#</div>
+  </a>
+</div>

@@ -1,0 +1,33 @@
+---
+// Service row on Home V1 (dark section with image, title and description).
+import type { Service } from '../../lib/cms';
+import { mediaSrc, mediaSrcset, mediaAlt } from '../../lib/cms';
+
+interface Props {
+  item: Service;
+}
+
+const { item } = Astro.props;
+const url = `/service/${item.slug}`;
+---
+
+<div class="service-row">
+  <div class="service-grid">
+    <a href={url} class="service-media w-inline-block">
+      <img src={mediaSrc(item.image)} sizes="(max-width: 767px) 100vw, (max-width: 991px) 727px, 939px" srcset={mediaSrcset(item.image)} alt={mediaAlt(item.image)} loading="lazy" parallax="" class="media-image-service" />
+      <div class="demo">#</div>
+    </a>
+    <div class="service-content">
+      <div class="service-head">
+        <a href={url} class="service-titile-link-v1 w-inline-block">
+          <div to-top-0="" class="service-card-title white-50">{item.title}</div>
+          <div class="demo">#</div>
+        </a>
+        <p to-top-0="" class="font-regular white-300">{item.shortDescription}</p>
+      </div>
+      <a href={url} class="service-button w-inline-block">
+        <p class="text-regular">View Service</p>
+      </a>
+    </div>
+  </div>
+</div>

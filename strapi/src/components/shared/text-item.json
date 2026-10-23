@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_shared_text_items",
+  "info": {
+    "displayName": "Text item",
+    "description": "A single line of text in a list",
+    "icon": "bulletList"
+  },
+  "options": {},
+  "attributes": {
+    "text": { "type": "string", "required": true }
+  }
+}

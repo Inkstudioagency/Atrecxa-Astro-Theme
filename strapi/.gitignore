@@ -1,0 +1,12 @@
+node_modules/
+build/
+dist/
+.cache/
+.tmp/
+.strapi/
+.env
+*.log
+public/uploads/*
+!public/uploads/.gitkeep
+types/generated/
+.strapi-updater.json

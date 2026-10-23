@@ -1,0 +1,123 @@
+---
+import ProjectRelatedCard from '../../components/cards/ProjectRelatedCard.astro';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/global/Header.astro';
+import ContactCta from '../../components/sections/ContactCta.astro';
+import Footer from '../../components/global/Footer.astro';
+import { getProjects, mediaSrc, mediaSrcset, mediaAlt, richText, formatDate, except } from '../../lib/cms';
+
+export async function getStaticPaths() {
+  const entries = await getProjects();
+  return entries.map((item) => ({ params: { slug: item.slug }, props: { item } }));
+}
+
+const { item } = Astro.props;
+
+const projects = await getProjects();
+const projects0 = except(projects, item).slice(0, 2);
+---
+
+<BaseLayout title={item.seo?.metaTitle || item.title} description={item.seo?.metaDescription || undefined} image={mediaSrc(item.image)} type="website" wfPage="6a9fa5178aa0087a7956aed3">
+<div class="page-wrapper">
+    <div class="project-hero-area">
+      <Header />
+      <section class="section project">
+        <div class="w-layout-blockcontainer container w-container">
+          <div class="project-hero-content">
+            <h1 class="font-h1 white">{item.title}</h1>
+            <div class="project-summary-wrap">
+              <p class="font-regular white">{item.tagline}</p>
+            </div>
+          </div>
+        </div>
+      </section><img src={mediaSrc(item.image)} sizes="100vw" srcset={mediaSrcset(item.image)} alt={mediaAlt(item.image)} loading="eager" class="inner-hero-image" />
+      <div class="project-hero-overlay"></div>
+    </div>
+    <div class="main">
+      <section class="section white-50">
+        <div class="section-gap project">
+          <div class="w-layout-blockcontainer container w-container">
+            <div class="detail-grid">
+              <div class="detail-main">
+                <div to-top-0="" class="project-rich-text w-richtext" set:html={richText(item.overview)}></div>
+                <div class="detail-gallery">
+                  <div to-top-0="" class="gallery-media"><img src={mediaSrc(item.gallery?.[0])} srcset={mediaSrcset(item.gallery?.[0])} alt={mediaAlt(item.gallery?.[0])} loading="lazy" class="project-multi-image" /></div>
+                  <div to-top-0="" class="gallery-media"><img src={mediaSrc(item.gallery?.[1])} srcset={mediaSrcset(item.gallery?.[1])} alt={mediaAlt(item.gallery?.[1])} loading="lazy" class="project-multi-image" /></div>
+                  <div to-top-0="" class="gallery-media"><img src={mediaSrc(item.gallery?.[2])} srcset={mediaSrcset(item.gallery?.[2])} alt={mediaAlt(item.gallery?.[2])} loading="lazy" class="project-multi-image" /></div>
+                  <div to-top-0="" class="gallery-media"><img src={mediaSrc(item.gallery?.[3])} srcset={mediaSrcset(item.gallery?.[3])} alt={mediaAlt(item.gallery?.[3])} loading="lazy" class="project-multi-image" /></div>
+                </div>
+                <div to-top-0="" class="project-rich-text w-richtext" set:html={richText(item.overviewSecondary)}></div>
+              </div>
+              <div to-top-0="" class="project-right">
+                <div class="detail-side">
+                  <div class="spec-list">
+                    <div class="spec-row">
+                      <p class="font-label">Property Type:</p>
+                      <p class="font-regular dark medium">{item.propertyType}</p>
+                    </div>
+                    <div class="spec-row">
+                      <p class="font-label">Location:</p>
+                      <p class="font-regular dark medium">{item.location}</p>
+                    </div>
+                    <div class="spec-row">
+                      <p class="font-label">Architecture Style:</p>
+                      <p class="font-regular dark medium">{item.architectureStyle}</p>
+                    </div>
+                    <div class="spec-row">
+                      <p class="font-label">Completed:</p>
+                      <p class="font-regular dark medium">{formatDate(item.completed)}</p>
+                    </div>
+                    <div class="spec-row">
+                      <p class="font-label">Interior Space:</p>
+                      <p class="font-regular dark medium">{item.interiorSpace}</p>
+                    </div>
+                    <div class="spec-row">
+                      <p class="font-label">Property Value:</p>
+                      <p class="font-regular dark medium">{item.propertyValue}</p>
+                    </div>
+                  </div>
+                  <div class="expert-card"><img src={mediaSrc(item.expertImage)} srcset={mediaSrcset(item.expertImage)} alt={mediaAlt(item.expertImage)} loading="lazy" class="expert-avatar" />
+                    <div class="expert-row">
+                      <div class="expert-text">
+                        <p class="font-regular">Let's help you</p>
+                        <p class="font-regular dark">Talk to an Expert</p>
+                      </div>
+                      <a href="/contact-us" class="expert-v2-button w-inline-block">
+                        <div class="blog-arrow-pill"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 24 24" fill="none" class="arrow">
+                            <path d="M18.5 11.998L5 11.998" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M13.0001 5.998C13.0001 5.998 19 10.417 19 11.9981C19 13.5792 13 17.998 13 17.998" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                          </svg><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 24 24" fill="none" class="arrow">
+                            <path d="M18.5 11.998L5 11.998" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M13.0001 5.998C13.0001 5.998 19 10.417 19 11.9981C19 13.5792 13 17.998 13 17.998" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                          </svg></div>
+                        <div class="demo">#</div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section inverse">
+        <div class="section-gap large">
+          <div class="w-layout-blockcontainer container w-container">
+            <div class="project-header-main">
+              <div class="section-badge">
+                <div class="section-badge-mark white"></div>
+                <p class="font-label white">Projects</p>
+              </div>
+              <h2 class="font-h2 proeject">more projects</h2>
+            </div>
+            <div class="related-row">
+              <div class="w-dyn-list">{projects0.length > 0 ? (<div role="list" class="releted-project-collection w-dyn-items">{projects0.map((entry) => (<div role="listitem" class="w-dyn-item"><ProjectRelatedCard item={entry} /></div>))}</div>) : (null)}</div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <ContactCta />
+      <Footer />
+    </div>
+  </div>
+</BaseLayout>

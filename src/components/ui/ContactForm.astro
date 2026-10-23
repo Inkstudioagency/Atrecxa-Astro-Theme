@@ -1,0 +1,42 @@
+---
+// The enquiry form used across the theme (contact page, CTA sections, detail pages).
+// Markup is Webflow's form block; submissions are sent by src/scripts/forms.ts to PUBLIC_FORM_ENDPOINT,
+// which then shows the original success (.w-form-done) or error (.w-form-fail) message.
+import { site } from '../../config/site';
+
+interface Props {
+  /** Name reported with each submission (lets one endpoint tell forms apart). */
+  name?: string;
+}
+
+const { name = 'Email Form' } = Astro.props;
+---
+
+<div class="cta-form-main w-form">
+  <form
+    id="email-form"
+    name="email-form"
+    data-name={name}
+    method="post"
+    action={site.formEndpoint || '#'}
+    class="cta-form-block"
+  >
+    <input class="cta-form-field w-input" maxlength="256" name="name" data-name="Name" aria-label="name" placeholder="Name" type="text" id="name" />
+    <input class="cta-form-field w-input" maxlength="256" name="Email" data-name="Email" aria-label="email" placeholder="Email" type="email" id="Email" required />
+    <input class="cta-form-field w-input" maxlength="256" name="Phone" data-name="Phone" aria-label="phone" placeholder="Phone" type="tel" id="Phone" required />
+    <textarea class="cta-form-field message-area w-input" maxlength="5000" name="Message" data-name="Message" aria-label="message" placeholder="Message" id="Message"></textarea>
+    <div class="form-honeypot" aria-hidden="true">
+      <label for="_gotcha">Leave this field empty</label>
+      <input type="text" name="_gotcha" id="_gotcha" tabindex="-1" autocomplete="off" />
+    </div>
+    <div class="form-button-wrap">
+      <input type="submit" data-wait="Please wait..." class="form-submit-button w-button" value="Submit" />
+    </div>
+  </form>
+  <div class="success-message w-form-done" tabindex="-1" role="region" aria-label={`${name} success`}>
+    <div>Thank you! Your submission has been received!</div>
+  </div>
+  <div class="error-message w-form-fail" tabindex="-1" role="region" aria-label={`${name} failure`}>
+    <div>Oops! Something went wrong while submitting the form.</div>
+  </div>
+</div>

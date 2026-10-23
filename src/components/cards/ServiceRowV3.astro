@@ -1,0 +1,43 @@
+---
+// Service row on Services V3 (tall text panel beside a wide image).
+import type { Service } from '../../lib/cms';
+import { mediaSrc, mediaSrcset, mediaAlt } from '../../lib/cms';
+
+interface Props {
+  item: Service;
+}
+
+const { item } = Astro.props;
+const url = `/service/${item.slug}`;
+---
+
+<div class="services-v3-row">
+  <div class="services-v3-panel tall">
+    <div class="services-v3-stack">
+      <a href={url} class="service-titile-link w-inline-block">
+        <div class="service-rebuild-text">{item.title}</div>
+        <div class="demo">#</div>
+      </a>
+      <p class="font-regular">{item.shortDescription}</p>
+    </div>
+    <div class="services-v3-stack hide-mobile">
+      <p class="font-small dark strong">What's Included</p>
+      <div class="tag-list tight">
+        {
+          item.included.slice(0, 5).map((entry, i) => (
+            <div class:list={['tag-pill compact', i >= 3 && 'hide-tab']}>
+              <p class="">{entry.text}</p>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+    <a href={url} class="learn-more-button w-inline-block">
+      <div>View Service</div>
+    </a>
+  </div>
+  <a href={url} class="media-frame services-v3-wide w-inline-block">
+    <img src={mediaSrc(item.image)} sizes="100vw" srcset={mediaSrcset(item.image)} alt={mediaAlt(item.image)} loading="lazy" class="service-card-image" />
+    <div class="demo">#</div>
+  </a>
+</div>

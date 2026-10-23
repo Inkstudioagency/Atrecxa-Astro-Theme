@@ -1,0 +1,281 @@
+---
+import ServiceRow from '../components/cards/ServiceRow.astro';
+import ProjectCard from '../components/cards/ProjectCard.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/global/Header.astro';
+import PrimaryButton from '../components/ui/PrimaryButton.astro';
+import { videos, lightboxJson } from '../config/videos';
+import TestimonialsV1 from '../components/sections/TestimonialsV1.astro';
+import FaqV1 from '../components/sections/FaqV1.astro';
+import LatestArticlesV1 from '../components/sections/LatestArticlesV1.astro';
+import ContactCta from '../components/sections/ContactCta.astro';
+import Footer from '../components/global/Footer.astro';
+import { getServices, getProjects } from '../lib/cms';
+
+const services = await getServices();
+const projects = await getProjects();
+const services0 = services.slice(0, 3);
+const projects1 = projects.slice(0, 1);
+const projects2 = projects.slice(1, 2);
+const projects3 = projects.slice(2, 3);
+const projects4 = projects.slice(3, 4);
+const projects5 = projects.slice(0, 1);
+const projects6 = projects.slice(1, 2);
+const projects7 = projects.slice(2, 3);
+---
+
+<BaseLayout description="Atrecxa is a modern architecture and interior design Astro theme for studios, architects and design firms to showcase projects and win clients." wfPage="6a9ea08c02c28ae8aa38c42c">
+<div class="page-wrapper">
+    <div class="home-hero-area"><img src="/images/Rectangle-1-1.webp" loading="eager" sizes="(max-width: 2160px) 100vw, 2160px" srcset="/images/Rectangle-1-1-p-500.webp 500w, /images/Rectangle-1-1-p-800.webp 800w, /images/Rectangle-1-1-p-1080.webp 1080w, /images/Rectangle-1-1.webp 2160w" alt="Modern single-story building with large floor-to-ceiling glass windows, concrete frames, outdoor seating, and landscaped greenery in front under a clear blue sky." class="inner-hero-image" />
+      <Header />
+      <section class="section home-hero-v1">
+        <div class="home-hero-gap">
+          <div class="w-layout-blockcontainer container hero w-container">
+            <div class="hero-content home-v1">
+              <h1 class="font-h2 white max-width-45">Redefining modern Apartment</h1>
+              <div class="home-hero-row">
+                <div class="hero-bottom-left">
+                  <p class="font-regular normal-white max-width-24">We design buildings and interiors as a single act of thinking — from the first sketch of a site</p>
+                  <PrimaryButton href="/contact-us" variant="soft-white">Get in touch</PrimaryButton>
+                </div>
+                <div class="font-h1 white">Luxury</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="main">
+      <section class="section white-50">
+        <div class="section-gap large">
+          <div class="w-layout-blockcontainer container w-container">
+            <div class="about-grid">
+              <div class="about-left">
+                <div to-top-0="" class="section-badge">
+                  <div class="section-badge-mark"></div>
+                  <div class="font-label">About</div>
+                </div>
+                <div to-top-0="" class="tag-list">
+                  <div class="tag-pill">
+                    <div class="tag-pill-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M10 18v-5m0 0 2.8-2.8M10 13 7.2 10.2M10 13c3.3 0 6-2.4 6-5.4C16 4.6 13.3 2 10 2S4 4.6 4 7.6C4 10.6 6.7 13 10 13Z" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"></path>
+                      </svg></div>
+                    <div class="font-small inter-tight">Sustainable</div>
+                  </div>
+                  <div class="tag-pill">
+                    <div class="tag-pill-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M11.2 2 4.6 10.4c-.3.4 0 .9.5.9h3.6c.5 0 .8.5.5.9L6.4 18l6.9-8.4c.3-.4 0-.9-.5-.9H9.3c-.5 0-.8-.5-.5-.9L11.2 2Z" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"></path>
+                      </svg></div>
+                    <div class="font-small inter-tight">Innovation</div>
+                  </div>
+                  <div class="tag-pill">
+                    <div class="tag-pill-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M8 16.5h4M8.5 18.5h3M10 2a5.5 5.5 0 0 0-3.2 10c.4.3.7.8.7 1.3v.2h5v-.2c0-.5.3-1 .7-1.3A5.5 5.5 0 0 0 10 2Z" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"></path>
+                      </svg></div>
+                    <div class="font-small inter-tight">Impactful</div>
+                  </div>
+                  <div class="tag-pill">
+                    <div class="tag-pill-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M3 18h14M4.5 18V4.2c0-.7.5-1.2 1.2-1.2h5.6c.7 0 1.2.5 1.2 1.2V18M12.5 8H15c.6 0 1 .4 1 1v9M7 6h3M7 9h3M7 12h3M8.5 18v-3h1v3" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"></path>
+                      </svg></div>
+                    <div class="font-small inter-tight">Ready Solutions</div>
+                  </div>
+                </div>
+                <div to-top-0="" class="media-frame intro-v3-wide"><img class="about-media-image-small-large" src="/images/Image-45.webp" alt="Modern single-story house with large glass doors open to a living area, illuminated warmly in the evening, reflecting in a calm rectangular swimming pool surrounded by a landscaped garden with trees and lawn." sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 940px" parallax="" loading="lazy" srcset="/images/Image-45-p-500.webp 500w, /images/Image-45-p-800.webp 800w, /images/Image-45.webp 1077w" />
+                  <a href="#" class="watch-badge-v1 small w-inline-block w-lightbox"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 24 24" fill="none" class="watch-icon">
+                      <path d="M18.8906 12.846C18.5371 14.189 16.8667 15.138 13.5257 17.0361C10.296 18.8709 8.6812 19.7884 7.37983 19.4196C6.8418 19.2671 6.35159 18.9776 5.95624 18.5787C5 17.6139 5 15.7426 5 12C5 8.2574 5 6.3861 5.95624 5.42132C6.35159 5.02245 6.8418 4.73288 7.37983 4.58042C8.6812 4.21165 10.296 5.12907 13.5257 6.96393C16.8667 8.86197 18.5371 9.811 18.8906 11.154C19.0365 11.7084 19.0365 12.2916 18.8906 12.846Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"></path>
+                    </svg>
+                    <script type="application/json" class="w-json" set:html={lightboxJson(videos.showreel)}></script>
+                  </a>
+                </div>
+              </div>
+              <div class="about-right">
+                <div class="about-head">
+                  <h2 class="rebuild-text">We Design Interiors That Blend Style, Comfort, And Functionality. With A Passion For Detail And a Focus On Timeless Elegance</h2>
+                  <div to-top-0="" class="header-button-wrap">
+                    <a href="/about-us-v1" class="learn-more-button w-inline-block">
+                      <div>Learn more</div>
+                    </a>
+                  </div>
+                </div>
+                <div class="about-stats">
+                  <div class="divider-line"></div>
+                  <div class="stat-grid">
+                    <div to-top-2="" class="stat first">
+                      <div data-counter="counter" class="counter-text">80+</div>
+                      <div class="about-stats-title">Projects Delivered Across Residentials</div>
+                    </div>
+                    <div to-top-4="" class="stat">
+                      <div data-counter="counter" class="counter-text">60+</div>
+                      <div class="about-stats-title">Cities Shaped Through Architecture</div>
+                    </div>
+                    <div to-top-6="" class="stat last">
+                      <div data-counter="counter" class="counter-text">14+</div>
+                      <div class="max-width-13">
+                        <div class="about-stats-title">Years Of Combined Experience</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section black-900">
+        <div class="section-gap large">
+          <div class="w-layout-blockcontainer container w-container">
+            <div class="section-head">
+              <div class="section-badge">
+                <div class="section-badge-mark white"></div>
+                <div class="font-label white">Services</div>
+              </div>
+              <h2 class="section-heading-v1 white">What We Do</h2>
+            </div>
+            <div class="service-list">
+              <div class="full-width w-dyn-list">{services0.length > 0 ? (<div role="list" class="service-list w-dyn-items">{services0.map((entry) => (<div role="listitem" class="service-collection w-dyn-item"><ServiceRow item={entry} /></div>))}</div>) : (<div class="w-dyn-empty">
+                  <div>No items found.</div>
+                </div>)}</div>
+            </div>
+            <div to-top-0="" class="service-buttton-wrap">
+              <PrimaryButton href="/services-v1">View All Service</PrimaryButton>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section white-50">
+        <div class="section-gap large">
+          <div class="w-layout-blockcontainer container w-container">
+            <div class="work-head sticky">
+              <div class="section-badge">
+                <div class="section-badge-mark"></div>
+                <div class="font-label">Projects</div>
+              </div>
+              <h2 class="font-h1">Selected Work</h2>
+            </div>
+            <div class="work-list">
+              <div class="work-row">
+                <div class="project-collection-main w-dyn-list">{projects1.length > 0 ? (<div role="list" class="w-dyn-items">{projects1.map((entry) => (<div role="listitem" class="collection-item w-dyn-item"><ProjectCard item={entry} sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 940px" /></div>))}</div>) : (<div class="w-dyn-empty">
+                    <div>No items found.</div>
+                  </div>)}</div>
+                <div class="full-width w-dyn-list">{projects2.length > 0 ? (<div role="list" class="w-dyn-items">{projects2.map((entry) => (<div role="listitem" class="full-width w-dyn-item"><ProjectCard item={entry} size="portrait" /></div>))}</div>) : (<div class="w-dyn-empty">
+                    <div>No items found.</div>
+                  </div>)}</div>
+              </div>
+              <div class="work-row alt">
+                <div class="full-width w-dyn-list">{projects3.length > 0 ? (<div role="list" class="w-dyn-items">{projects3.map((entry) => (<div role="listitem" class="full-width w-dyn-item"><ProjectCard item={entry} size="square" /></div>))}</div>) : (<div class="w-dyn-empty">
+                    <div>No items found.</div>
+                  </div>)}</div>
+                <div class="full-width w-dyn-list">{projects4.length > 0 ? (<div role="list" class="w-dyn-items">{projects4.map((entry) => (<div role="listitem" class="full-width w-dyn-item"><ProjectCard item={entry} size="tinny" /></div>))}</div>) : (<div class="w-dyn-empty">
+                    <div>No items found.</div>
+                  </div>)}</div>
+              </div>
+            </div>
+            <div data-delay="4000" data-animation="slide" class="slider-mobile w-slider" data-autoplay="false" to-top-0="" data-easing="ease" data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="3" data-duration="500" data-infinite="true">
+              <div class="w-slider-mask">
+                <div class="slide w-slide">
+                  <div class="w-dyn-list">{projects5.length > 0 ? (<div role="list" class="w-dyn-items">{projects5.map((entry) => (<div role="listitem" class="full-width w-dyn-item"><ProjectCard item={entry} animate={false} parallax={false} sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 940px" /></div>))}</div>) : (<div class="w-dyn-empty">
+                      <div>No items found.</div>
+                    </div>)}</div>
+                </div>
+                <div class="slide w-slide">
+                  <div class="w-dyn-list">{projects6.length > 0 ? (<div role="list" class="w-dyn-items">{projects6.map((entry) => (<div role="listitem" class="full-width w-dyn-item"><ProjectCard item={entry} animate={false} parallax={false} /></div>))}</div>) : (<div class="w-dyn-empty">
+                      <div>No items found.</div>
+                    </div>)}</div>
+                </div>
+                <div class="slide w-slide">
+                  <div class="w-dyn-list">{projects7.length > 0 ? (<div role="list" class="w-dyn-items">{projects7.map((entry) => (<div role="listitem" class="full-width w-dyn-item"><ProjectCard item={entry} animate={false} parallax={false} /></div>))}</div>) : (<div class="w-dyn-empty">
+                      <div>No items found.</div>
+                    </div>)}</div>
+                </div>
+              </div>
+              <div class="slider-button-white left w-slider-arrow-left"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 24 24" fill="none" class="arrow left">
+                  <path d="M18.5 11.998L5 11.998" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                  <path d="M13.0001 5.998C13.0001 5.998 19 10.417 19 11.9981C19 13.5792 13 17.998 13 17.998" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg></div>
+              <div class="slider-button-white right w-slider-arrow-right"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 24 24" fill="none" class="arrow">
+                  <path d="M18.5 11.998L5 11.998" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                  <path d="M13.0001 5.998C13.0001 5.998 19 10.417 19 11.9981C19 13.5792 13 17.998 13 17.998" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg></div>
+              <div class="hide w-slider-nav w-round w-num"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section white">
+        <div class="section-gap large">
+          <div class="w-layout-blockcontainer container w-container">
+            <div class="section-head">
+              <div class="section-badge">
+                <div class="section-badge-mark"></div>
+                <div class="font-label">Process</div>
+              </div>
+              <h2 class="section-heading-v1">From brief to build</h2>
+            </div>
+            <div class="process-sticky-wrap">
+              <div class="grid-3">
+                <div class="step _01">
+                  <div class="step-info">
+                    <div class="step-top">
+                      <div class="step-number _01">
+                        <div class="text-regular">01</div>
+                      </div>
+                      <div class="divider-line grow">
+                        <div class="project-animated-line _01"></div>
+                      </div>
+                    </div>
+                    <div class="text-stack">
+                      <div class="card-title body-font">Concept</div>
+                      <p class="font-regular">One organising idea, tested against the brief with sketches and study models.</p>
+                    </div>
+                  </div>
+                  <div class="step-media v1"><img class="media-image" src="/images/Image-Design-yours-1-1.webp" alt="Close-up of hands working on a detailed wooden architectural model of a multi-story building surrounded by miniature trees on a table with blueprints." sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 940px" parallax="" loading="lazy" srcset="/images/Image-Design-yours-1-p-500.webp 500w, /images/Image-Design-yours-1-p-800.webp 800w, /images/Image-Design-yours-1-p-1080.webp 1080w, /images/Image-Design-yours-1-1.webp 1233w" /></div>
+                </div>
+                <div class="step _02">
+                  <div class="step-info">
+                    <div class="step-top">
+                      <div class="step-number _02">
+                        <div class="text-regular">02</div>
+                      </div>
+                      <div class="divider-line grow">
+                        <div class="project-animated-line _02"></div>
+                      </div>
+                    </div>
+                    <div class="text-stack">
+                      <div class="card-title body-font">Development</div>
+                      <p class="font-regular">Technical resolution, materials, and coordination with engineers and consultants.</p>
+                    </div>
+                  </div>
+                  <div class="step-media v1"><img class="media-image" src="/images/Image-Design-yours-4.webp" alt="Man in a white hard hat and black suit holding blueprints and looking to the side in front of colorful apartment buildings." sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 940px" parallax="" loading="lazy" srcset="/images/Image-Design-yours-4-p-500.webp 500w, /images/Image-Design-yours-4-p-800.webp 800w, /images/Image-Design-yours-4-p-1080.webp 1080w, /images/Image-Design-yours-4.webp 1230w" /></div>
+                </div>
+                <div class="step _03">
+                  <div class="step-info">
+                    <div class="step-top">
+                      <div class="step-number _03">
+                        <div class="text-regular">03</div>
+                      </div>
+                      <div class="divider-line grow">
+                        <div class="project-animated-line _03"></div>
+                      </div>
+                    </div>
+                    <div class="text-stack">
+                      <div class="card-title body-font">Delivery</div>
+                      <p class="font-regular">Site coordination through to handover, with the same team that drew it.</p>
+                    </div>
+                  </div>
+                  <div class="step-media v1"><img class="media-image" src="/images/Image-Design-yours-3.webp" alt="A smiling woman handing a key with a yellow keychain to a man indoors, suggesting a key exchange or property rental." sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 940px" parallax="" loading="lazy" srcset="/images/Image-Design-yours-3-p-500.webp 500w, /images/Image-Design-yours-3-p-800.webp 800w, /images/Image-Design-yours-3-p-1080.webp 1080w, /images/Image-Design-yours-3.webp 1233w" /></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <TestimonialsV1 />
+      <FaqV1 />
+      <LatestArticlesV1 />
+      <ContactCta />
+      <Footer />
+    </div>
+  </div>
+</BaseLayout>

@@ -1,0 +1,13 @@
+/*
+ * Theme additions. The original Webflow stylesheets (normalize.css, webflow.css,
+ * atrecxa.webflow.css) are kept unchanged. Put new or overriding rules here.
+ */
+
+/* Honeypot field added to forms for spam protection (not part of the visual design). */
+.form-honeypot {
+  position: absolute !important;
+  left: -9999px !important;
+  width: 1px !important;
+  height: 1px !important;
+  overflow: hidden !important;
+}

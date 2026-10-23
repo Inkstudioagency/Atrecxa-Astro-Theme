@@ -1,0 +1,31 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/global/Header.astro';
+import PrimaryButton from '../components/ui/PrimaryButton.astro';
+import Footer from '../components/global/Footer.astro';
+---
+
+<BaseLayout title="Not Found - Atrecxa - Astro Theme" description="Page not found in the Atrecxa Astro theme — a styled 404 page that keeps visitors on your architecture studio site with a clear way back." wfPage="6a9ea08c02c28ae8aa38c433" noindex>
+<div class="page-wrapper">
+    <Header variant="dark" />
+    <div class="main">
+      <section class="section">
+        <div class="section-gap">
+          <div class="w-layout-blockcontainer container w-container">
+            <div class="not-found-content-block">
+              <div class="not-found-text-block">
+                <h1 class="not-found-text">4<span class="not-found-ht-text">0</span>4</h1>
+                <h2 data-wf-target="[[[&quot;6a9ea08c02c28ae8aa38c433&quot;,&quot;deb223b9-c449-3a7c-96aa-088f5d7901d4&quot;],[]]]" class="_404-heading">Page Not Found!</h2>
+                <div class="_404 align-center">The page you are looking for doesn't exist or has been moved</div>
+              </div>
+              <div class="not-found-button-block">
+                <PrimaryButton href="/" variant="black">Back To Home</PrimaryButton>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <Footer />
+  </div>
+</BaseLayout>

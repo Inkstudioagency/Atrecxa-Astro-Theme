@@ -1,0 +1,74 @@
+---
+// Site footer (Webflow component "Footer"). Menus live in src/config/navigation.ts, social links in src/config/site.ts.
+import { site } from '../../config/site';
+import { footerColumns } from '../../config/navigation';
+import { currentLink } from '../../lib/nav';
+
+const { linkClass, ariaCurrent } = currentLink(Astro.url);
+const columnAnimation = ['to-top-0', 'to-top-2', 'to-top-4'];
+const socials = [
+  { label: 'Facebook', href: site.social.facebook },
+  { label: 'Instagram', href: site.social.instagram },
+  { label: 'LinkedIn', href: site.social.linkedin },
+  { label: 'Twitter', href: site.social.x },
+];
+const year = new Date().getFullYear();
+---
+
+<footer data-wf-component-id="090dcd28-8ec7-3275-de39-6b92ff350ca3" data-wf-variant-state="base" class="section black-900">
+  <div class="section-gap large">
+    <div class="w-layout-blockcontainer container w-container">
+      <div class="footer-grid">
+        <div class="grid-3 footer">
+          {
+            footerColumns.map((column, i) => (
+              <div {...{ [columnAnimation[i % columnAnimation.length]]: '' }} class="footer-column">
+                <div class="footer-menu-title">{column.title}</div>
+                <div class="footer-link-list">
+                  {column.links.map((link) => (
+                    <a href={link.href} aria-current={ariaCurrent(link.href)} class={linkClass(link.href, 'footer-link w-inline-block')}>
+                      <div class="footer-link-text one">{link.label}</div>
+                      <div class="footer-link-text is-two">{link.label}</div>
+                    </a>
+                  ))}
+                </div>
+              </div>
+            ))
+          }
+        </div>
+        <div to-top-6="" class="footer-social-list">
+          {
+            socials.map((social, i) => (
+              <a href={social.href} target="_blank" rel="noopener" class:list={['footer-social', i === socials.length - 1 && 'last', 'w-inline-block']}>
+                <div class="font-small white">{social.label}</div>
+                <div class="social-arrow w-embed">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M9 5l7 7-7 7" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </div>
+              </a>
+            ))
+          }
+        </div>
+      </div>
+      <div to-top-0="" class="footer-bottom">
+        <div class="font-regular tertiary">© {year} {site.name}. All rights reserved.</div>
+        <div class="font-regular tertiary">
+          Designed by <a href={site.designer.url} target="_blank" rel="noopener" class="footer-brand-link">{site.designer.name}</a> - Powered by <a href="https://astro.build" target="_blank" rel="noopener" class="footer-brand-link">Astro</a>
+        </div>
+      </div>
+      <div to-top-0="" class="footer-brand">
+        <div class="footer-brand-overlay">
+          <img
+            src="/images/Vector-5.webp"
+            loading="lazy"
+            sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 940px"
+            srcset="/images/aca6d5d0931470c64914ca8745442992_Vector-5-p-500.webp 500w, /images/aca6d5d0931470c64914ca8745442992_Vector-5-p-800.webp 800w, /images/aca6d5d0931470c64914ca8745442992_Vector-5-p-1080.webp 1080w, /images/aca6d5d0931470c64914ca8745442992_Vector-5-p-1600.webp 1600w, /images/aca6d5d0931470c64914ca8745442992_Vector-5-p-2000.webp 2000w, /images/aca6d5d0931470c64914ca8745442992_Vector-5-p-2600.webp 2600w, /images/aca6d5d0931470c64914ca8745442992_Vector-5-p-3200.webp 3200w, /images/Vector-5.webp 4612w"
+            alt="Architect logo with stylized hexagonal shapes forming a geometric symbol next to the word 'Architect'."
+            class="footer-brand-logo"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>

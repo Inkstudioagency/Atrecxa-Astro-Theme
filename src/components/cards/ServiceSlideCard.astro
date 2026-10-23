@@ -1,0 +1,45 @@
+---
+// Service slide on Home V2 (intro, four "What's Included" pills and an image).
+import type { Service } from '../../lib/cms';
+import { mediaSrc, mediaSrcset, mediaAlt } from '../../lib/cms';
+
+interface Props {
+  item: Service;
+  sizes?: string;
+  loading?: 'lazy' | 'eager';
+}
+
+const { item, sizes, loading } = Astro.props;
+const url = `/service/${item.slug}`;
+---
+
+<div class="service-slide-card">
+  <div class="service-slide-body">
+    <div class="text-stack _02">
+      <a href={url} class="service-titile-link w-inline-block">
+        <div class="font-h5 body-font">{item.title}</div>
+        <div class="demo">#</div>
+      </a>
+      <p class="font-regular">{item.intro}</p>
+    </div>
+    <div class="service-pill-wrap">
+      <p class="font-small dark strong">What's Included</p>
+      <div class="tag-list">
+        {
+          item.included.slice(0, 4).map((entry) => (
+            <div class="tag-pill compact">
+              <p class="">{entry.text}</p>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+    <a href={url} class="learn-more-button w-inline-block">
+      <div>View Service</div>
+    </a>
+  </div>
+  <a href={url} class="media-frame service-slide-v2 w-inline-block">
+    <img src={mediaSrc(item.image)} sizes={sizes} srcset={mediaSrcset(item.image)} alt={mediaAlt(item.image)} parallax="" loading={loading} class="service-img" />
+    <div class="demo">#</div>
+  </a>
+</div>

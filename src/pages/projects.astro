@@ -1,0 +1,70 @@
+---
+import FeaturedProject from '../components/cards/FeaturedProject.astro';
+import ProjectGridCard from '../components/cards/ProjectGridCard.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/global/Header.astro';
+import ContactCta from '../components/sections/ContactCta.astro';
+import Footer from '../components/global/Footer.astro';
+import { getProjects, byOrderAsc } from '../lib/cms';
+
+const projects = await getProjects();
+const projects0 = projects.slice(0, 1);
+const projects1 = projects.slice(3, 4);
+const projects2 = projects.slice(4, 5);
+const projects3 = projects.slice(0, 1);
+const projects4 = projects.slice(1, 3);
+const projects5 = byOrderAsc(projects).slice(3, 5);
+const projects6 = projects.slice(5, 6);
+const projects7 = byOrderAsc(projects).slice(6, 9);
+---
+
+<BaseLayout title="Projects - Atrecxa - Astro Theme" description="Projects page of the Atrecxa Astro theme — a CMS-powered portfolio grid to showcase residential and commercial architecture work." wfPage="6a9fa567b9bd14bcdd40d456">
+<div class="page-wrapper">
+    <div class="project-hero">
+      <Header />
+      <div class="featured-project-wrap">
+        <div class="featured-project-card _01">
+          <div class="featured-project-collection-wrap w-dyn-list">{projects0.length > 0 ? (<div role="list" class="featured-project-collection-list w-dyn-items">{projects0.map((entry) => (<div role="listitem" class="featured-project-collection-item w-dyn-item"><FeaturedProject item={entry} counter="03/03" /></div>))}</div>) : (<div class="w-dyn-empty">
+              <div>No items found.</div>
+            </div>)}</div>
+        </div>
+        <div class="featured-project-card _02">
+          <div class="featured-project-collection-wrap w-dyn-list">{projects1.length > 0 ? (<div role="list" class="featured-project-collection-list w-dyn-items">{projects1.map((entry) => (<div role="listitem" class="featured-project-collection-item w-dyn-item"><FeaturedProject item={entry} counter="02/03" /></div>))}</div>) : (<div class="w-dyn-empty">
+              <div>No items found.</div>
+            </div>)}</div>
+        </div>
+        <div class="featured-project-card _03">
+          <div class="featured-project-collection-wrap w-dyn-list">{projects2.length > 0 ? (<div role="list" class="featured-project-collection-list w-dyn-items">{projects2.map((entry) => (<div role="listitem" class="featured-project-collection-item w-dyn-item"><FeaturedProject item={entry} counter="01/03" headingLevel="h1" /></div>))}</div>) : (<div class="w-dyn-empty">
+              <div>No items found.</div>
+            </div>)}</div>
+        </div>
+      </div>
+      <div class="project-line-wrap">
+        <div class="project-line-block">
+          <div class="devider-animated-line"></div>
+        </div>
+      </div>
+    </div>
+    <div class="main">
+      <section class="section white-50">
+        <div class="section-gap large">
+          <div class="w-layout-blockcontainer container w-container">
+            <div class="project-header">
+              <h2 class="font-h2">All project</h2>
+              <p class="font-regular max-width-35">Each space is carefully designed with precision, blending exquisite materials and timeless aesthetics to create an exceptional living experience that enhances your lifestyle.</p>
+            </div>
+            <div class="project-list">
+              <div class="project-collection w-dyn-list">{projects3.length > 0 ? (<div role="list" class="project-row lead w-dyn-items">{projects3.map((entry) => (<div role="listitem" class="full-width w-dyn-item"><ProjectGridCard item={entry} /></div>))}</div>) : (null)}</div>
+              <div class="project-collection w-dyn-list">{projects4.length > 0 ? (<div role="list" class="project-row w-dyn-items">{projects4.map((entry) => (<div role="listitem" class="full-width w-dyn-item"><ProjectGridCard item={entry} layout="horizontal" /></div>))}</div>) : (null)}</div>
+              <div class="project-collection w-dyn-list">{projects5.length > 0 ? (<div role="list" class="project-row right w-dyn-items">{projects5.map((entry) => (<div role="listitem" class="full-width w-dyn-item"><ProjectGridCard item={entry} layout="horizontal" /></div>))}</div>) : (null)}</div>
+              <div class="project-collection w-dyn-list">{projects6.length > 0 ? (<div role="list" class="project-row full w-dyn-items">{projects6.map((entry) => (<div role="listitem" class="full-width w-dyn-item"><ProjectGridCard item={entry} layout="full" /></div>))}</div>) : (null)}</div>
+              <div class="project-collection w-dyn-list">{projects7.length > 0 ? (<div role="list" class="project-row trio w-dyn-items">{projects7.map((entry) => (<div role="listitem" class="full-width sticky-none w-dyn-item"><ProjectGridCard item={entry} layout="horizontal" /></div>))}</div>) : (null)}</div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <ContactCta />
+      <Footer />
+    </div>
+  </div>
+</BaseLayout>

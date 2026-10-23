@@ -1,0 +1,29 @@
+---
+// Project card on Home V2 (image with a "View Project" pill, white caption).
+import type { Project } from '../../lib/cms';
+import { mediaSrc, mediaSrcset, mediaAlt } from '../../lib/cms';
+
+interface Props {
+  item: Project;
+}
+
+const { item } = Astro.props;
+const url = `/project/${item.slug}`;
+---
+
+<div class="work-card">
+  <a href={url} class="project-image-card w-inline-block">
+    <img src={mediaSrc(item.image)} sizes="100vw" srcset={mediaSrcset(item.image)} alt={mediaAlt(item.image)} loading="lazy" class="project-image-v2" />
+    <div class="project-button"><div class="project-button-text">View Project</div></div>
+  </a>
+  <div class="work-caption">
+    <a href={url} class="prject-title-link white w-inline-block">
+      <div class="project-title">{item.title}</div>
+      <div class="demo">#</div>
+    </a>
+    <a href={url} class="project-link white w-inline-block">
+      <p class="text-regular underline-text">View Project</p>
+      <div class="project-button-line"><div class="project-animated-line white"></div></div>
+    </a>
+  </div>
+</div>

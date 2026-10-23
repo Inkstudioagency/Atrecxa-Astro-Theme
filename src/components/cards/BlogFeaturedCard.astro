@@ -1,0 +1,33 @@
+---
+// Featured post card at the top of the Blogs page.
+import type { Blog } from '../../lib/cms';
+import { formatDate } from '../../lib/cms';
+import ArrowPill from '../ui/ArrowPill.astro';
+
+interface Props {
+  item: Blog;
+}
+
+const { item } = Astro.props;
+const url = `/blog/${item.slug}`;
+---
+
+<div class="featured-card">
+  <div class="featured-meta">
+    <div class="featured-badge"><p class="font-small">Featured</p></div>
+    <div class="blog-meta">
+      <p class="font-small dark">{formatDate(item.date)}</p>
+      <p class="font-small">•</p>
+      <p class="font-small dark">{item.category}</p>
+    </div>
+  </div>
+  <a href={url} class="blog-title-wrap w-inline-block">
+    <div class="blog-card-title large">{item.title}</div>
+    <div class="demo">#</div>
+  </a>
+  <p class="font-regular">{item.excerpt}</p>
+  <a href={url} class="expert-v2-button w-inline-block" aria-label={item.title}>
+    <ArrowPill />
+    <div class="demo">#</div>
+  </a>
+</div>

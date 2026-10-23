@@ -1,0 +1,219 @@
+---
+import ServiceCardV3 from '../components/cards/ServiceCardV3.astro';
+import ProjectCardV3 from '../components/cards/ProjectCardV3.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/global/Header.astro';
+import PrimaryButton from '../components/ui/PrimaryButton.astro';
+import { videos, lightboxJson } from '../config/videos';
+import TestimonialsV3 from '../components/sections/TestimonialsV3.astro';
+import FaqV3 from '../components/sections/FaqV3.astro';
+import LatestArticlesV3 from '../components/sections/LatestArticlesV3.astro';
+import CtaV3 from '../components/sections/CtaV3.astro';
+import Footer from '../components/global/Footer.astro';
+import { getServices, getProjects } from '../lib/cms';
+
+const services = await getServices();
+const projects = await getProjects();
+const services0 = services.slice(0, 1);
+const services1 = services.slice(1, 2);
+const services2 = services.slice(2, 3);
+const projects3 = projects.slice(0, 3);
+---
+
+<BaseLayout title="Home V3 - Atrecxa - Astro Theme" description="Home V3 layout of the Atrecxa Astro theme — a refined architecture studio homepage with a rotating photo ring and editorial section flow." wfPage="6aa2bc854f1e650338495bd1">
+<div class="page-wrapper">
+    <div class="home-hero-v3">
+      <div class="inner-hero-overlay-v3"></div>
+      <Header />
+      <section class="section hero-v3">
+        <div class="hero-v3-band">
+          <div class="container">
+            <div class="hero-v3-row">
+              <div class="hero-v3-title-wrap">
+                <h1 class="hero-heading-v3">Redefining modern Luxury Apartment</h1>
+              </div>
+              <div class="home-hero-right">
+                <p class="home-hero-summary">We develop retail and mixed-use spaces as integral components of community planning. By aligning development strategies</p>
+                <PrimaryButton href="/contact-us">Get in touch</PrimaryButton>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section><img src="/images/Rectangle-2-1.webp" loading="eager" sizes="100vw" srcset="/images/Rectangle-2-1-p-500.webp 500w, /images/Rectangle-2-1-p-800.webp 800w, /images/Rectangle-2-1-p-1080.webp 1080w, /images/Rectangle-2-1-p-1600.webp 1600w, /images/Rectangle-2-1-p-2000.webp 2000w, /images/Rectangle-2-1.webp 2264w" alt="Row of modern two-story houses with large glass windows and balconies, surrounded by manicured lawns, trees, and a wooden walkway at dusk." class="inner-hero-image" />
+    </div>
+    <div class="main">
+      <section class="section white">
+        <div class="section-gap large">
+          <div class="w-layout-blockcontainer container w-container">
+            <div class="v2-section-stack">
+              <div class="intro-v2-head">
+                <div class="section-badge-v3">
+                  <div class="section-badge-mark"></div>
+                  <p class="font-label">About</p>
+                </div>
+                <h2 class="rebuild-text">We Design Interiors That Blend Style, Comfort, And Functionality. With A Passion For Detail And a Focus On Timeless Elegance</h2>
+              </div>
+              <div class="intro-v3-body">
+                <div to-top-0="" class="media-frame home-hero-image-v3"><img class="about-image-v3" src="/images/Image-single-image-5.webp" alt="A modern three-story house made of stacked black shipping containers with windows and plants on the rooftop and balcony, set against a sunset sky in an urban area." sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 822px" parallax="" loading="lazy" srcset="/images/Image-single-image-5-p-500.webp 500w, /images/Image-single-image-5-p-800.webp 800w, /images/Image-single-image-5.webp 822w" /></div>
+                <div class="intro-v3-right">
+                  <div class="intro-v3-top">
+                    <div to-top-0="" class="intro-v3-text">
+                      <p class="font-regular">We develop retail and mixed-use spaces as integral components of community planning. By aligning development strategies with construction execution, we deliver commercial environments that activate.</p>
+                      <a href="/about-us-v3" class="learn-more-button w-inline-block">
+                        <div>Learn more</div>
+                      </a>
+                    </div>
+                    <div to-top-2="" class="media-frame intro-v3-wide"><img class="about-media-image-small" src="/images/Image-single-image-6.webp" alt="Modern architectural building with large glass walls reflecting surrounding green trees, a flat roof extending outward, and wide steps leading to the entrance, under a clear blue sky." sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 940px" parallax="" loading="lazy" srcset="/images/Image-single-image-6-p-500.webp 500w, /images/Image-single-image-6-p-800.webp 800w, /images/Image-single-image-6-p-1080.webp 1080w, /images/Image-single-image-6.webp 1161w" />
+                      <a href="#" class="watch-badge-v1 small w-inline-block w-lightbox"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 24 24" fill="none" class="watch-icon">
+                          <path d="M18.8906 12.846C18.5371 14.189 16.8667 15.138 13.5257 17.0361C10.296 18.8709 8.6812 19.7884 7.37983 19.4196C6.8418 19.2671 6.35159 18.9776 5.95624 18.5787C5 17.6139 5 15.7426 5 12C5 8.2574 5 6.3861 5.95624 5.42132C6.35159 5.02245 6.8418 4.73288 7.37983 4.58042C8.6812 4.21165 10.296 5.12907 13.5257 6.96393C16.8667 8.86197 18.5371 9.811 18.8906 11.154C19.0365 11.7084 19.0365 12.2916 18.8906 12.846Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"></path>
+                        </svg>
+                        <script type="application/json" class="w-json" set:html={lightboxJson(videos.showreel)}></script>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="divider-line"></div>
+                  <div class="stat-grid even">
+                    <div to-top-0="" class="stat first">
+                      <div data-counter="counter" class="counter-text">80+</div>
+                      <div class="max-width-13">
+                        <p class="font-extra-normal">Projects Delivered Across Residentials</p>
+                      </div>
+                    </div>
+                    <div to-top-2="" class="stat">
+                      <div data-counter="counter" class="font-h1 counter-text">60+</div>
+                      <p class="font-extra-normal">Cities Shaped Through Architecture</p>
+                    </div>
+                    <div to-top-4="" id="w-node-d7f68a0d-d99b-a2e5-98de-65a5602c7ffb-38495bd1" class="stat last">
+                      <div data-counter="counter" class="font-h1 counter-text">14+</div>
+                      <p class="font-extra-normal">Years Of Combined Experience</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section service">
+        <div class="section-gap service-v3">
+          <div class="container">
+            <div class="service-header">
+              <div class="section-badge-v3">
+                <div class="section-badge-mark"></div>
+                <p class="font-label">Services</p>
+              </div>
+              <h2 class="section-heading-small">What We Do</h2>
+            </div>
+          </div>
+        </div>
+        <div class="service-sticy-wrap">
+          <div class="service-list-wrap">
+            <div class="service-list-wrap-main">
+              <div class="w-dyn-list">{services0.length > 0 ? (<div role="list" class="w-dyn-items">{services0.map((entry) => (<div role="listitem" class="w-dyn-item"><ServiceCardV3 item={entry} sizes="(max-width: 991px) 100vw, 926px" /></div>))}</div>) : (<div class="w-dyn-empty">
+                  <div>No items found.</div>
+                </div>)}</div>
+            </div>
+            <div class="service-list-wrap-main">
+              <div class="w-dyn-list">{services1.length > 0 ? (<div role="list" class="w-dyn-items">{services1.map((entry) => (<div role="listitem" class="w-dyn-item"><ServiceCardV3 item={entry} /></div>))}</div>) : (<div class="w-dyn-empty">
+                  <div>No items found.</div>
+                </div>)}</div>
+            </div>
+            <div class="service-list-wrap-main">
+              <div class="w-dyn-list">{services2.length > 0 ? (<div role="list" class="w-dyn-items">{services2.map((entry) => (<div role="listitem" class="w-dyn-item"><ServiceCardV3 item={entry} sizes="(max-width: 1439px) 100vw, 1389px" /></div>))}</div>) : (<div class="w-dyn-empty">
+                  <div>No items found.</div>
+                </div>)}</div>
+            </div>
+          </div>
+        </div>
+        <div to-top-0="" class="service-button-wrap">
+          <PrimaryButton href="/services-v3" variant="black">View All Service</PrimaryButton>
+        </div>
+      </section>
+      <section class="section black-900">
+        <div class="section-gap large">
+          <div class="w-layout-blockcontainer container w-container">
+            <div class="v2-section-stack">
+              <div class="project-head">
+                <div class="section-badge-v3">
+                  <div class="section-badge-mark white"></div>
+                  <p class="font-label white">Projects</p>
+                </div>
+                <h2 class="font-h1 white">Selected Work</h2>
+              </div>
+              <div class="w-dyn-list">{projects3.length > 0 ? (<div role="list" class="work-v3-list w-dyn-items">{projects3.map((entry) => (<div role="listitem" class="project-collection-item w-dyn-item"><ProjectCardV3 item={entry} /></div>))}</div>) : (<div class="w-dyn-empty">
+                  <div>No items found.</div>
+                </div>)}</div>
+              <div to-top-0="" class="button-wrap flush">
+                <PrimaryButton href="/projects">See All Projects</PrimaryButton>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section page-bg">
+        <div class="section-gap large">
+          <div class="w-layout-blockcontainer container w-container">
+            <div class="process-v3-grid">
+              <div class="process-v3-left">
+                <div class="process-v3-head">
+                  <div class="section-badge-v3">
+                    <div class="section-badge-mark"></div>
+                    <p class="font-label">Process</p>
+                  </div>
+                  <h2 class="font-h2 style-font">From brief to build</h2>
+                  <div class="button-wrap-block">
+                    <PrimaryButton href="/about-us-v1" variant="black">Get In Touch</PrimaryButton>
+                  </div>
+                </div>
+                <div to-top-0="" class="process-v3-list">
+                  <div class="process-v3-row">
+                    <div class="step-top">
+                      <div class="step-number _01">
+                        <p class="text-regular">01</p>
+                      </div>
+                      <h3 class="font-h5 body-font">Concept</h3>
+                    </div>
+                    <p class="process-summary-main _01">We start with your brief, site and ambitions, then shape the first spatial ideas.</p>
+                  </div>
+                  <div class="process-v3-rule">
+                    <div class="process-v3-rule-fill _01"></div>
+                  </div>
+                  <div class="process-v3-row">
+                    <div class="step-top">
+                      <div class="step-number _02">
+                        <p class="text-regular">02</p>
+                      </div>
+                      <h3 class="font-h5 body-font">Development</h3>
+                    </div>
+                    <p class="process-summary-main _02">Technical resolution, materials, and coordination with engineers and consultants.</p>
+                  </div>
+                  <div class="process-v3-rule">
+                    <div class="process-v3-rule-fill _02"></div>
+                  </div>
+                  <div class="process-v3-row">
+                    <div class="step-top">
+                      <div class="step-number _03">
+                        <p class="text-regular">03</p>
+                      </div>
+                      <h3 class="font-h5 body-font">Delivery</h3>
+                    </div>
+                    <p class="process-summary-main _03">Site coordination through to handover, with the same team that drew it.</p>
+                  </div>
+                  <div class="process-v3-rule">
+                    <div class="process-v3-rule-fill _03"></div>
+                  </div>
+                </div>
+              </div>
+              <div to-top-0="" class="process-medai-frame"><img src="/images/Image-Design-yours-1-1.webp" alt="Modern rectangular building with large glass windows and concrete roof surrounded by green lawn, bushes, and trees under a clear blue sky." sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 940px" srcset="/images/Image-Design-yours-1-p-500.webp 500w, /images/Image-Design-yours-1-p-800.webp 800w, /images/Image-Design-yours-1-p-1080.webp 1080w, /images/Image-Design-yours-1-1.webp 1233w" class="proces-image-v3 _01" /><img src="/images/Image-Design-yours-4.webp" alt="Modern rectangular building with large glass windows and concrete roof surrounded by green lawn, bushes, and trees under a clear blue sky." sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 940px" srcset="/images/Image-Design-yours-4-p-500.webp 500w, /images/Image-Design-yours-4-p-800.webp 800w, /images/Image-Design-yours-4-p-1080.webp 1080w, /images/Image-Design-yours-4.webp 1230w" class="proces-image-v3 _02" /><img src="/images/Image-Design-yours-3.webp" alt="Modern rectangular building with large glass windows and concrete roof surrounded by green lawn, bushes, and trees under a clear blue sky." sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 940px" srcset="/images/Image-Design-yours-3-p-500.webp 500w, /images/Image-Design-yours-3-p-800.webp 800w, /images/Image-Design-yours-3-p-1080.webp 1080w, /images/Image-Design-yours-3.webp 1233w" class="proces-image-v3 _03" /></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <TestimonialsV3 />
+      <FaqV3 />
+      <LatestArticlesV3 />
+      <CtaV3 />
+      <Footer />
+    </div>
+  </div>
+</BaseLayout>

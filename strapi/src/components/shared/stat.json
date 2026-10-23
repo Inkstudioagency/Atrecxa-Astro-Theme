@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_shared_stats",
+  "info": {
+    "displayName": "Stat",
+    "description": "A key figure (e.g. \"180+\" / \"Homes Delivered\")",
+    "icon": "chartBubble"
+  },
+  "options": {},
+  "attributes": {
+    "value": { "type": "string", "required": true },
+    "label": { "type": "string", "required": true }
+  }
+}

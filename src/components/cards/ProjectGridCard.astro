@@ -1,0 +1,32 @@
+---
+// Project card on the Projects page grid.
+import type { Project } from '../../lib/cms';
+import { mediaSrc, mediaSrcset, mediaAlt } from '../../lib/cms';
+
+interface Props {
+  item: Project;
+  /** default: stacked caption · horizontal: caption in a row on mobile · full: full-width card with a taller image */
+  layout?: 'default' | 'horizontal' | 'full';
+}
+
+const { item, layout = 'default' } = Astro.props;
+const url = `/project/${item.slug}`;
+const full = layout === 'full';
+---
+
+<div to-top-0="" class:list={['work-card', full && 'full']}>
+  <a href={url} class={full ? 'project-image-wrap large w-inline-block' : 'project-image-block w-inline-block'}>
+    <img src={mediaSrc(item.image)} sizes="(max-width: 767px) 100vw, (max-width: 991px) 727px, 939px" srcset={mediaSrcset(item.image)} alt={mediaAlt(item.image)} loading="lazy" parallax="" class={full ? 'media-image extra-large' : 'media-image large'} />
+    <div class="demo">#</div>
+  </a>
+  <div class={layout === 'horizontal' ? 'work-caption horizontal-mobile' : 'work-info-wrap'}>
+    <a href={url} class="prject-title-link w-inline-block">
+      <div class="project-title">{item.title}</div>
+      <div class="demo">#</div>
+    </a>
+    <a href={url} class="project-link w-inline-block">
+      <p class="text-regular underline-text">View Project</p>
+      <div class="project-button-line"><div class="project-animated-line"></div></div>
+    </a>
+  </div>
+</div>

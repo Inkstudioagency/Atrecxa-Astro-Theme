@@ -1,0 +1,67 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/global/Header.astro';
+import ContactForm from '../components/ui/ContactForm.astro';
+import FaqV1 from '../components/sections/FaqV1.astro';
+import Footer from '../components/global/Footer.astro';
+---
+
+<BaseLayout title="Contact Us - Atrecxa - Astro Theme" description="Contact page of the Atrecxa Astro theme — a clear enquiry form, studio details and map so new clients can reach your team fast." wfPage="6a9ecbc2ee1b24fab4ffd1b8">
+<div class="page-wrapper">
+    <div class="contact-hero">
+      <Header />
+      <section class="section hero-center">
+        <div class="w-layout-blockcontainer w-container">
+          <div class="hero-center-content">
+            <h1 class="font-h1 contact">Contact</h1>
+          </div>
+        </div>
+      </section><img src="/images/Rectangle-1-6_1.webp" loading="eager" sizes="(max-width: 2880px) 100vw, 2880px" srcset="/images/Rectangle-1-6_1-p-500.webp 500w, /images/Rectangle-1-6_1-p-800.webp 800w, /images/Rectangle-1-6_1-p-1080.webp 1080w, /images/Rectangle-1-6_1-p-1600.webp 1600w, /images/Rectangle-1-6_1.webp 2880w" alt="Four young adults seated around a table in a modern room working on laptops and papers, focusing on their tasks and writing notes." class="inner-hero-image" />
+      <div class="inner-hero-overlay"></div>
+    </div>
+    <div class="main">
+      <section class="section white">
+        <div class="section-gap large">
+          <div class="w-layout-blockcontainer container w-container">
+            <div class="split-grid contact">
+              <div class="contact-heading-wrap">
+                <h2 class="contact-heading">Let’s build something together.</h2>
+              </div>
+              <div to-top-0="" class="contact-form-wrapper">
+                <div class="contact-form-header">
+                  <div class="contact-form-title">Envision Your property</div>
+                  <div class="contact-header-text">we will contact you as soon as possible.</div>
+                </div>
+                <ContactForm />
+                <div class="contact-bottom-text">By sending your request, you're agreeing to our privacy policy. We promise to keep your personal information safe and secure</div>
+              </div>
+            </div>
+            <div class="logo-section">
+              <div class="logo-grid top">
+                <div to-top-0="" class="logo-cell first"><img src="/images/Image-Client-Image-1.webp" loading="lazy" alt="3Portals company logo." class="company-logo" /></div>
+                <div to-top-0="" class="logo-cell _02"><img src="/images/Image-Client-Image-2.webp" loading="lazy" alt="AlphaWave company logo with overlapping geometric shapes to the left of the text." class="company-logo" /></div>
+                <div to-top-0="" id="w-node-_77e319e1-e1df-b7ea-7bc4-ccc5f426dcc0-b4ffd1b8" class="logo-cell text">
+                  <div class="max-width-10">
+                    <div class="about-stats-title">Trusted by industry-leading Brands</div>
+                  </div>
+                </div>
+                <div to-top-0="" class="logo-cell border-none-mobile"><img src="/images/Image-Client-Image-3.webp" loading="lazy" alt="Clandestine company logo with stylized cross symbol to the left of the word 'Clandestine'." class="company-logo" /></div>
+                <div to-top-0="" class="logo-cell last"><img src="/images/Image-Client-Image-4.webp" loading="lazy" alt="Acme Corp" class="company-logo" /></div>
+              </div>
+              <div class="divider-line"></div>
+              <div class="logo-grid bottom">
+                <div to-top-0="" class="logo-cell first"><img src="/images/Image-Client-Image-5.webp" loading="lazy" alt="Boltshift company logo with a stylized lightning bolt inside a circle to the left of the company name in bold font." class="company-logo" /></div>
+                <div to-top-0="" class="logo-cell"><img src="/images/Image-Client-Image-6.webp" loading="lazy" alt="Alt+Shift company logo with a circular icon featuring wavy horizontal lines next to the text 'Alt+Shift'." class="company-logo" /></div>
+                <div to-top-0="" class="logo-cell border-none-mobile"><img src="/images/Image-Client-Image-7.webp" loading="lazy" alt="Kintsugi company logo featuring an eight-pointed star shape next to the word 'Kintsugi' in bold black font." class="company-logo" /></div>
+                <div to-top-0="" class="logo-cell"><img src="/images/Image-Client-Image-8.webp" loading="lazy" alt="Calescence company logo with a geometric hexagonal design to the left of the word 'Calescence' in bold black text." class="company-logo" /></div>
+                <div to-top-0="" id="w-node-_77e319e1-e1df-b7ea-7bc4-ccc5f426dcd2-b4ffd1b8" class="logo-cell last"><img src="/images/Image-Client-Image-9.webp" loading="lazy" alt="CoreOS wordmark logo with hexagon containing a right-pointing arrow." class="company-logo" /></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <FaqV1 />
+      <Footer />
+    </div>
+  </div>
+</BaseLayout>

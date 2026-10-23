@@ -1,0 +1,106 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/global/Header.astro';
+import ContactCta from '../../components/sections/ContactCta.astro';
+import Footer from '../../components/global/Footer.astro';
+import { getServices, mediaSrc, mediaSrcset, mediaAlt, richText } from '../../lib/cms';
+
+export async function getStaticPaths() {
+  const entries = await getServices();
+  return entries.map((item) => ({ params: { slug: item.slug }, props: { item } }));
+}
+
+const { item } = Astro.props;
+
+---
+
+<BaseLayout title={item.seo?.metaTitle || item.title} description={item.seo?.metaDescription || undefined} image={mediaSrc(item.image)} type="website" wfPage="6a9fa0416cfcb148fdf7afb3">
+<div class="page-wrapper">
+    <div class="service-single-hero">
+      <Header />
+      <section class="section hero-center">
+        <div class="hero-service-content">
+          <div class="service-heading-wrap">
+            <h1 class="font-h1 white">{item.title}</h1>
+          </div>
+          <div class="service-heading-wrap">
+            <div class="font-h1 white">{item.title}</div>
+          </div>
+        </div>
+      </section><img src={mediaSrc(item.image)} sizes="100vw" srcset={mediaSrcset(item.image)} alt={mediaAlt(item.image)} loading="eager" class="inner-hero-image" />
+      <div class="inner-hero-overlay"></div>
+    </div>
+    <div class="main">
+      <section class="section white">
+        <div class="section-gap large">
+          <div class="w-layout-blockcontainer container w-container">
+            <div class="work-head">
+              <div class="section-badge">
+                <div class="section-badge-mark"></div>
+                <p class="font-label">About this Service</p>
+              </div>
+              <div class="max-width-55">
+                <h2 class="about-rebuild-text body-font">{item.intro}</h2>
+              </div>
+            </div>
+            <div class="service-stat-row">
+              <div to-top-0="" class="feature-media"><img src={mediaSrc(item.featureImages?.[0])} srcset={mediaSrcset(item.featureImages?.[0])} alt={mediaAlt(item.featureImages?.[0])} loading="lazy" parallax="" class="service-multi-image" /></div>
+              <div to-top-2="" class="stat-card">
+                <div class="stat-item">
+                  <p data-counter="counter" class="about-rebuild-text body-font">{item.stats[0]?.value}</p>
+                  <p class="font-regular dark">Homes Designed</p>
+                </div>
+                <div class="divider-line"></div>
+                <div class="stat-item">
+                  <p data-counter="counter" class="about-rebuild-text body-font">{item.stats[1]?.value}</p>
+                  <p class="font-regular dark">Client Satisfaction Rate</p>
+                </div>
+                <div class="divider-line"></div>
+                <div class="stat-item">
+                  <p data-counter="counter" class="about-rebuild-text body-font">{item.stats[2]?.value}</p>
+                  <p class="font-regular dark">Space efficiency</p>
+                </div>
+              </div>
+              <div to-top-4="" class="feature-media none-tab"><img src={mediaSrc(item.featureImages?.[1])} srcset={mediaSrcset(item.featureImages?.[1])} alt={mediaAlt(item.featureImages?.[1])} loading="lazy" parallax="" class="media-image" /></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section white-50">
+        <div class="section-gap service">
+          <div class="w-layout-blockcontainer container w-container">
+            <div class="service-detail-grid">
+              <div class="service-main">
+                <div to-top-0="" class="project-rich-text w-richtext" set:html={richText(item.overview)}></div>
+                <div class="service-gallery">
+                  <div to-top-0="" class="service-gallery-media"><img src={mediaSrc(item.gallery?.[0])} srcset={mediaSrcset(item.gallery?.[0])} alt={mediaAlt(item.gallery?.[0])} loading="lazy" parallax="" class="blog-multi-image" /></div>
+                  <div to-top-0="" class="service-gallery-media"><img src={mediaSrc(item.gallery?.[1])} srcset={mediaSrcset(item.gallery?.[1])} alt={mediaAlt(item.gallery?.[1])} loading="lazy" parallax="" class="blog-multi-image" /></div>
+                  <div to-top-0="" class="service-gallery-media wide"><img src={mediaSrc(item.gallery?.[2])} srcset={mediaSrcset(item.gallery?.[2])} alt={mediaAlt(item.gallery?.[2])} loading="lazy" parallax="" class="blog-multi-image" /></div>
+                </div>
+                <div to-top-0="" class="project-rich-text w-richtext" set:html={richText(item.overviewSecondary)}></div>
+              </div>
+              <div class="service-right">
+                <div to-top-0="" class="expert-card"><img src="/images/Image-Design-yours-11.webp" loading="lazy" sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 940px" srcset="/images/Image-Design-yours-11-p-500.webp 500w, /images/Image-Design-yours-11-p-800.webp 800w, /images/Image-Design-yours-11-p-1080.webp 1080w, /images/Image-Design-yours-11.webp 1476w" alt="Portrait of a woman with light skin and blue eyes wearing a white turtleneck and a brown coat against a plain light gray background." class="expert-avatar" />
+                  <div class="expert-row">
+                    <div class="expert-text">
+                      <p class="font-regular">Let's help you</p>
+                      <p class="font-regular dark">Talk to an Expert</p>
+                    </div>
+                    <a href="#" class="arrow-button-icon inverse w-inline-block"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 24 24" fill="none" class="arrow">
+                        <path d="M18.5 11.998L5 11.998" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M13.0001 5.998C13.0001 5.998 19.0001 10.417 19.0001 11.9981C19.0001 13.5792 13 17.998 13 17.998" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                      </svg>
+                      <div class="demo">#</div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <ContactCta />
+      <Footer />
+    </div>
+  </div>
+</BaseLayout>

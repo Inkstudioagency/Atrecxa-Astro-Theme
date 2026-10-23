@@ -1,0 +1,40 @@
+---
+// Blog card on the Blogs page grid, and (dark) in "more blogs" on blog detail pages.
+import type { Blog } from '../../lib/cms';
+import { mediaSrc, mediaSrcset, mediaAlt, formatDate } from '../../lib/cms';
+import ArrowPill from '../ui/ArrowPill.astro';
+
+interface Props {
+  item: Blog;
+  /** White text for dark sections. */
+  dark?: boolean;
+}
+
+const { item, dark = false } = Astro.props;
+const url = `/blog/${item.slug}`;
+---
+
+<div to-top-0="" class="blog-card">
+  <a href={url} class="blog-media w-inline-block">
+    <img src={mediaSrc(item.image)} sizes="(max-width: 767px) 100vw, (max-width: 991px) 727px, 939px" srcset={mediaSrcset(item.image)} alt={mediaAlt(item.image)} loading="lazy" class:list={['media-image', !dark && 'post-image']} />
+    <div class="demo">#</div>
+  </a>
+  <div class="blog-date-wrap">
+    <div class="blog-meta">
+      <p class={dark ? 'font-extra-normal white-50' : 'font-extra-normal black-900'}>{formatDate(item.date)}</p>
+      <p class:list={['font-small', dark && 'white']}>•</p>
+      <p class:list={['font-extra-normal', dark && 'white-50']}>{item.category}</p>
+    </div>
+    <div class="project-arrow-block">
+      <a href={url} class:list={['expert-v2-button', dark && 'white-50', 'w-inline-block']} aria-label={item.title}>
+        <ArrowPill />
+        <div class="demo">#</div>
+      </a>
+    </div>
+  </div>
+  <div class="divider-line"></div>
+  <a href={url} class:list={['blog-title-wrap', dark && 'white', 'w-inline-block']}>
+    <div class:list={['card-title body-font', dark && 'white-50']}>{item.title}</div>
+    <div class="demo">#</div>
+  </a>
+</div>

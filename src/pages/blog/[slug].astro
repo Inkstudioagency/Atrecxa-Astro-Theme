@@ -1,0 +1,82 @@
+---
+import BlogGridCard from '../../components/cards/BlogGridCard.astro';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/global/Header.astro';
+import ContactCta from '../../components/sections/ContactCta.astro';
+import Footer from '../../components/global/Footer.astro';
+import { getBlogs, formatDate, mediaSrc, mediaSrcset, mediaAlt, richText, except } from '../../lib/cms';
+
+export async function getStaticPaths() {
+  const entries = await getBlogs();
+  return entries.map((item) => ({ params: { slug: item.slug }, props: { item } }));
+}
+
+const { item } = Astro.props;
+
+const blogs = await getBlogs();
+const blogs0 = except(blogs, item).slice(0, 3);
+---
+
+<BaseLayout title={item.seo?.metaTitle || item.title} description={item.seo?.metaDescription || undefined} image={mediaSrc(item.image)} type="article" wfPage="6a9fb7c96cfcb148fd00e15b">
+<div class="page-wrapper">
+    <div class="blog-hero-area">
+      <Header />
+      <section class="section blog-single">
+        <div class="w-layout-blockcontainer container w-container">
+          <div class="post-hero-content">
+            <h1 class="font-h1 white post-title">{item.title}</h1>
+            <div class="divider-line white"></div>
+            <div class="post-meta-row">
+              <div class="date-wrapper"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 24 24" fill="none" class="date-icon">
+                  <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-width="1.5"></path>
+                  <path d="M9.5 9.5L12.9999 12.9996M16 8L11 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+                <div class="font-regular white inter-tight">{item.readTime}</div>
+              </div>
+              <div class="date-wrapper"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 24 24" fill="none" class="date-icon">
+                  <path d="M16 2V6M8 2V6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                  <path d="M13 4H11C7.22876 4 5.34315 4 4.17157 5.17157C3 6.34315 3 8.22876 3 12V14C3 17.7712 3 19.6569 4.17157 20.8284C5.34315 22 7.22876 22 11 22H13C16.7712 22 18.6569 22 19.8284 20.8284C21 19.6569 21 17.7712 21 14V12C21 8.22876 21 6.34315 19.8284 5.17157C18.6569 4 16.7712 4 13 4Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                  <path d="M3 10H21" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+                <div class="font-regular white inter-tight">{formatDate(item.date)}</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section><img src={mediaSrc(item.image)} sizes="100vw" srcset={mediaSrcset(item.image)} alt={mediaAlt(item.image)} loading="eager" class="inner-hero-image" />
+      <div class="blog-overlay"></div>
+    </div>
+    <div class="main">
+      <section class="section white-50">
+        <div class="section-gap large">
+          <div class="w-layout-blockcontainer container w-container">
+            <div class="post-body">
+              <div to-top-0="" class="post-body-content w-richtext" set:html={richText(item.body)}></div>
+              <div to-top-0="" class="blog-gallery">
+                <div class="blog-gallery-media"><img src={mediaSrc(item.gallery?.[0])} srcset={mediaSrcset(item.gallery?.[0])} alt={mediaAlt(item.gallery?.[0])} loading="lazy" class="post-multi-image" /></div>
+                <div class="blog-gallery-media"><img src={mediaSrc(item.gallery?.[1])} srcset={mediaSrcset(item.gallery?.[1])} alt={mediaAlt(item.gallery?.[1])} loading="lazy" class="post-multi-image" /></div>
+              </div>
+              <div to-top-0="" class="post-body-content w-richtext" set:html={richText(item.bodySecondary)}></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section inverse">
+        <div class="section-gap large">
+          <div class="w-layout-blockcontainer container w-container">
+            <div class="blog-header">
+              <div class="section-badge">
+                <div class="section-badge-mark white"></div>
+                <div class="font-label white">Blogs</div>
+              </div>
+              <h2 class="font-h2 white-50">more Blogs</h2>
+            </div>
+            <div class="w-dyn-list">{blogs0.length > 0 ? (<div role="list" class="grid-3 blog w-dyn-items">{blogs0.map((entry) => (<div role="listitem" class="w-dyn-item"><BlogGridCard item={entry} dark /></div>))}</div>) : (null)}</div>
+          </div>
+        </div>
+      </section>
+      <ContactCta />
+      <Footer />
+    </div>
+  </div>
+</BaseLayout>

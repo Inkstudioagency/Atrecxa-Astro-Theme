@@ -1,0 +1,46 @@
+---
+// Service row on Services V2 (title + pills, image, description + link).
+import type { Service } from '../../lib/cms';
+import { mediaSrc, mediaSrcset, mediaAlt } from '../../lib/cms';
+
+interface Props {
+  item: Service;
+  sizes?: string;
+  /** Hide the description on mobile. */
+  hideDescriptionOnMobile?: boolean;
+}
+
+const { item, sizes, hideDescriptionOnMobile = true } = Astro.props;
+const url = `/service/${item.slug}`;
+---
+
+<div class="service-row-v2">
+  <div class="service-slide-body">
+    <a href={url} class="service-titile-link w-inline-block">
+      <div class="service-tilte">{item.title}</div>
+      <div class="demo">#</div>
+    </a>
+    <div class="text-stack">
+      <p class="font-small dark strong">What's Included</p>
+      <div class="tag-list tight">
+        {
+          item.included.slice(0, 5).map((entry, i) => (
+            <div class:list={['tag-pill compact', i >= 3 && 'hide-tab']}>
+              <p class="">{entry.text}</p>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </div>
+  <a href={url} class="media-frame w-inline-block">
+    <img src={mediaSrc(item.image)} sizes={sizes} srcset={mediaSrcset(item.image)} alt={mediaAlt(item.image)} loading="lazy" class="media-image v2" />
+    <div class="demo">#</div>
+  </a>
+  <div class="service-slide-body">
+    <p class:list={['font-regular', hideDescriptionOnMobile && 'hide-mobile']}>{item.shortDescription}</p>
+    <a href={url} class="learn-more-button w-inline-block">
+      <div>View Service</div>
+    </a>
+  </div>
+</div>

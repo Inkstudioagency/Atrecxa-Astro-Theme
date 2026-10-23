@@ -1,0 +1,30 @@
+---
+// Full-screen featured project slide at the top of the Projects page.
+import type { Project } from '../../lib/cms';
+import { mediaSrc, mediaSrcset, mediaAlt } from '../../lib/cms';
+
+interface Props {
+  item: Project;
+  /** Slide counter shown under the title, e.g. "01/03". */
+  counter: string;
+  /** Render the title as the page's <h1> (only one slide should). */
+  headingLevel?: 'h1' | 'div';
+}
+
+const { item, counter, headingLevel = 'div' } = Astro.props;
+const url = `/project/${item.slug}`;
+const Title = headingLevel;
+---
+
+<img src={mediaSrc(item.image)} sizes="100vw" srcset={mediaSrcset(item.image)} alt={mediaAlt(item.image)} loading="eager" class="featured-project-image" />
+<div class="featured-project-center">
+  <a href={url} class="project-name-wrap w-inline-block">
+    <Title class="font-h1 project">{item.title}</Title>
+    <div class="demo">#</div>
+  </a>
+  <div class="project-content-wrap">
+    <p class="font-extra-normal white-50">Featured Project</p>
+    <p class="project-stats">{counter}</p>
+  </div>
+</div>
+<div class="hero-overlay"></div>

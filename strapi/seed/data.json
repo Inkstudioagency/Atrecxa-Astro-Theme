@@ -1,0 +1,991 @@
+{
+  "services": [
+    {
+      "title": "Custom Homebuilding",
+      "slug": "custom-homebuilding",
+      "position": 4,
+      "shortDescription": "One team draws the house, prices it, programmes it and stands on site while it is built, so the home that is handed over on the agreed date is the one that was actually designed.",
+      "intro": "One team holding the drawing, the budget and the build programme — so the house that is handed over is the house that was designed.",
+      "image": {
+        "file": "Image-8.webp",
+        "alt": "Bespoke family home designed and built by Atrecxa, from first sketch through to handover"
+      },
+      "stats": [
+        {
+          "value": "180+",
+          "label": "Homes Delivered"
+        },
+        {
+          "value": "94%",
+          "label": "On-Time Handover"
+        },
+        {
+          "value": "12%",
+          "label": "Average Under Budget"
+        }
+      ],
+      "featureImages": [
+        {
+          "file": "6aa00926be84e350f954cc34_Image.webp",
+          "alt": "Bespoke family home designed and built by Atrecxa, from first sketch through to handover"
+        },
+        {
+          "file": "6aa0090462bce152ddeaceb0_Image-20-1.webp",
+          "alt": "Bespoke family home designed and built by Atrecxa, from first sketch through to handover"
+        }
+      ],
+      "overview": "## Service Overview\n\nMost custom homes fail at the seam between design and construction, where a drawing meets a price and someone quietly changes the answer. We remove the seam. The same team that draws the house prices it, programmes it and stands on site while it is built.\n\n## Design Philosophy\n\nA custom home should be specific to a family and a plot, not to a style. We start with how you actually live — who cooks, who works from home, where the noise is — and let the plan follow from that.",
+      "gallery": [
+        {
+          "file": "6aa009cb8de3b7f53a6d2fc9_Figure-20-9.webp",
+          "alt": "Bespoke family home designed and built by Atrecxa, from first sketch through to handover"
+        },
+        {
+          "file": "6aa009e351df5af9a0003874_Figure-20-10.webp",
+          "alt": "Bespoke family home designed and built by Atrecxa, from first sketch through to handover"
+        },
+        {
+          "file": "6aa00a34ab414f3ad48e9e3b_Figure-20-12.webp",
+          "alt": "Bespoke family home designed and built by Atrecxa, from first sketch through to handover"
+        }
+      ],
+      "overviewSecondary": "## Who We Serve\n\nFamilies building the house they intend to grow old in, and owners who have bought a plot and want one contract rather than five. Most of our clients have never built before, so the process is designed to be explainable at every stage.\n\n## Key Features & Innovations\n\n- Feasibility and budget test before design begins\n- One contract covering design and construction\n- Fixed cost plan split by trade, not per square metre\n- Named contingency held and reported monthly\n- Weekly site presence throughout the build\n- Structure and services coordinated before ground is broken\n- Snagging closed out before handover, not after\n- Twelve-month defects review included\n\n‍\n\n![Bespoke family home designed and built by Atrecxa, from first sketch through to handover](media:Figure-6.webp)\n\n## Outcome & Client Experience\n\nNinety-four per cent of our homes hand over on the date agreed at contract. The remaining six per cent were late for reasons we told the client about months in advance.",
+      "included": [
+        {
+          "text": "Budget feasibility"
+        },
+        {
+          "text": "Fixed cost plan"
+        },
+        {
+          "text": "Site management"
+        },
+        {
+          "text": "Handover snagging"
+        },
+        {
+          "text": "Defects review"
+        }
+      ],
+      "seo": {
+        "metaTitle": "Custom Homebuilding | Atrecxa",
+        "metaDescription": "Bespoke homes designed and delivered from first sketch to handover, with one team holding the drawing, the budget and the build programme throughout."
+      }
+    },
+    {
+      "title": "Architecture & Design",
+      "slug": "architecture-design",
+      "position": 3,
+      "shortDescription": "Site, structure, light and material resolved together by one team, from the first section study through planning consent to the final inspection on site, never handed between offices.",
+      "intro": "We design buildings and interiors as a single act of thinking — from the first sketch of a site to the last handle on a door, held by one team the whole way.",
+      "image": {
+        "file": "Image-7.webp",
+        "alt": "Atrecxa architecture and design project, with site, structure, light and material resolved together"
+      },
+      "stats": [
+        {
+          "value": "250+",
+          "label": "Homes Designed"
+        },
+        {
+          "value": "75%",
+          "label": "Client Satisfaction Rate"
+        },
+        {
+          "value": "30%",
+          "label": "Space efficiency"
+        }
+      ],
+      "featureImages": [
+        {
+          "file": "6aa00926be84e350f954cc34_Image.webp",
+          "alt": "Atrecxa architecture and design project, with site, structure, light and material resolved together"
+        },
+        {
+          "file": "6aa0090462bce152ddeaceb0_Image-20-1.webp",
+          "alt": "Atrecxa architecture and design project, with site, structure, light and material resolved together"
+        }
+      ],
+      "overview": "## Service Overview\n\nArchitecture and interiors are not two commissions with a handover in the middle. We resolve site, structure, light and material together, which is why the finished rooms feel inevitable rather than decorated. One team holds the drawing, the budget and the programme from first sketch to final inspection.\n\n## Design Philosophy\n\nEvery project begins in section rather than plan. Where the light falls, how the ground moves and how deep a room can be before it stops working are decided before a single elevation is drawn.",
+      "gallery": [
+        {
+          "file": "6aa009cb8de3b7f53a6d2fc9_Figure-20-9.webp",
+          "alt": "Atrecxa architecture and design project, with site, structure, light and material resolved together"
+        },
+        {
+          "file": "6aa009e351df5af9a0003874_Figure-20-10.webp",
+          "alt": "Atrecxa architecture and design project, with site, structure, light and material resolved together"
+        },
+        {
+          "file": "6aa00a34ab414f3ad48e9e3b_Figure-20-12.webp",
+          "alt": "Atrecxa architecture and design project, with site, structure, light and material resolved together"
+        }
+      ],
+      "overviewSecondary": "## Who We Serve\n\nPrivate clients building once in a lifetime, families extending a house they intend to stay in, and developers who want a scheme that still reads well in twenty years. What they share is a willingness to spend the first month deciding rather than drawing.\n\n## Key Features & Innovations\n\n- Site and light study before any elevation is drawn\n- Section-led planning for daylight and room depth\n- Single team from concept through construction\n- Material palette tested against the real context\n- Full planning and building-regulations delivery\n- Coordinated structural and services design\n- Fortnightly site inspection during construction\n- Post-completion review at twelve months\n\n‍\n\n![Atrecxa architecture and design project, with site, structure, light and material resolved together](media:Figure-6.webp)\n\n## Outcome & Client Experience\n\nClients tell us the same thing at handover: the house is quieter than they expected. That is what happens when the plan does the work instead of the finishes.",
+      "included": [
+        {
+          "text": "Site & light study"
+        },
+        {
+          "text": "Concept design"
+        },
+        {
+          "text": "Planning submission"
+        },
+        {
+          "text": "Site coordination"
+        },
+        {
+          "text": "Detail drawings"
+        }
+      ],
+      "seo": {
+        "metaTitle": "Architecture & Design | Atrecxa",
+        "metaDescription": "Architecture and interiors developed as a single act of thinking — site, structure, light and material resolved together rather than handed between teams."
+      }
+    },
+    {
+      "title": "Renovation Reuse",
+      "slug": "renovation-reuse",
+      "position": 2,
+      "shortDescription": "We survey what is already standing before deciding what to change, then design only what the building can carry, keeping the fabric and the character that are still worth keeping.",
+      "intro": "We survey what is already standing before we decide what to change — because the cheapest, greenest material on any site is the building you already own.",
+      "image": {
+        "file": "6aa24b6c199ac82979fa46c4_Image-20-6.webp",
+        "alt": "Atrecxa renovation and adaptive reuse project, with the original building fabric surveyed and retained"
+      },
+      "stats": [
+        {
+          "value": "140+",
+          "label": "Buildings Reused"
+        },
+        {
+          "value": "60%",
+          "label": "Original Fabric Retained"
+        },
+        {
+          "value": "45%",
+          "label": "Embodied Carbon Saved"
+        }
+      ],
+      "featureImages": [
+        {
+          "file": "6aa00926be84e350f954cc34_Image.webp",
+          "alt": "Atrecxa renovation and adaptive reuse project, with the original building fabric surveyed and retained"
+        },
+        {
+          "file": "6aa0090462bce152ddeaceb0_Image-20-1.webp",
+          "alt": "Atrecxa renovation and adaptive reuse project, with the original building fabric surveyed and retained"
+        }
+      ],
+      "overview": "## Service Overview\n\nRenovation is an argument about what to keep. We begin with a measured and opening-up survey so the argument is settled with evidence rather than instinct, then design the changes the building can actually carry. Demolition is the last option, not the first move.\n\n## Design Philosophy\n\nOld buildings are usually right about something — an orientation, a ceiling height, a wall in the correct place. Our job is to find that one thing and build the new work around it rather than over it.",
+      "gallery": [
+        {
+          "file": "6aa009cb8de3b7f53a6d2fc9_Figure-20-9.webp",
+          "alt": "Atrecxa renovation and adaptive reuse project, with the original building fabric surveyed and retained"
+        },
+        {
+          "file": "6aa009e351df5af9a0003874_Figure-20-10.webp",
+          "alt": "Atrecxa renovation and adaptive reuse project, with the original building fabric surveyed and retained"
+        },
+        {
+          "file": "6aa00a34ab414f3ad48e9e3b_Figure-20-12.webp",
+          "alt": "Atrecxa renovation and adaptive reuse project, with the original building fabric surveyed and retained"
+        }
+      ],
+      "overviewSecondary": "## Who We Serve\n\nOwners of period houses that no longer work, buyers who have inherited a poor previous extension, and organisations converting a building to a use it was never designed for. All of them arrive with a structure and a constraint rather than a blank plot.\n\n## Key Features & Innovations\n\n- Measured and opening-up survey before design\n- Structural appraisal of what can be removed\n- Retention plan agreed in writing at the start\n- Breathable build-ups for solid-wall construction\n- Damp and thermal strategy designed together\n- Listed and conservation consent handled in-house\n- Embodied-carbon comparison against rebuilding\n- Phased delivery so the building can stay occupied\n\n‍\n\n![Atrecxa renovation and adaptive reuse project, with the original building fabric surveyed and retained](media:Figure-6.webp)\n\n## Outcome & Client Experience\n\nThe best compliment a renovation gets is that nobody can tell where the old work stops. On average we retain sixty per cent of the original fabric and still deliver a building that performs like a new one.",
+      "included": [
+        {
+          "text": "Measured survey"
+        },
+        {
+          "text": "Structural appraisal"
+        },
+        {
+          "text": "Conservation consent"
+        },
+        {
+          "text": "Phased delivery"
+        },
+        {
+          "text": "Retention plan"
+        }
+      ],
+      "seo": {
+        "metaTitle": "Renovation & Adaptive Reuse | Atrecxa",
+        "metaDescription": "Renovation and adaptive reuse that keeps what is worth keeping — surveying the existing fabric first, then designing the changes the building can carry."
+      }
+    },
+    {
+      "title": "Interior Styling",
+      "slug": "interior-styling",
+      "position": 1,
+      "shortDescription": "Furniture, lighting and material selected room by room, then procured, delivered and installed by us, so the finished interior reads as part of the architecture, not as decoration.",
+      "intro": "We create architectural designs that combine style, comfort, and functionality with thoughtful details and a modern vibe.",
+      "image": {
+        "file": "Image-46-1.webp",
+        "alt": "Interior styled by Atrecxa, with furniture, lighting and materials specified room by room"
+      },
+      "stats": [
+        {
+          "value": "320+",
+          "label": "Rooms Styled"
+        },
+        {
+          "value": "88%",
+          "label": "Clients Who Return"
+        },
+        {
+          "value": "6 wk",
+          "label": "Average Turnaround"
+        }
+      ],
+      "featureImages": [
+        {
+          "file": "Image.webp",
+          "alt": "Interior styled by Atrecxa, with furniture, lighting and materials specified room by room"
+        },
+        {
+          "file": "Image-1.webp",
+          "alt": "Interior styled by Atrecxa, with furniture, lighting and materials specified room by room"
+        }
+      ],
+      "overview": "## Service Overview\n\nAlder House began as a low, closed-off brick house at the edge of a working orchard. The brief was simple to state and hard to solve: let in the orchard without losing the privacy the site’s boundary wall had always provided. The result is a single-storey extension that reorganises the ground floor around one long view, rather than adding more rooms.\n\n## Design Philosophy\n\nOur approach to this project centered around the idea of \"livable luxury. The design philosophy wes to create a clinic that feels both sophisticated and inviting, blending architectural precision with warmth and comfort. By prioritizing natural materials thoughtful proportions",
+      "gallery": [
+        {
+          "file": "Figure-9.webp",
+          "alt": "Interior styled by Atrecxa, with furniture, lighting and materials specified room by room"
+        },
+        {
+          "file": "Figure-10.webp",
+          "alt": "Interior styled by Atrecxa, with furniture, lighting and materials specified room by room"
+        },
+        {
+          "file": "Figure-12.webp",
+          "alt": "Interior styled by Atrecxa, with furniture, lighting and materials specified room by room"
+        }
+      ],
+      "overviewSecondary": "## Who We Serve\n\nWhether you're developing a residential, commercial, institutional, or mixed-use project, our sustainable design expertise ensures you meet both environmental goals and regulatory requirements—without compromising on design excellence. With a forward-thinking approach, we design for durability and adaptability—ensuring your project is resilient to climate-related challenges such as heatwaves, flooding, and changing weather patterns.\n\n## Key Features & Innovations\n\n- Room-by-room specification, not a single scheme\n- Samples viewed in the actual room light\n- Lighting layered in three levels per room\n- Mix of new, vintage and commissioned pieces\n- Full procurement and delivery management\n- Installation completed in a single day per room\n- Budget tracked per room, visible throughout\n- Styling guide left with the client at handover\n\n‍\n\n![Interior styled by Atrecxa, with furniture, lighting and materials specified room by room](media:Figure-6.webp)\n\n## Outcome & Client Experience\n\nThe finished clinic is more than just a building it is a healing environment that evolves with its inhabitants. The outcome reflects the perfect balance of the client's aspirations and our design philosophy, Every corner of the clinic feels intentional, from the vibrant, light-filled communal areas to the serene private retreats that provide calm and intimacy",
+      "included": [
+        {
+          "text": "Room-by-room spec"
+        },
+        {
+          "text": "Lighting design"
+        },
+        {
+          "text": "Procurement"
+        },
+        {
+          "text": "Install & styling"
+        },
+        {
+          "text": "Styling guide"
+        }
+      ],
+      "seo": {
+        "metaTitle": "Interior Styling Services | Atrecxa",
+        "metaDescription": "Interior styling that finishes the architecture rather than decorating over it — furniture, lighting and material selection specified room by room."
+      }
+    }
+  ],
+  "projects": [
+    {
+      "title": "Tranquil Haven Residences",
+      "slug": "tranquil-haven-residences",
+      "position": 9,
+      "order": 1,
+      "tagline": "A hillside cluster of five homes, planned so that every one of them keeps its own quiet.",
+      "image": {
+        "file": "25321d0c2f735538b1e3a0b3cffc4f70e5b61563.webp",
+        "alt": "Tranquil Haven Residences, a hillside cluster of five warm minimalist homes in Marin County"
+      },
+      "propertyType": "Residential Development",
+      "location": "Marin County, California",
+      "architectureStyle": "Warm Minimalism",
+      "completed": "2026-03-14",
+      "interiorSpace": "4,100 sq ft",
+      "propertyValue": "$4.2 Million",
+      "expertImage": {
+        "file": "Image-Design-yours.png",
+        "alt": "Tranquil Haven Residences, a hillside cluster of five warm minimalist homes in Marin County"
+      },
+      "overview": "## Project Overview\n\nTranquil Haven began with a question the client asked on the first site visit: how do you build five houses on one hillside without any of them looking into another? The answer was not screening but geometry. Each dwelling is rotated a few degrees off its neighbour and set at a different level on the slope, so privacy comes from the plan rather than from fences and planting.\n\n## The best thing about the site\n\nThe slope everyone else treated as a constraint is the reason this scheme works. Dropping each house half a storey below the one above gave every home an uninterrupted view over the roof of its neighbour, and let us keep the mature oaks that a flat cut-and-fill approach would have removed.\n\n## Creating Lasting Value\n\nBeyond the immediate appeal of the views, the development was planned for a forty-year life. Cross-ventilation and deep eaves do most of the cooling work without machinery, the timber cladding is a species chosen to silver evenly rather than patch, and every service run is accessible without opening a finished wall.\n\n‍\n\n![Tranquil Haven Residences, a hillside cluster of five warm minimalist homes in Marin County](media:Figure.webp)\n\n## Key Features\n\n- Five homes on individually rotated plots\n- Half-storey level changes for private outlook\n- Mature oak canopy retained across the site\n- Deep eaves and cross-ventilation for passive cooling\n- Silvering timber cladding with no applied finish\n- Accessible service routes behind removable panels\n- Shared landscape maintained under one agreement\n- Designed for a forty-year maintenance cycle",
+      "gallery": [
+        {
+          "file": "6a9ffdceb2d24f9cdf93a8e3_Figure-20-1.webp",
+          "alt": "Tranquil Haven Residences, a hillside cluster of five warm minimalist homes in Marin County"
+        },
+        {
+          "file": "6a9ffdd04d4bb1af127b8293_Figure-20-2.webp",
+          "alt": "Tranquil Haven Residences, a hillside cluster of five warm minimalist homes in Marin County"
+        },
+        {
+          "file": "6a9ffe2e1d92d441f20e7f75_Figure-20-4.webp",
+          "alt": "Tranquil Haven Residences, a hillside cluster of five warm minimalist homes in Marin County"
+        },
+        {
+          "file": "6a9ffe2f1fae7c7e4b3c8c8d_Figure-20-3.webp",
+          "alt": "Tranquil Haven Residences, a hillside cluster of five warm minimalist homes in Marin County"
+        }
+      ],
+      "overviewSecondary": "## Built Around Lifestyle and Opportunity\n\nThe brief was written by two families buying together, which meant the plan had to hold both shared life and separate life at once. A single arrival court, one landscape agreement and a shared workshop building carry the collective side; from the front door of each house inward, nothing is shared at all.\n\n## Project Summary\n\nTranquil Haven is a study in how far site planning can do the work usually handed to walls. Five houses, one hillside, and not a single window that looks into a neighbour's room — achieved by rotating plans and stepping levels rather than by building barriers.",
+      "seo": {
+        "metaTitle": "Tranquil Haven Residences | Atrecxa",
+        "metaDescription": "A Marin County scheme of five homes built around quiet, light and long sightlines. How plan, materials and landscape were resolved on this Atrecxa project."
+      }
+    },
+    {
+      "title": "Namib Dune Retreat",
+      "slug": "namib-dune-retreat",
+      "position": 8,
+      "order": 2,
+      "tagline": "A desert house built heavy and low, so the night can cool what the day has warmed.",
+      "image": {
+        "file": "Image-41.webp",
+        "alt": "Namib Dune Retreat, a low earth-toned desert house at Sossusvlei, Namibia"
+      },
+      "propertyType": "Desert Retreat",
+      "location": "Sossusvlei, Namibia",
+      "architectureStyle": "Earth-Toned Modern",
+      "completed": "2025-11-08",
+      "interiorSpace": "3,400 sq ft",
+      "propertyValue": "$3.8 Million",
+      "expertImage": {
+        "file": "Image-Design-yours.png",
+        "alt": "Namib Dune Retreat, a low earth-toned desert house at Sossusvlei, Namibia"
+      },
+      "overview": "## Project Overview\n\nNamib Dune Retreat sits where the daily temperature swing is close to thirty degrees. That single fact set the whole design. The house is built from heavyweight rammed earth drawn from the site itself, so the mass absorbs heat through the day and releases it at night — the building works as a battery rather than as a shell with machinery bolted on.\n\n## The best thing about the site\n\nThe site's real gift is not the dune but the horizon behind it. By keeping the house low and long, and lifting only the living room to catch the ridge line, the whole plan reads as part of the landform instead of an object placed on top of it.\n\n## Creating Lasting Value\n\nDurability in a desert is mostly about what you do not use. There is no render to crack, no paint to fade and no sealant to perish. Rammed earth, oiled hardwood and unfinished steel were chosen because they weather rather than fail, and because every one of them can be repaired by a local trade.\n\n‍\n\n![Namib Dune Retreat, a low earth-toned desert house at Sossusvlei, Namibia](media:Figure.webp)\n\n## Key Features\n\n- Rammed earth walls made from site material\n- Thermal mass sized to the daily temperature swing\n- Living room lifted to the dune ridge line\n- Deep shaded verandah on the western face\n- Rainwater capture and greywater reuse\n- No render, paint or sealant on the exterior\n- Solar array sized for full off-grid operation\n- Materials repairable by local trades",
+      "gallery": [
+        {
+          "file": "6a9ffdceb2d24f9cdf93a8e3_Figure-20-1.webp",
+          "alt": "Namib Dune Retreat, a low earth-toned desert house at Sossusvlei, Namibia"
+        },
+        {
+          "file": "6a9ffdd04d4bb1af127b8293_Figure-20-2.webp",
+          "alt": "Namib Dune Retreat, a low earth-toned desert house at Sossusvlei, Namibia"
+        },
+        {
+          "file": "6a9ffe2e1d92d441f20e7f75_Figure-20-4.webp",
+          "alt": "Namib Dune Retreat, a low earth-toned desert house at Sossusvlei, Namibia"
+        },
+        {
+          "file": "6a9ffe2f1fae7c7e4b3c8c8d_Figure-20-3.webp",
+          "alt": "Namib Dune Retreat, a low earth-toned desert house at Sossusvlei, Namibia"
+        }
+      ],
+      "overviewSecondary": "## Built Around Lifestyle and Opportunity\n\nThe clients wanted somewhere to disappear for six weeks at a time, and somewhere that could sit empty for the other forty-six without deteriorating. Everything from the shutter detail to the water system was designed around that pattern of long occupation and long absence.\n\n## Project Summary\n\nNamib Dune Retreat is a demonstration that comfort in an extreme climate is an architectural problem before it is a mechanical one. The building is heavy, low and shaded, and it holds temperature on its own.",
+      "seo": {
+        "metaTitle": "Namib Dune Retreat | Atrecxa",
+        "metaDescription": "A desert retreat shaped by wind, heat and horizon. How orientation, shading and heavyweight material keep this Atrecxa house comfortable without machinery."
+      }
+    },
+    {
+      "title": "Aurora Pavilion Residence",
+      "slug": "aurora-pavilion-residence",
+      "position": 7,
+      "order": 3,
+      "tagline": "Glass, stone and deep overhangs, tuned to a light that changes for six months at a time.",
+      "image": {
+        "file": "Image-38.webp",
+        "alt": "Aurora Pavilion Residence, a Nordic contemporary pavilion house in Tromsø, Norway"
+      },
+      "propertyType": "Pavilion Residence",
+      "location": "Tromsø, Norway",
+      "architectureStyle": "Nordic Contemporary",
+      "completed": "2026-01-22",
+      "interiorSpace": "4,700 sq ft",
+      "propertyValue": "$5.1 Million",
+      "expertImage": {
+        "file": "Image-Design-yours.png",
+        "alt": "Aurora Pavilion Residence, a Nordic contemporary pavilion house in Tromsø, Norway"
+      },
+      "overview": "## Project Overview\n\nAurora Pavilion was designed for a place where the sun does not rise for two months and does not set for two more. A conventional plan built around daylight hours makes no sense here, so the house is organised around two different modes of living — a compact, warm winter core and a wide, open summer perimeter that opens out of it.\n\n## The best thing about the site\n\nThe site looks north over the fjord, which is the wrong orientation by every rule of thumb and exactly right here. North light is the steady light, and it is the direction the aurora appears in. Glazing is concentrated on that face and deliberately restrained everywhere else.\n\n## Creating Lasting Value\n\nIn a climate this severe, longevity is an assembly question. Triple glazing sits in thermally broken frames, the timber structure is kept entirely inside the vapour line, and the stone plinth takes all the ground contact so no timber ever meets snow. Nothing about this detailing is visible, which is rather the point.\n\n‍\n\n![Aurora Pavilion Residence, a Nordic contemporary pavilion house in Tromsø, Norway](media:Figure.webp)\n\n## Key Features\n\n- Winter core and summer perimeter as two modes\n- North-facing glazing framing the fjord and aurora\n- Triple glazing in thermally broken frames\n- Timber structure kept inside the vapour line\n- Stone plinth taking all ground contact\n- Snow-shedding roof geometry with no valleys\n- Ground-source heating with a buffer store\n- Detailing designed for a hundred-year fabric life",
+      "gallery": [
+        {
+          "file": "6a9ffdceb2d24f9cdf93a8e3_Figure-20-1.webp",
+          "alt": "Aurora Pavilion Residence, a Nordic contemporary pavilion house in Tromsø, Norway"
+        },
+        {
+          "file": "6a9ffdd04d4bb1af127b8293_Figure-20-2.webp",
+          "alt": "Aurora Pavilion Residence, a Nordic contemporary pavilion house in Tromsø, Norway"
+        },
+        {
+          "file": "6a9ffe2e1d92d441f20e7f75_Figure-20-4.webp",
+          "alt": "Aurora Pavilion Residence, a Nordic contemporary pavilion house in Tromsø, Norway"
+        },
+        {
+          "file": "6a9ffe2f1fae7c7e4b3c8c8d_Figure-20-3.webp",
+          "alt": "Aurora Pavilion Residence, a Nordic contemporary pavilion house in Tromsø, Norway"
+        }
+      ],
+      "overviewSecondary": "## Built Around Lifestyle and Opportunity\n\nThe client is a photographer, and the house had to work as both home and workspace through a year of extreme light. Two dark rooms, a north-lit studio and a long circulation wall used as a print gallery were planned in from the first sketch rather than fitted around a finished house.\n\n## Project Summary\n\nAurora Pavilion is a building organised by light rather than by rooms. Its plan changes character twice a year, and every major decision — orientation, glazing, plan depth — was made in service of that.",
+      "seo": {
+        "metaTitle": "Aurora Pavilion Residence | Atrecxa",
+        "metaDescription": "A Tromsø pavilion house of glass, stone and deep overhangs. See how structure and glazing were tuned to the site's light on this Atrecxa project."
+      }
+    },
+    {
+      "title": "Casa Bruma Sintra",
+      "slug": "casa-bruma-sintra",
+      "position": 6,
+      "order": 6,
+      "tagline": "A house built into the slope rather than onto it, where the mist arrives before the view does.",
+      "image": {
+        "file": "Image-37.webp",
+        "alt": "Casa Bruma, a Mediterranean modern hillside villa in Sintra, Portugal"
+      },
+      "propertyType": "Hillside Villa",
+      "location": "Sintra, Portugal",
+      "architectureStyle": "Mediterranean Modern",
+      "completed": "2026-06-30",
+      "interiorSpace": "3,900 sq ft",
+      "propertyValue": "$4.6 Million",
+      "expertImage": {
+        "file": "Image-Design-yours.png",
+        "alt": "Casa Bruma, a Mediterranean modern hillside villa in Sintra, Portugal"
+      },
+      "overview": "## Project Overview\n\nCasa Bruma is cut into a Sintra hillside where morning mist sits below the house for most of the year. Rather than fight the slope with a podium, the plan follows it: four half-levels stepping down the contour, each one a single room deep, so daylight reaches both faces of every space.\n\n## The best thing about the site\n\nThe best thing about this site is something you cannot photograph — the mist. For two hours most mornings the valley disappears and the house appears to float. The terraces were positioned and sized around that window rather than around the afternoon sun.\n\n## Creating Lasting Value\n\nGranite from the region forms the retaining structure and the plinth, and lime render was chosen over cement because it breathes in a climate this damp. The result costs more to build and considerably less to keep, which is the trade the clients were happy to make.\n\n‍\n\n![Casa Bruma, a Mediterranean modern hillside villa in Sintra, Portugal](media:Figure.webp)\n\n## Key Features\n\n- Four half-levels following the natural contour\n- Single-room depth for daylight on both faces\n- Terraces positioned for the morning mist\n- Regional granite retaining walls and plinth\n- Breathable lime render throughout the exterior\n- Passive stack ventilation through the stair core\n- Mature cork oaks retained on the upper terrace\n- Rainwater harvesting fed from the stepped roofs",
+      "gallery": [
+        {
+          "file": "6a9ffdceb2d24f9cdf93a8e3_Figure-20-1.webp",
+          "alt": "Casa Bruma, a Mediterranean modern hillside villa in Sintra, Portugal"
+        },
+        {
+          "file": "6a9ffdd04d4bb1af127b8293_Figure-20-2.webp",
+          "alt": "Casa Bruma, a Mediterranean modern hillside villa in Sintra, Portugal"
+        },
+        {
+          "file": "6a9ffe2e1d92d441f20e7f75_Figure-20-4.webp",
+          "alt": "Casa Bruma, a Mediterranean modern hillside villa in Sintra, Portugal"
+        },
+        {
+          "file": "6a9ffe2f1fae7c7e4b3c8c8d_Figure-20-3.webp",
+          "alt": "Casa Bruma, a Mediterranean modern hillside villa in Sintra, Portugal"
+        }
+      ],
+      "overviewSecondary": "## Built Around Lifestyle and Opportunity\n\nThe family splits its year between Lisbon and the house, so the design had to work at two very different occupancies — two people for most of the year, fourteen at Christmas. The lower two levels close down completely without affecting how the upper house lives.\n\n## Project Summary\n\nCasa Bruma is a section before it is a plan. Every decision — daylight, ventilation, view, even how the house is closed up — follows from stepping the building down the hill instead of levelling it.",
+      "seo": {
+        "metaTitle": "Casa Bruma Sintra | Atrecxa",
+        "metaDescription": "A hillside house in Sintra built into its slope rather than onto it. How level changes, stone and mist shaped the plan on this Atrecxa project."
+      }
+    },
+    {
+      "title": "Horizon Residence",
+      "slug": "horizon-residence",
+      "position": 5,
+      "order": 7,
+      "tagline": "One long, low house organised around a single line — the place where sea meets sky.",
+      "image": {
+        "file": "Image-36.webp",
+        "alt": "Horizon Residence, a long low coastal modern house at Byron Bay, Australia"
+      },
+      "propertyType": "Coastal Residence",
+      "location": "Byron Bay, Australia",
+      "architectureStyle": "Coastal Modern",
+      "completed": "2026-09-05",
+      "interiorSpace": "4,400 sq ft",
+      "propertyValue": "$5.4 Million",
+      "expertImage": {
+        "file": "Image-Design-yours.png",
+        "alt": "Horizon Residence, a long low coastal modern house at Byron Bay, Australia"
+      },
+      "overview": "## Project Overview\n\nHorizon Residence is a single-storey house sixty metres long and one room deep. That proportion was not a stylistic choice: it is what it takes to give every space in the house the same uninterrupted sea horizon, without one room borrowing its view over another.\n\n## The best thing about the site\n\nThe site is a coastal dune, which means salt, wind and sand rather than a benign view. Setting the house behind the primary dune rather than on top of it cost eight metres of elevation and bought a building that will still look new in twenty years.\n\n## Creating Lasting Value\n\nEverything within reach of salt air is either marine-grade stainless, anodised aluminium or hardwood with no coating to fail. The roof is a single unbroken plane with concealed drainage, because on this coast every joint and every gutter is a maintenance appointment waiting to happen.\n\n‍\n\n![Horizon Residence, a long low coastal modern house at Byron Bay, Australia](media:Figure.webp)\n\n## Key Features\n\n- Sixty-metre single-room-deep plan\n- Uninterrupted sea horizon from every room\n- Sited behind the primary dune for shelter\n- Marine-grade stainless and anodised fixings\n- Uncoated hardwood chosen to weather evenly\n- Single unbroken roof plane with concealed drainage\n- Louvred east face for controlled sea breeze\n- Native dune planting reinstated across the frontage",
+      "gallery": [
+        {
+          "file": "6a9ffdceb2d24f9cdf93a8e3_Figure-20-1.webp",
+          "alt": "Horizon Residence, a long low coastal modern house at Byron Bay, Australia"
+        },
+        {
+          "file": "6a9ffdd04d4bb1af127b8293_Figure-20-2.webp",
+          "alt": "Horizon Residence, a long low coastal modern house at Byron Bay, Australia"
+        },
+        {
+          "file": "6a9ffe2e1d92d441f20e7f75_Figure-20-4.webp",
+          "alt": "Horizon Residence, a long low coastal modern house at Byron Bay, Australia"
+        },
+        {
+          "file": "6a9ffe2f1fae7c7e4b3c8c8d_Figure-20-3.webp",
+          "alt": "Horizon Residence, a long low coastal modern house at Byron Bay, Australia"
+        }
+      ],
+      "overviewSecondary": "## Built Around Lifestyle and Opportunity\n\nThe clients had lived on the site in an existing cottage for eleven years, so they arrived with an unusually precise brief — where the wind comes from in February, which corner catches the first light, where the sand collects. Most of the plan came from those observations rather than from us.\n\n## Project Summary\n\nHorizon Residence is a house shaped by one idea held consistently: a single line, seen from everywhere. The length, the depth, the roof and the siting are all consequences of protecting that.",
+      "seo": {
+        "metaTitle": "Horizon Residence | Atrecxa",
+        "metaDescription": "A long, low Byron Bay house organised around a single horizon line. See how the section, the roof and the openings work together on this Atrecxa project."
+      }
+    },
+    {
+      "title": "Pavilion Residence",
+      "slug": "pavilion-residence",
+      "position": 4,
+      "order": 9,
+      "tagline": "Linked pavilions around a courtyard, so the house can be one home or four quiet ones.",
+      "image": {
+        "file": "Image-32.webp",
+        "alt": "Pavilion Residence, linked waterfront pavilions set around a courtyard in Miami Beach"
+      },
+      "propertyType": "Waterfront Residence",
+      "location": "Miami Beach, Florida",
+      "architectureStyle": "Contemporary Modern",
+      "completed": "2026-07-02",
+      "interiorSpace": "5,200 sq ft",
+      "propertyValue": "$6.5 Million",
+      "expertImage": {
+        "file": "Image-Design-yours.png",
+        "alt": "Pavilion Residence, linked waterfront pavilions set around a courtyard in Miami Beach"
+      },
+      "overview": "## Project Overview\n\nAlder House began as a low, closed-off brick house at the edge of a working orchard. The brief was simple to state and hard to solve: let in the orchard without losing the privacy the site’s boundary wall had always provided. The result is a single-storey extension that reorganises the ground floor around one long view, rather than adding more rooms.\n\n## The best thing about the site\n\nThe existing house had almost no relationship to its strongest asset — a mature, south-facing orchard just beyond a garden wall. Planning constraints limited any increase in overall footprint, so the answer had to come from reorganisation, not addition.\n\n## Creating Lasting Value\n\nBeyond its visual appeal, this development focuses on durability, practicality, and future relevance. The combination of thoughtful planning and quality execution ensures that the property remains attractive for years to come. Attention has been given not only to aesthetics but also to efficiency, comfort, and usability. These qualities contribute to a living experience that is both enjoyable today and valuable in the future.\n\n‍\n\n![Pavilion Residence, linked waterfront pavilions set around a courtyard in Miami Beach](media:Figure.webp)\n\n## Key Features\n\n- Contemporary architectural design\n- Spacious and functional floor plan\n- Premium materials and finishes\n- Abundant natural light throughout\n- Carefully curated interior details\n- Strong long-term investment potential\n- Convenient access to surrounding amenities\n- Designed for modern lifestyles",
+      "gallery": [
+        {
+          "file": "Figure-1.webp",
+          "alt": "Pavilion Residence, linked waterfront pavilions set around a courtyard in Miami Beach"
+        },
+        {
+          "file": "Figure-2.webp",
+          "alt": "Pavilion Residence, linked waterfront pavilions set around a courtyard in Miami Beach"
+        },
+        {
+          "file": "Figure-4.webp",
+          "alt": "Pavilion Residence, linked waterfront pavilions set around a courtyard in Miami Beach"
+        },
+        {
+          "file": "Figure-3.webp",
+          "alt": "Pavilion Residence, linked waterfront pavilions set around a courtyard in Miami Beach"
+        }
+      ],
+      "overviewSecondary": "## Built Around Lifestyle and Opportunity\n\nAlder House was designed for a family whose children are about to leave and whose parents may soon arrive. Splitting the house into linked pavilions means rooms can be closed off, reopened or let independently without a single structural change.\n\n## Project Summary\n\nThe extension does not add rooms; it reorganises the ones that were already there around a single long view of the orchard. That restraint is the project — everything else follows from it.",
+      "seo": {
+        "metaTitle": "Pavilion Residence | Atrecxa",
+        "metaDescription": "A Miami Beach residence composed as linked pavilions around a courtyard. How separation, circulation and shared space were planned on this Atrecxa project."
+      }
+    },
+    {
+      "title": "Solstice Ridge House",
+      "slug": "solstice-ridge-house",
+      "position": 3,
+      "order": 4,
+      "tagline": "An alpine house turned to catch the low winter sun and shrug off four metres of snow.",
+      "image": {
+        "file": "Image-33.webp",
+        "alt": "Solstice Ridge House, an alpine contemporary residence in Aspen, Colorado"
+      },
+      "propertyType": "Alpine Residence",
+      "location": "Aspen, Colorado",
+      "architectureStyle": "Alpine Contemporary",
+      "completed": "2026-02-18",
+      "interiorSpace": "3,700 sq ft",
+      "propertyValue": "$5.9 Million",
+      "expertImage": {
+        "file": "6aa002a8c6d2222416921d15_Image-20-Design-20yours.png",
+        "alt": "Solstice Ridge House, an alpine contemporary residence in Aspen, Colorado"
+      },
+      "overview": "## Project Overview\n\nAt 2,600 metres the sun sits low for half the year and the roof carries snow for longer than it carries nothing. Solstice Ridge is planned around both facts. The living floor is lifted a storey above the ground so the winter sun reaches the back of the room, and the roof is a single steep plane pitched away from every entrance so snow never sheds onto a door.\n\n## The best thing about the site\n\nThe plot sits on a shoulder rather than a summit, which meant we could put the house below the ridge line and keep it out of the prevailing wind. It costs a little of the view northward and buys a terrace that is usable in February.\n\n## Creating Lasting Value\n\nEverything here is sized for load rather than for looks. The frame is glulam at spacings a snow engineer signed off, the glazing is triple with warm-edge spacers, and the whole envelope is airtight enough that the heating plant is a third of the size the local rule of thumb suggests.\n\n‍\n\n![Solstice Ridge House, an alpine contemporary residence in Aspen, Colorado](media:Figure.webp)\n\n## Key Features\n\n- Living floor lifted for low winter sun penetration\n- Single steep roof plane, shedding away from entrances\n- Glulam frame sized to alpine snow loading\n- Triple glazing with warm-edge spacers throughout\n- Airtight envelope allowing a third-size heating plant\n- Sheltered terrace sited below the ridge line\n- Boot room and drying room on the arrival level\n- Local stone plinth taking all ground contact",
+      "gallery": [
+        {
+          "file": "8131c941-6a9ffdceb2d24f9cdf93a8e3_Figure-20-1.webp",
+          "alt": "Solstice Ridge House, an alpine contemporary residence in Aspen, Colorado"
+        },
+        {
+          "file": "8131c94b-6a9ffdd04d4bb1af127b8293_Figure-20-2.webp",
+          "alt": "Solstice Ridge House, an alpine contemporary residence in Aspen, Colorado"
+        },
+        {
+          "file": "8131c944-6a9ffe2e1d92d441f20e7f75_Figure-20-4.webp",
+          "alt": "Solstice Ridge House, an alpine contemporary residence in Aspen, Colorado"
+        },
+        {
+          "file": "8131c948-6a9ffe2f1fae7c7e4b3c8c8d_Figure-20-3.webp",
+          "alt": "Solstice Ridge House, an alpine contemporary residence in Aspen, Colorado"
+        }
+      ],
+      "overviewSecondary": "## Built Around Lifestyle and Opportunity\n\nThe house is occupied hard for four months and lightly for the rest, so it had to be safe to leave. Water can be drained down from a single point, the heating drops to a frost regime on its own, and every external opening can be shuttered from inside in under ten minutes.\n\n## Project Summary\n\nSolstice Ridge is a building designed by its climate rather than decorated to suit it. Sun angle, snow load and wind direction set the section, and the plan followed.",
+      "seo": {
+        "metaTitle": "Solstice Ridge House | Atrecxa",
+        "metaDescription": "An alpine house in Aspen planned around sun angle and snow load. See how section, structure and envelope were resolved together on this Atrecxa project."
+      }
+    },
+    {
+      "title": "Kiyomizu Court House",
+      "slug": "kiyomizu-court-house",
+      "position": 2,
+      "order": 5,
+      "tagline": "A narrow Kyoto plot turned inward, where three courtyards do the work of a garden.",
+      "image": {
+        "file": "Image-40.webp",
+        "alt": "Kiyomizu Court House, a contemporary machiya on a narrow Kyoto plot built around three courtyards"
+      },
+      "propertyType": "Urban Courtyard House",
+      "location": "Kyoto, Japan",
+      "architectureStyle": "Contemporary Machiya",
+      "completed": "2026-04-03",
+      "interiorSpace": "2,600 sq ft",
+      "propertyValue": "$3.1 Million",
+      "expertImage": {
+        "file": "6aa002a8c6d2222416921d15_Image-20-Design-20yours.png",
+        "alt": "Kiyomizu Court House, a contemporary machiya on a narrow Kyoto plot built around three courtyards"
+      },
+      "overview": "## Project Overview\n\nThe plot is five metres wide and thirty deep, with neighbours hard against both long walls. A house on this site cannot look out, so this one looks in. Three courtyards — an entry court, a planted court at the middle and a small water court at the rear — bring light and air into a plan that has almost no external face to work with.\n\n## The best thing about the site\n\nWhat the site lacks in outlook it makes up for in quiet. Set back from the street behind a machiya frontage, the interior is genuinely still, and the courtyards let us hold on to that instead of trading it for a window onto traffic.\n\n## Creating Lasting Value\n\nThe timber post-and-beam frame follows the local tradition because it is repairable in the local way: any single member can be replaced without disturbing the ones around it. Earthen plaster, cedar boarding and clay tile were chosen for the same reason.\n\n‍\n\n![Kiyomizu Court House, a contemporary machiya on a narrow Kyoto plot built around three courtyards](media:Figure.webp)\n\n## Key Features\n\n- Three courtyards lighting a five-metre-wide plan\n- Timber post-and-beam frame, member by member repairable\n- Earthen plaster and cedar boarding internally\n- Clay tile roof matching the street's existing line\n- Cross-ventilation driven by the middle court\n- Sliding screens allowing the plan to open end to end\n- Machiya frontage retained to the street\n- Rear water court moderating summer humidity",
+      "gallery": [
+        {
+          "file": "8131c941-6a9ffdceb2d24f9cdf93a8e3_Figure-20-1.webp",
+          "alt": "Kiyomizu Court House, a contemporary machiya on a narrow Kyoto plot built around three courtyards"
+        },
+        {
+          "file": "8131c94b-6a9ffdd04d4bb1af127b8293_Figure-20-2.webp",
+          "alt": "Kiyomizu Court House, a contemporary machiya on a narrow Kyoto plot built around three courtyards"
+        },
+        {
+          "file": "8131c944-6a9ffe2e1d92d441f20e7f75_Figure-20-4.webp",
+          "alt": "Kiyomizu Court House, a contemporary machiya on a narrow Kyoto plot built around three courtyards"
+        },
+        {
+          "file": "8131c948-6a9ffe2f1fae7c7e4b3c8c8d_Figure-20-3.webp",
+          "alt": "Kiyomizu Court House, a contemporary machiya on a narrow Kyoto plot built around three courtyards"
+        }
+      ],
+      "overviewSecondary": "## Built Around Lifestyle and Opportunity\n\nThe clients are a couple who work from home in different disciplines and needed to be able to disappear from each other during the day. The courtyards double as acoustic breaks — each work room sits on a different court, so neither hears the other.\n\n## Project Summary\n\nKiyomizu Court House takes the oldest answer to a narrow urban plot and rebuilds it with current fabric performance. The plan is inward, the light is borrowed from above, and the street sees almost nothing of it.",
+      "seo": {
+        "metaTitle": "Kiyomizu Court House | Atrecxa",
+        "metaDescription": "A narrow Kyoto plot planned around three courtyards. How light, air and privacy were resolved without a single outward view on this Atrecxa project."
+      }
+    },
+    {
+      "title": "Foundry Lofts",
+      "slug": "foundry-lofts",
+      "position": 1,
+      "order": 8,
+      "tagline": "A 1920s iron foundry kept almost whole, with eleven homes threaded through what was already there.",
+      "image": {
+        "file": "Image-28.webp",
+        "alt": "Foundry Lofts, a 1920s iron foundry in Rotterdam converted into eleven homes"
+      },
+      "propertyType": "Adaptive Reuse",
+      "location": "Rotterdam, Netherlands",
+      "architectureStyle": "Industrial Conversion",
+      "completed": "2026-08-21",
+      "interiorSpace": "18,400 sq ft",
+      "propertyValue": "$12.8 Million",
+      "expertImage": {
+        "file": "6aa002a8c6d2222416921d15_Image-20-Design-20yours.png",
+        "alt": "Foundry Lofts, a 1920s iron foundry in Rotterdam converted into eleven homes"
+      },
+      "overview": "## Project Overview\n\nThe foundry had a riveted steel frame, a north-lit sawtooth roof and eleven metres of clear height — three things you cannot buy new at any price. The conversion adds eleven apartments as a lightweight timber structure standing inside the old shell, touching it in as few places as possible, so the original volume is still legible from the floor.\n\n## The best thing about the site\n\nThe sawtooth roof is the whole project. It gives every apartment even north light with no overheating and no blinds, and it is the reason the building did not need a single new window on the long elevations.\n\n## Creating Lasting Value\n\nRetaining the frame and envelope avoided roughly forty per cent of the embodied carbon of an equivalent new build. The new insertions are dry-jointed and demountable, so in fifty years the next use can take them out without touching the 1920s fabric underneath.\n\n‍\n\n![Foundry Lofts, a 1920s iron foundry in Rotterdam converted into eleven homes](media:Figure.webp)\n\n## Key Features\n\n- Riveted steel frame retained and left exposed\n- North-lit sawtooth roof reglazed in place\n- Eleven apartments as a free-standing timber insert\n- Dry-jointed, fully demountable new structure\n- Around forty per cent embodied carbon avoided\n- Original crane rails kept as a datum through the hall\n- Shared ground-floor workshop and bike store\n- Communal courtyard cut into the former casting bay",
+      "gallery": [
+        {
+          "file": "8131c941-6a9ffdceb2d24f9cdf93a8e3_Figure-20-1.webp",
+          "alt": "Foundry Lofts, a 1920s iron foundry in Rotterdam converted into eleven homes"
+        },
+        {
+          "file": "8131c94b-6a9ffdd04d4bb1af127b8293_Figure-20-2.webp",
+          "alt": "Foundry Lofts, a 1920s iron foundry in Rotterdam converted into eleven homes"
+        },
+        {
+          "file": "8131c944-6a9ffe2e1d92d441f20e7f75_Figure-20-4.webp",
+          "alt": "Foundry Lofts, a 1920s iron foundry in Rotterdam converted into eleven homes"
+        },
+        {
+          "file": "8131c948-6a9ffe2f1fae7c7e4b3c8c8d_Figure-20-3.webp",
+          "alt": "Foundry Lofts, a 1920s iron foundry in Rotterdam converted into eleven homes"
+        }
+      ],
+      "overviewSecondary": "## Built Around Lifestyle and Opportunity\n\nThe building was bought by a residents' collective before design started, which changed everything. Eleven households sat in the same room and traded floor area against shared space, and the ground floor workshop exists because they voted for it over larger kitchens.\n\n## Project Summary\n\nFoundry Lofts is an argument for keeping what is already standing. The frame, the roof and the volume did the heavy lifting; the new work is deliberately light, reversible and quiet against them.",
+      "seo": {
+        "metaTitle": "Foundry Lofts | Atrecxa",
+        "metaDescription": "A 1920s Rotterdam iron foundry converted into eleven homes, keeping the steel frame, the sawtooth roof and the volume. An Atrecxa adaptive reuse project."
+      }
+    }
+  ],
+  "blogs": [
+    {
+      "title": "The Case For Reclaimed Brick",
+      "slug": "the-case-for-reclaimed-brick",
+      "order": 1,
+      "date": "2025-07-24",
+      "category": "Business",
+      "readTime": "7 min",
+      "excerpt": "Where it actually comes from, what it costs, how it ages, and the three situations where we would specify it again.",
+      "image": {
+        "file": "Image-23.webp",
+        "alt": "Atrecxa article on where reclaimed brick comes from, what it costs and how it ages"
+      },
+      "body": "## The best thing about this\n\nAlmost no reclaimed brick comes from the romantic source people imagine. The bulk of good stock is hand-cleaned lime-mortar brick from nineteenth-century demolition, sorted by a handful of yards who know exactly what they hold. Anything much cheaper is usually cement-mortar brick tumbled to look old, and it will not behave the same way in a wall.\n\n### Creating Lasting Value\n\nReclaimed brick arrives already weathered, so it skips the awkward five years where new brick looks new. Lime mortar lets the wall move and lets moisture out, and the joint can be raked and repointed in fifty years without damaging the face. That is the real return on the premium, and it only shows up over decades.\n\n‍\n\n![Atrecxa article on where reclaimed brick comes from, what it costs and how it ages](media:Figure-5.webp)\n\n### Designed for Your Lifestyle and Chances\n\nExpect the material to cost two to three times new stock and expect slower laying because the sizes vary. On a recent extension the brick was eighteen per cent of the facade cost and the labour premium another eleven. Presented per square metre of finished wall rather than per thousand bricks, the number is much easier to live with.",
+      "gallery": [
+        {
+          "file": "6a9ffe2f1fae7c7e4b3c8c8d_Figure-20-3.webp",
+          "alt": "Atrecxa article on where reclaimed brick comes from, what it costs and how it ages"
+        },
+        {
+          "file": "6a9ffe2e1d92d441f20e7f75_Figure-20-4.webp",
+          "alt": "Atrecxa article on where reclaimed brick comes from, what it costs and how it ages"
+        }
+      ],
+      "bodySecondary": "### Built Around Lifestyle and Opportunity\n\nThere are three cases where we would specify it again without hesitation: an extension to a period building where matching matters more than cost, a garden or boundary wall seen close up for decades, and any project where the client genuinely wants a material with a history rather than a finish that imitates one.\n\n### Project Summary\n\nWhere we would not use it is on large, flat, repetitive elevations. Reclaimed brick is at its worst in long unbroken runs, where size variation reads as sloppiness rather than character. On those walls we specify a good new brick and spend the saving on the mortar and the bond.",
+      "seo": {
+        "metaTitle": "The Case For Reclaimed Brick | Atrecxa",
+        "metaDescription": "Where reclaimed brick actually comes from, what it costs, how it ages, and the three situations where we would specify it again on a project."
+      }
+    },
+    {
+      "title": "How to choose the right neighborhood for your family",
+      "slug": "how-to-choose-the-right-neighborhood-for-your-family",
+      "order": 2,
+      "date": "2025-07-24",
+      "category": "Business",
+      "readTime": "6 min",
+      "excerpt": "A practical checklist for weighing schools, commute, light and long-term value before you commit to a plot.",
+      "image": {
+        "file": "Image-12.webp",
+        "alt": "Atrecxa article on weighing schools, commute, light and long-term value when choosing a plot"
+      },
+      "body": "## The best thing about this\n\nThe single decision that most affects daily life is not the plot, it is the journey. We ask clients to drive the commute twice before they look at a floor plan: once at eight on a Tuesday morning and once on a wet Friday evening. A house that adds twenty minutes each way costs roughly eight working days a year.\n\n### Creating Lasting Value\n\nCatchment areas are redrawn, head teachers move, and a school's reputation can turn in five years. The street itself is far more stable — the width of the pavement, whether cars park on both sides, how many front doors face the road. Judge the permanent things and treat the school as a bonus rather than a foundation.\n\n‍\n\n![Atrecxa article on weighing schools, commute, light and long-term value when choosing a plot](media:Figure-5.webp)\n\n### Designed for Your Lifestyle and Chances\n\nVisit the plot at three different times on the same day. Most of the disappointments we are later asked to fix are light problems, and almost all of them were visible before the purchase. A north-facing rear garden is not a fault, but it is a fact worth owning knowingly rather than discovering in year two.",
+      "gallery": [
+        {
+          "file": "6a9ffe2f1fae7c7e4b3c8c8d_Figure-20-3.webp",
+          "alt": "Atrecxa article on weighing schools, commute, light and long-term value when choosing a plot"
+        },
+        {
+          "file": "6a9ffe2e1d92d441f20e7f75_Figure-20-4.webp",
+          "alt": "Atrecxa article on weighing schools, commute, light and long-term value when choosing a plot"
+        }
+      ],
+      "bodySecondary": "### Built Around Lifestyle and Opportunity\n\nAsk what the street will look like in fifteen years, not what it looks like today. Mature trees, a mix of house sizes and at least one reason for people to walk somewhere are better predictors of long-term value than any current price comparison an agent will show you.\n\n### Project Summary\n\nCommute driven twice, light checked three times in a day, pavement and parking observed on a weekday evening, one conversation with a neighbour, and a look at the drainage after rain. Five items, one afternoon, and it will tell you more than any brochure ever will.",
+      "seo": {
+        "metaTitle": "Choosing the Right Neighborhood for Your Family | Atrecxa",
+        "metaDescription": "A practical checklist for weighing schools, commute, light and long-term value before you commit to a plot — from the Atrecxa design studio."
+      }
+    },
+    {
+      "title": "Finding the perfect neighborhood to inspire your interior style",
+      "slug": "finding-the-perfect-neighborhood-to-inspire-your-interior-style",
+      "order": 3,
+      "date": "2025-07-18",
+      "category": "Design",
+      "readTime": "5 min",
+      "excerpt": "How the street outside quietly sets the palette, the proportions and the materials inside.",
+      "image": {
+        "file": "Image-13.webp",
+        "alt": "Atrecxa design article on letting the surrounding neighbourhood set an interior palette"
+      },
+      "body": "## The best thing about this\n\nInteriors that feel settled almost always borrow something from outside the window. A brick terrace pushes a warm, mid-toned palette; a white rendered street can carry much cooler greys without going cold. Choosing a palette that fights the view is the fastest way to make a room feel like a stage set.\n\n### Creating Lasting Value\n\nCeiling heights, window head heights and the rhythm of the facade are decided by the era of the street. Working with them costs nothing; working against them means every piece of furniture has to compensate. Tall Victorian rooms want vertical emphasis and generous skirtings, not the low horizontal furniture that suits a post-war house.\n\n‍\n\n![Atrecxa design article on letting the surrounding neighbourhood set an interior palette](media:Figure-5.webp)\n\n### Designed for Your Lifestyle and Chances\n\nA coastal street wants materials that tolerate salt and low light. An inland town with hard water wants surfaces that forgive limescale. These are not style decisions at all, but they quietly determine which style will still look good in five years and which will need replacing.",
+      "gallery": [
+        {
+          "file": "6a9ffe2f1fae7c7e4b3c8c8d_Figure-20-3.webp",
+          "alt": "Atrecxa design article on letting the surrounding neighbourhood set an interior palette"
+        },
+        {
+          "file": "6a9ffe2e1d92d441f20e7f75_Figure-20-4.webp",
+          "alt": "Atrecxa design article on letting the surrounding neighbourhood set an interior palette"
+        }
+      ],
+      "bodySecondary": "### Built Around Lifestyle and Opportunity\n\nThe trick is restraint. Take one cue from the context — a brick tone, a window proportion, a local stone — and let the rest of the interior be your own. Copying the street wholesale produces pastiche; ignoring it completely produces a room that never quite lands.\n\n### Project Summary\n\nThere is a simple way to test it. Photograph the view from each main window, print it, and lay your material samples on the photograph. If the palette holds against the real context, it will hold in the finished room.",
+      "seo": {
+        "metaTitle": "How a Neighborhood Shapes Your Interior Style | Atrecxa",
+        "metaDescription": "How the street outside quietly sets the palette, the proportions and the materials inside — and how we use that rather than fight it on every project."
+      }
+    },
+    {
+      "title": "Designing homes that age gracefully with their owners",
+      "slug": "designing-homes-that-age-gracefully-with-their-owners",
+      "order": 4,
+      "date": "2025-07-10",
+      "category": "Architecture",
+      "readTime": "8 min",
+      "excerpt": "Rooms that can change use without changing walls, and why that decision is made on day one.",
+      "image": {
+        "file": "Image-15.webp",
+        "alt": "Atrecxa article on designing homes whose rooms change use without changing walls"
+      },
+      "body": "## The best thing about this\n\nA house that ages well is one where the plan can absorb a new life stage without construction. That usually means one room more than you strictly need, doors positioned so a space can be closed off, and a ground floor that could take a bed. None of it is visible on day one, and all of it is decided on day one.\n\n### Creating Lasting Value\n\nStructure, services and openings deserve the early money. Anything buried is expensive to change later, so we oversize service routes, run conduit to places we might need power in fifteen years, and put lintels over openings we have not yet cut. Finishes are the cheap part to revisit and the easy part to defer.\n\n‍\n\n![Atrecxa article on designing homes whose rooms change use without changing walls](media:Figure-5.webp)\n\n### Designed for Your Lifestyle and Chances\n\nLevel thresholds, a shower that can lose its tray, a stair wide enough for two people side by side, and a downstairs cloakroom that could become a shower room. Each costs almost nothing at design stage and is close to impossible to retrofit gracefully once the house is finished.",
+      "gallery": [
+        {
+          "file": "6a9ffe2f1fae7c7e4b3c8c8d_Figure-20-3.webp",
+          "alt": "Atrecxa article on designing homes whose rooms change use without changing walls"
+        },
+        {
+          "file": "6a9ffe2e1d92d441f20e7f75_Figure-20-4.webp",
+          "alt": "Atrecxa article on designing homes whose rooms change use without changing walls"
+        }
+      ],
+      "bodySecondary": "### Built Around Lifestyle and Opportunity\n\nMaterials should improve rather than degrade. Oiled timber, solid stone, lime plaster and unlacquered brass all look better after ten years of use than after ten days. The alternative — laminate, lacquer, painted MDF — is at its best on the day it is installed and declines steadily from there.\n\n### Project Summary\n\nThe test we apply is simple. Could this house absorb a new baby, a teenager, a home office and an elderly parent without calling a builder? If the answer is yes for at least three of the four, the plan will comfortably outlast its first owners.",
+      "seo": {
+        "metaTitle": "Designing Homes That Age Gracefully | Atrecxa",
+        "metaDescription": "Rooms that can change use without changing walls, and why that decision has to be made on day one rather than retrofitted a decade later on."
+      }
+    },
+    {
+      "title": "Natural light as the first material of every room",
+      "slug": "natural-light-as-the-first-material-of-every-room",
+      "order": 5,
+      "date": "2025-06-28",
+      "category": "Interior",
+      "readTime": "6 min",
+      "excerpt": "Orientation, aperture and depth — the three moves that decide how a room feels at 8am and at 6pm.",
+      "image": {
+        "file": "Image-16.webp",
+        "alt": "Atrecxa interior article on using natural light as the first material of every room"
+      },
+      "body": "## The best thing about this\n\nA modest north window and a large south window are not the same light in different quantities; they are different materials. North light is even, cool and never moves. South light is bright, warm and changes hourly. Deciding which one a room needs comes before deciding how big the window should be.\n\n### Creating Lasting Value\n\nA window high in a wall throws light deep into a room; the same area of glass low in the wall lights the floor and little else. For a room deeper than about six metres the head height matters more than the width, which is why tall narrow openings frequently outperform wide low ones on the same budget.\n\n‍\n\n![Atrecxa interior article on using natural light as the first material of every room](media:Figure-5.webp)\n\n### Designed for Your Lifestyle and Chances\n\nNo amount of glazing rescues a room that is too deep for its window. As a working rule, useful daylight reaches about two and a half times the window head height. Beyond that line you are lighting with electricity whatever the brochure photograph appears to show.",
+      "gallery": [
+        {
+          "file": "6a9ffe2f1fae7c7e4b3c8c8d_Figure-20-3.webp",
+          "alt": "Atrecxa interior article on using natural light as the first material of every room"
+        },
+        {
+          "file": "6a9ffe2e1d92d441f20e7f75_Figure-20-4.webp",
+          "alt": "Atrecxa interior article on using natural light as the first material of every room"
+        }
+      ],
+      "bodySecondary": "### Built Around Lifestyle and Opportunity\n\nTwo windows beat one. Light from a single direction models a room harshly and makes every face in it look flat. A second opening on a different wall — even a small one — removes the contrast and makes a space feel calm rather than merely bright.\n\n### Project Summary\n\nBefore you build, stand in the existing space at eight in the morning and again at six in the evening, and note where you naturally want to sit. That instinct is usually a better daylight model than any simulation, and it costs nothing to run.",
+      "seo": {
+        "metaTitle": "Natural Light: The First Material of Every Room | Atrecxa",
+        "metaDescription": "Orientation, aperture and depth — the three moves that decide how a room actually feels at eight in the morning and again at six in the evening."
+      }
+    },
+    {
+      "title": "What a renovation really costs before the first wall comes down",
+      "slug": "what-a-renovation-really-costs-before-the-first-wall-comes-down",
+      "order": 6,
+      "date": "2025-06-14",
+      "category": "Renovation",
+      "readTime": "9 min",
+      "excerpt": "The survey, the structure and the services — where budgets quietly go before anything looks different.",
+      "image": {
+        "file": "Image-17.webp",
+        "alt": "Atrecxa renovation article on where a budget goes before any visible work begins"
+      },
+      "body": "## The best thing about this\n\nA measured survey and an opening-up survey together cost a fraction of one per cent of a renovation, and they are the only reliable way to learn what you have actually bought. Every project we have watched go badly over budget skipped one of the two, usually to save a fortnight.\n\n### Creating Lasting Value\n\nStructure is where the surprises live. Undersized joists, a chimney breast removed without support, foundations that stop half a metre down. None of it is visible and all of it is expensive, so we budget a structural contingency separately from the general one — mixing them hides the problem until it is too late to act.\n\n‍\n\n![Atrecxa renovation article on where a budget goes before any visible work begins](media:Figure-5.webp)\n\n### Designed for Your Lifestyle and Chances\n\nServices quietly eat the budget. Rewiring, replumbing, a new consumer unit, drainage re-laid to fall. On a full renovation this is routinely a quarter of the cost and it produces nothing anyone can see, which makes it the hardest line to defend and the worst possible one to cut.",
+      "gallery": [
+        {
+          "file": "6a9ffe2f1fae7c7e4b3c8c8d_Figure-20-3.webp",
+          "alt": "Atrecxa renovation article on where a budget goes before any visible work begins"
+        },
+        {
+          "file": "6a9ffe2e1d92d441f20e7f75_Figure-20-4.webp",
+          "alt": "Atrecxa renovation article on where a budget goes before any visible work begins"
+        }
+      ],
+      "bodySecondary": "### Built Around Lifestyle and Opportunity\n\nOn a typical whole-house renovation the split is roughly twenty per cent structure, twenty-five services, twenty envelope, twenty-five finishes and ten fees. The kitchen and bathrooms everyone worries about sit inside that last quarter, and they are almost never the reason a project overruns.\n\n### Project Summary\n\nThe number to ask for is not a price per square metre but a cost plan split by those five headings with a named contingency against each. If a builder will not give you that, they have not priced the work — they have guessed at it.",
+      "seo": {
+        "metaTitle": "What a Renovation Really Costs Before You Start | Atrecxa",
+        "metaDescription": "The survey, the structure and the services — where renovation budgets quietly go long before anything in the house begins to look any different."
+      }
+    },
+    {
+      "title": "Choosing stone that still looks right in twenty years",
+      "slug": "choosing-stone-that-still-looks-right-in-twenty-years",
+      "order": 7,
+      "date": "2025-05-30",
+      "category": "Materials",
+      "readTime": "7 min",
+      "excerpt": "Wear, patina and repairability — how we test a surface long before it reaches a drawing.",
+      "image": {
+        "file": "Image-18.webp",
+        "alt": "Atrecxa materials article on choosing stone that wears and patinas well over twenty years"
+      },
+      "body": "## The best thing about this\n\nHardness tells you whether a stone will scratch; wear tells you how it will look after ten thousand footfalls. A soft limestone that wears evenly often ages better than a hard granite that holds a polish in some places and loses it in others. We look at floors in old buildings before we look at test certificates.\n\n### Creating Lasting Value\n\nPatina is a decision, not an accident. Every stone changes — the question is whether that change is visible and even, or invisible and abrupt. Honed finishes patina gracefully; high polish does not, because the day it loses its shine in one spot it reads as damaged rather than aged.\n\n‍\n\n![Atrecxa materials article on choosing stone that wears and patinas well over twenty years](media:Figure-5.webp)\n\n### Designed for Your Lifestyle and Chances\n\nRepairability is usually the deciding factor. Can a single slab be lifted and replaced in ten years? Is the quarry still working? Is the batch variation wide enough that a replacement will blend? A beautiful stone with no route to repair is a liability on a floor that will be walked on for decades.",
+      "gallery": [
+        {
+          "file": "6a9ffe2f1fae7c7e4b3c8c8d_Figure-20-3.webp",
+          "alt": "Atrecxa materials article on choosing stone that wears and patinas well over twenty years"
+        },
+        {
+          "file": "6a9ffe2e1d92d441f20e7f75_Figure-20-4.webp",
+          "alt": "Atrecxa materials article on choosing stone that wears and patinas well over twenty years"
+        }
+      ],
+      "bodySecondary": "### Built Around Lifestyle and Opportunity\n\nWe ask every supplier the same five questions: which quarry, which bed, what is the water absorption, what does this stone look like after fifteen years, and can you show us an installed floor of that age. A supplier who can answer all five is worth paying more for.\n\n### Project Summary\n\nWhere we compromise is on vertical surfaces. Walls take no wear, so a stone that would be wrong underfoot can be exactly right on a wall — and that is very often where the saving quietly lives.",
+      "seo": {
+        "metaTitle": "Choosing Stone That Lasts Twenty Years | Atrecxa",
+        "metaDescription": "Wear, patina and repairability — how we test a stone surface long before it ever reaches a drawing, and the questions we ask every single supplier."
+      }
+    },
+    {
+      "title": "The quiet discipline of a well-planned kitchen",
+      "slug": "the-quiet-discipline-of-a-well-planned-kitchen",
+      "order": 8,
+      "date": "2025-05-16",
+      "category": "Interior",
+      "readTime": "6 min",
+      "excerpt": "Three working triangles, one sightline, and the storage decisions nobody notices when they are right.",
+      "image": {
+        "file": "Image-19.webp",
+        "alt": "Atrecxa interior article on planning a kitchen around work zones, sightlines and storage"
+      },
+      "body": "## The best thing about this\n\nThe classic work triangle assumes one cook and one task at a time. Real kitchens run a prep zone, a cooking zone and a clearing zone simultaneously, often with different people in each. Planning three overlapping triangles rather than one is what stops a kitchen feeling crowded at exactly the moment it matters most.\n\n### Creating Lasting Value\n\nEvery good kitchen has one view that must be protected — to the garden, to the table, to the door the children come through. Once that line is agreed, the position of the tall units and the extraction usually resolve themselves, because those two elements are the only things large enough to block it.\n\n‍\n\n![Atrecxa interior article on planning a kitchen around work zones, sightlines and storage](media:Figure-5.webp)\n\n### Designed for Your Lifestyle and Chances\n\nStoring things by type is how showrooms work. Storing them by how often you reach for them is how kitchens work. Daily items belong between hip and shoulder height within one step of the prep zone; everything else can be as awkward to reach as it likes.",
+      "gallery": [
+        {
+          "file": "6a9ffe2f1fae7c7e4b3c8c8d_Figure-20-3.webp",
+          "alt": "Atrecxa interior article on planning a kitchen around work zones, sightlines and storage"
+        },
+        {
+          "file": "6a9ffe2e1d92d441f20e7f75_Figure-20-4.webp",
+          "alt": "Atrecxa interior article on planning a kitchen around work zones, sightlines and storage"
+        }
+      ],
+      "bodySecondary": "### Built Around Lifestyle and Opportunity\n\nThe details nobody notices when they are right: worktop depth behind the hob, a socket where the kettle actually lives, a bin that opens without moving your feet, a drawer that takes the pans without stacking. Each is a two-minute decision at design stage and a daily irritation if missed.\n\n### Project Summary\n\nHandles, splashbacks and the tap are the most visible items and the easiest to change later, which makes them exactly the right place to economise while the layout is still being fought for.",
+      "seo": {
+        "metaTitle": "The Quiet Discipline of a Well-Planned Kitchen | Atrecxa",
+        "metaDescription": "Three working triangles, one sightline, and the storage decisions nobody ever notices when they are right — how we plan a kitchen that really works."
+      }
+    },
+    {
+      "title": "Building on a difficult site without fighting it",
+      "slug": "building-on-a-difficult-site-without-fighting-it",
+      "order": 9,
+      "date": "2025-04-29",
+      "category": "Architecture",
+      "readTime": "8 min",
+      "excerpt": "Slope, water and wind read as constraints on paper and as character once the house is standing.",
+      "image": {
+        "file": "Image-20.webp",
+        "alt": "Atrecxa article on building with a site’s slope, water and wind rather than against them"
+      },
+      "body": "## The best thing about this\n\nA sloping site is not a harder version of a flat one; it is a different exercise entirely. Solved in section rather than in plan, the slope hands you level changes, split floors and views over your own roof — all things a flat site has to invent artificially and expensively.\n\n### Creating Lasting Value\n\nWalk the site after heavy rain and mark where water collects and where it runs. That map is worth more than any desktop study, and it will usually rule out one part of the site immediately while making another part obviously correct before a single line is drawn.\n\n‍\n\n![Atrecxa article on building with a site’s slope, water and wind rather than against them](media:Figure-5.webp)\n\n### Designed for Your Lifestyle and Chances\n\nPrevailing wind decides where the entrance can sit, which terrace will actually be used, and how much work shelter planting has to do. On exposed sites we have moved a front door fifteen metres for wind reasons alone, and it was unquestionably the right call.",
+      "gallery": [
+        {
+          "file": "6a9ffe2f1fae7c7e4b3c8c8d_Figure-20-3.webp",
+          "alt": "Atrecxa article on building with a site’s slope, water and wind rather than against them"
+        },
+        {
+          "file": "6a9ffe2e1d92d441f20e7f75_Figure-20-4.webp",
+          "alt": "Atrecxa article on building with a site’s slope, water and wind rather than against them"
+        }
+      ],
+      "bodySecondary": "### Built Around Lifestyle and Opportunity\n\nThe houses people remember are almost always the ones where a difficulty is still visible in the finished building — a retaining wall that became a room, a level change that became a stair everyone sits on. Erasing the difficulty usually erases the interest along with it.\n\n### Project Summary\n\nThere is one case where we advise walking away, and that is ground conditions. Slope, water and wind are design problems with an upside; unstable ground is a cost problem without one. If the site investigation comes back badly, no amount of good design makes the numbers work.",
+      "seo": {
+        "metaTitle": "Building on a Difficult Site Without Fighting It | Atrecxa",
+        "metaDescription": "Slope, water and wind read as constraints on paper and as character once the house is standing. How we turn a hard site into the design itself."
+      }
+    },
+    {
+      "title": "Why we start every project with a week of doing nothing",
+      "slug": "why-we-start-every-project-with-a-week-of-doing-nothing",
+      "order": 10,
+      "date": "2025-04-11",
+      "category": "Studio",
+      "readTime": "8 min",
+      "excerpt": "Sitting on the site, watching the light, and resisting the first idea long enough to find a better one.",
+      "image": {
+        "file": "Image-21.webp",
+        "alt": "Atrecxa studio article on spending the first week of a project observing the site before designing"
+      },
+      "body": "## The best thing about this\n\nThe existing house had almost no relationship to its strongest asset — a mature, south-facing orchard just beyond a garden wall. Planning constraints limited any increase in overall footprint, so the answer had to come from reorganisation, not addition.\n\n### Creating Lasting Value\n\nBeyond its visual appeal, this development focuses on durability, practicality, and future relevance. The combination of thoughtful planning and quality execution ensures that the property remains attractive for years to come. Attention has been given not only to aesthetics but also to efficiency, comfort, and usability. These qualities contribute to a living experience that is both enjoyable today and valuable in the future.\n\n‍\n\n![Atrecxa studio article on spending the first week of a project observing the site before designing](media:Figure-5.webp)\n\n### Designed for Your Lifestyle and Chances\n\nEvery great property starts with knowing how people live, work, and interact with their environment. This project takes that idea to heart by designing spaces that are flexible, convenient, and really feel like home. The design keeps up with changing needs while staying classic enough to avoid going out of style. So, the property feels fresh now and will stay that way for years to come.",
+      "gallery": [
+        {
+          "file": "Figure-3.webp",
+          "alt": "Atrecxa studio article on spending the first week of a project observing the site before designing"
+        },
+        {
+          "file": "Figure-4.webp",
+          "alt": "Atrecxa studio article on spending the first week of a project observing the site before designing"
+        }
+      ],
+      "bodySecondary": "### Built Around Lifestyle and Opportunity\n\nEvery successful property begins with an understanding of how people live, work, and connect with their surroundings. This project embraces that philosophy by creating spaces that encourage flexibility, convenience, and a strong sense of place. The design responds to evolving expectations while maintaining a timeless character that transcends short-term trends. As a result, the property offers both immediate appeal and enduring relevance.\n\n### Project Summary\n\nThis project represents a careful balance between design excellence, functionality, and investment potential. Through thoughtful planning, quality craftsmanship, and a commitment to creating meaningful living environments, it delivers a complete real estate experience. Whether viewed as a residence, an asset, or a long-term opportunity, the property stands as a reflection of modern living at its finest.",
+      "seo": {
+        "metaTitle": "Why We Start Every Project Doing Nothing | Atrecxa",
+        "metaDescription": "Sitting on the site, watching the light, and resisting the first idea long enough to find a better one — how an Atrecxa project actually begins."
+      }
+    }
+  ]
+}
